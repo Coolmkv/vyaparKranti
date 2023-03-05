@@ -14,7 +14,7 @@
                                     <br>
                                     <p>Showcase your Profile to the world using online CV builder and Get Hired
                                         Faster</p>
-                                    <a class="contact_bt" href="about.html">About us</a>
+                                    <a class="contact_bt" href="{{ route("aboutUs") }}">About us</a>
                                 </div>
                             </div>
                         </div>
@@ -31,7 +31,7 @@
                                     <br>
                                     <p>Showcase your Profile to the world using online CV builder and Get Hired
                                         Faster</p>
-                                    <a class="contact_bt" href="about.html">About us</a>
+                                    <a class="contact_bt" href="{{ route("aboutUs") }}">About us</a>
                                 </div>
                             </div>
                         </div>
