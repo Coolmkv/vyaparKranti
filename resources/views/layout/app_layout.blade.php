@@ -6,7 +6,7 @@
     @include('includes.head')
 </head>
 
-<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+<body id="home" class="@yield("bodyClass")" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
     <!-- LOADER -->
     <div id="preloader">
@@ -28,6 +28,10 @@
 
     <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
     @include("includes.script")
+    <!-- Start Page script -->
+    @yield("pageScript")
+    <!-- End Page script -->
+
 </body>
 
 </html>

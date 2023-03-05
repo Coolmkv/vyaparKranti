@@ -11,12 +11,11 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                 <ul class="navbar-nav">
-                    <li><a class="nav-link active" href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="about.html">Aboutus</a></li>
-                    <li><a class="nav-link" href="services.html">Services</a></li>
-                    <li><a class="nav-link" href="#">Blog</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact us</a></li>
-                    <li><a class="nav-link active" style="background:#f2184f;color:#fff;" href="#">Sinup now</a></li>
+                    <li><a class="nav-link active" href="{{ url("/") }}">Home</a></li>
+                    <li><a class="nav-link" href="{{ route("aboutUs") }}">About Us</a></li>
+                    <li><a class="nav-link" href="{{ route("ourServices") }}">Our Services</a></li>
+                    <li><a class="nav-link" href="{{ route("ourPortfolio") }}">Our Portfolio</a></li>
+                    <li><a class="nav-link" href="{{ route("contactUs") }}">Contact us</a></li>
                 </ul>
             </div>
             <div class="search-box">
