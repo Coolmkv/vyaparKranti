@@ -1,7 +1,7 @@
 <header class="top-header">
     <nav class="navbar header-nav navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+        <div class="container-fluid bg-light">
+            <a class="navbar-brand" href="{{ url("/") }}">
                 <img src="{{asset("assets/img/logo.png")}}" alt="image">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,7 @@
                     <li><a class="nav-link" href="{{ route("contactUs") }}">Contact us</a></li>
                 </ul>
             </div>
-            <div class="search-box">
+            <div class="search-box invisible" >
                 <input type="text" class="search-txt" placeholder="Search">
                 <a class="search-btn">
                     <img src="{{ asset("assets/images/search_icon.png")}}" alt="#" />
