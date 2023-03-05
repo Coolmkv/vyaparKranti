@@ -13,8 +13,8 @@
                 <ul class="navbar-nav">
                     <li><a class="nav-link active" href="{{ url("/") }}">Home</a></li>
                     <li><a class="nav-link" href="{{ route("aboutUs") }}">About Us</a></li>
-                    <li><a class="nav-link" href="{{ route("ourServices") }}">Our Services</a></li>
-                    <li><a class="nav-link" href="{{ route("ourPortfolio") }}">Our Portfolio</a></li>
+                    <li><a class="nav-link" href="{{ route("ourServices") }}">Services</a></li>
+                    <li><a class="nav-link" href="{{ route("ourPortfolio") }}">Library</a></li>
                     <li><a class="nav-link" href="{{ route("contactUs") }}">Contact us</a></li>
                 </ul>
             </div>

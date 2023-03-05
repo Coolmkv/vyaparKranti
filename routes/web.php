@@ -17,8 +17,8 @@ use App\Http\Controllers\WebSitePages;
 
 Route::get('/', [WebSitePages::class,"homePage"])->name("homePage");
 Route::get('about-us', [WebSitePages::class,"aboutUs"])->name("aboutUs");
-Route::get('our-service', [WebSitePages::class,"ourServices"])->name("ourServices");
-Route::get('our-portfolio', [WebSitePages::class,"ourPortfolio"])->name("ourPortfolio");
+Route::get('services', [WebSitePages::class,"ourServices"])->name("ourServices");
+Route::get('library', [WebSitePages::class,"ourPortfolio"])->name("ourPortfolio");
 Route::get('contact-us', [WebSitePages::class,"contactUs"])->name("contactUs");
 
 Route::get('/dashboard', function () {
