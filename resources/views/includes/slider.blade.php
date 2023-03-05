@@ -8,13 +8,14 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="slide_text">
-                                    <h3>Trusted and<br>Professional Advisers</h3>
+                                    <h3>Trusted and<br>Professionals</h3>
                                     <br>
                                     <h4><span class="theme_color">For your Business</span></h4>
                                     <br>
-                                    <p>Showcase your Profile to the world using online CV builder and Get Hired
-                                        Faster</p>
-                                    <a class="contact_bt" href="{{ route("aboutUs") }}">About us</a>
+                                    <p class="bg-light" style="width: fit-content;">Bridging the gap between seller and buyer to maximize the opportunity to serve.
+                                    </p>
+
+                                    <a class="contact_bt" href="{{ route('aboutUs') }}">About us</a>
                                 </div>
                             </div>
                         </div>
@@ -25,13 +26,13 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="slide_text">
-                                    <h3>Trusted and<br>Professional Advisers</h3>
+                                    <h3>Trusted and<br>Professionals</h3>
                                     <br>
                                     <h4><span class="theme_color">For your Business</span></h4>
                                     <br>
-                                    <p>Showcase your Profile to the world using online CV builder and Get Hired
-                                        Faster</p>
-                                    <a class="contact_bt" href="{{ route("aboutUs") }}">About us</a>
+                                    <p>Showcase your business to the world using the innovative WEB Solutions and<br> boost
+                                        up your business growth.</p>
+                                    <a class="contact_bt" href="{{ route('aboutUs') }}">About us</a>
                                 </div>
                             </div>
                         </div>

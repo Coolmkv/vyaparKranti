@@ -3,41 +3,38 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 margin-bottom_30">
-                <img src="assets/img/f_logo.png" alt="#" />
+                <img src="assets/img/logo_img.jpg" alt="#" style="height:70px" />
             </div>
             <div class="col-xl-6 white_fonts">
                 <div class="row">
                     <div class="col-md-12 white_fonts margin-bottom_30">
                         <h3>Contact Us</h3>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 text-center">
                         <div class="full icon">
                             <img src="assets/images/social1.png">
                         </div>
                         <div class="full white_fonts">
-                            <p>London 145
-                                <br>United Kingdom
+                            <p>New Delhi,
+                                <br>
+                                India
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-4 text-center">
                         <div class="full icon">
                             <img src="assets/images/social2.png">
                         </div>
                         <div class="full white_fonts">
-                            <p>consultation@gmail.com
-                                <br>consultation@gmail.com
-                            </p>
+                            <a class="text-light" href="mailto:vyaparkranti@gmail.com" >vyaparkranti@gmail.com</a>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4 text-center">
                         <div class="full icon">
                             <img src="assets/images/social3.png">
                         </div>
                         <div class="full white_fonts">
-                            <p>+7586656566
-                                <br>+7586656566
-                            </p>
+                            <a  class="text-light" href="tel:+919958224825" >+91 99582 24825</a>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -58,22 +55,19 @@
                             <h3>Menus</h3>
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="{{ route("aboutUs") }}">About Us</a></li>
+                                <li><a href="{{ route("ourServices") }}">Our Services</a></li>
+                                <li><a href="{{ route("ourPortfolio") }}">Our Portfolio</a></li>
+                                <li><a href="{{ route("contactUs") }}">Contact us</a></li>
                             </ul>
                         </div>
-                        <div class="footer_blog recent_post_footer">
-                            <h3>Recent Post</h3>
-                            <p>Participate in staff meetings manage dedicated to marketing November 25, 2019</p>
-                        </div>
+                        
                     </div>
                     <div class="col-md-6">
                         <div class="footer_blog full">
                             <h3>Newsletter</h3>
                             <div class="newsletter_form">
-                                <form action="index.html">
+                                <form action="#">
                                     <input type="email" placeholder="Your Email" name="#" required />
                                     <button>Submit</button>
                                 </form>
