@@ -96,7 +96,13 @@
                   <div data-i18n="Analytics">WebSite Elements</div>
                 </a>
               </li>
-              
+              <!-- Site Elements -->
+              <li class="menu-item">
+                <a href="{{route("LibraryCategories")}}" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-category"></i>
+                  <div data-i18n="Analytics">Library Categories</div>
+                </a>
+              </li>
               <!-- Layouts -->
               {{-- <li class="menu-item active open">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">

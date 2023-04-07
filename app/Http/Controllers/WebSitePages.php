@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Library\Library;
+use App\Http\Requests\LibraryRequest;
 use Illuminate\Http\Request;
 
 class WebSitePages extends Controller
@@ -26,5 +28,9 @@ class WebSitePages extends Controller
     
     public function contactUs(){
         return view("WebSitePages.contactUs");
+    }
+
+    public function libraryCategory(LibraryRequest $request){
+         return (new Library())->viewLibrary($request);
     }
 }

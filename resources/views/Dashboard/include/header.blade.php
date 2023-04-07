@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="dashboard/assets/vendor/css/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="dashboard/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="dashboard/assets/css/demo.css" />
-
+    <link rel="stylesheet" href="assets/css/custom.css" />
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="dashboard/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 

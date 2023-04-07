@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Library\Library;
 use App\Http\Controllers\WebSitePages;
 
 /*
@@ -20,6 +21,7 @@ Route::get('about-us', [WebSitePages::class,"aboutUs"])->name("aboutUs");
 Route::get('services', [WebSitePages::class,"ourServices"])->name("ourServices");
 Route::get('library', [WebSitePages::class,"ourPortfolio"])->name("ourPortfolio");
 Route::get('contact-us', [WebSitePages::class,"contactUs"])->name("contactUs");
+Route::get('library-category',[WebSitePages::class,"libraryCategory"]);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -39,6 +41,8 @@ Route::middleware(['auth'])->group(function () {
     Route::post("addGalleryDataTable",[AdminController::class,"addGalleryDataTable"])->name("addGalleryDataTable");
 
     Route::get("web-site-elements",[AdminController::class,"webSiteElements"])->name("webSiteElements");
+    Route::get('library-categories',[Library::class,"manageLibraryCategories"])->name("LibraryCategories");
+    Route::post('add-library-categories',[Library::class,"addLibraryCategories"])->name("addLibraryCategories");
 });
 
 require __DIR__.'/auth.php';

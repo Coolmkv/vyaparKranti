@@ -69,7 +69,7 @@ class AdminController extends Controller
                 }else{
                     $return = redirect()->back()->withInput()->with("error","Invalid details");
                 }    
-            }
+            } 
              
             return $return;
         }catch(Exception $exception){
