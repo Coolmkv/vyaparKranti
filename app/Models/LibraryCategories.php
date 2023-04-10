@@ -11,6 +11,7 @@ class LibraryCategories extends Model
 
     protected $table="library_categories";
 
+    const TABLE_NAME = "library_categories";
     const ID = "id";
     const CATEGORY_NAME = "category_name";
     const CATEGORY_ICON = "category_icon";

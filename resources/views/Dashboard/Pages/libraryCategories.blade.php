@@ -14,44 +14,24 @@
                     </div>
                     <div class="alert-success card-body">
                         <x-form enctype="multipart/form-data" action="javascript:" >
+                            <input type="hidden" name="id" id="id" value="">
                             <input type="hidden" name="action" id="action" value="insert">
                             <div class="row">
                                 <x-input-group-element title="Category Name" placeholder="Category Name" id="category_name_id" name="category_name"  required></x-input-group-element>
                                 
                                 <x-input-group-element title="Category Icon" type="file" accept="image/*" placeholder="Category Name" id="category_icon_id" name="category_icon"  required></x-input-group-element>
                                 
-                                <x-text-area-group-element title="Category Details" id="category_details" name="category_details" required></x-text-area-group-element>
+                                <x-text-area-group-element title="Category Details" id="category_details" name="category_details" ></x-text-area-group-element>
                             </div>
                         </x-form>                         
                     </div>
                 </div>
-                <div class="card mb-4">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <h5 class="mb-0">Gallery Data</h5>
-                    </div>
-                    <div class="alert-info card-body">
-                        <table class="table table-bordered data-table table-responsive">
-                            <thead>
-                                <tr>
-                                    <th width="100px">Action</th>
-                                    <th>Id</th>
-                                    <th>Title</th>
-                                    <th>Description</th>
-                                    <th>Alternate Text</th>
-                                    <th>Image Local</th>
-                                    <th>Image Link</th>
-                                    <th>Video Local</th>
-                                    <th>Video Link</th>
-                                    <th>Position</th>
-                                    <th>View Status</th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                <x-data-table-card card_title="Library Data">
+                    <th >Action</th>
+                    <th>Name</th>
+                    <th>Icon</th>
+                    <th>Details</th>
+                </x-data-table-card>                 
             </div>
         </div>
     </div>
@@ -67,7 +47,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: "{{ route('addGalleryDataTable') }}",
+                    url: "{{ route('categoryDetailsDataTable') }}",
                     type: 'POST',
                     data: {
                         '_token': '{{ csrf_token() }}'
@@ -77,92 +57,26 @@
                 "order": [
                     [1, 'desc']
                 ],
-                columns: [{
+                columns: [
+                    {
                         data: 'action',
                         name: 'action',
                         orderable: false,
                         searchable: false
                     },
+                    
                     {
-                        data: '{{ \App\Models\GalleryItem::ID }}',
-                        name: '{{ \App\Models\GalleryItem::ID }}'
+                        data: '{{ \App\Models\LibraryCategories::CATEGORY_NAME }}',
+                        name: '{{ \App\Models\LibraryCategories::CATEGORY_NAME }}'
                     },
                     {
-                        data: '{{ \App\Models\GalleryItem::TITLE }}',
-                        name: '{{ \App\Models\GalleryItem::TITLE }}'
+                        data: 'iconImage',
+                        name: '{{ \App\Models\LibraryCategories::CATEGORY_ICON }}'
                     },
                     {
-                        data: '{{ \App\Models\GalleryItem::DESCRIPTION }}',
-                        name: '{{ \App\Models\GalleryItem::DESCRIPTION }}'
-                    },
-                    {
-                        data: '{{ \App\Models\GalleryItem::ALTERNATE_TEXT }}',
-                        name: '{{ \App\Models\GalleryItem::ALTERNATE_TEXT }}'
-                    },
-                    {
-                        data: '{{ \App\Models\GalleryItem::LOCAL_IMAGE }}',
-                        render: function(data, type) {
-                            let image = '';
-                            if (data) {
-                                image += '<img alt="Stored Image" src="' + site_url + data +
-                                    '" class="img-thumbnail">';
-                            }
-                            return image;
-                        },
-                        orderable: false,
-                        searchable: false
-                    },
-                    {
-                        data: '{{ \App\Models\GalleryItem::LOCAL_IMAGE }}',
-                        render: function(data, type) {
-
-                            let image = '';
-                            if (data) {
-                                image += '<img alt="Image Link" src="' + data +
-                                    '" class="img-thumbnail">';
-                            }
-                            return image;
-                        },
-                        orderable: false,
-                        searchable: false
-                    },
-                    {
-                        data: '{{ \App\Models\GalleryItem::LOCAL_VIDEO }}',
-                        render: function(data, type) {
-                            let video = '';
-                            if (data) {
-                                video += '<video width="100" height="100" controls><source src="' +
-                                    site_url + data + '" type="video/mp4">' +
-                                    'Your browser does not support the video tag.</video>';
-                            }
-                            return video;
-                        },
-                        orderable: false,
-                        searchable: false
-                    },
-                    {
-                        data: '{{ \App\Models\GalleryItem::VIDEO_LINK }}',
-                        render: function(data, type) {
-                            let video = '';
-                            if (data) {
-                                video += '<video width="100" height="100" controls><source src="' +
-                                    data + '" type="video/mp4">' +
-                                    'Your browser does not support the video tag.</video>';
-                            }
-                            return video;
-                        },
-                        orderable: false,
-                        searchable: false
-                    },
-                    {
-                        data: '{{ \App\Models\GalleryItem::POSITION }}',
-                        name: '{{ \App\Models\GalleryItem::POSITION }}'
-                    },
-                    {
-                        data: '{{ \App\Models\GalleryItem::VIEW_STATUS }}',
-                        name: '{{ \App\Models\GalleryItem::VIEW_STATUS }}'
-                    },
-
+                        data: '{{ \App\Models\LibraryCategories::CATEGORY_DETAILS }}',
+                        name: '{{ \App\Models\LibraryCategories::CATEGORY_DETAILS }}'
+                    }
                 ]
             });
 
@@ -171,14 +85,10 @@
             let row = $.parseJSON(atob($(this).data("row")));
             if (row['id']) {
                 $("#id").val(row['id']);
-                $("#image_link").val(row['image_link']);
-                $("#alternate_text").val(row['alternate_text']);
-                $("#video_link").val(row['video_link']);
-                $("#title").val(row['title']);
-                $("#description").val(row['description']);
-                $("#position").val(row['position']);
-                $("#view_status").val(row['view_status']);
+                $("#category_name_id").val(row['category_name']);
+                $("#category_details").val(row['category_details']);
                 $("#action").val("update");
+                $("#category_icon_id").attr("required",false);
 
             }
         });
@@ -193,20 +103,25 @@
                     contentType: false,
                     processData: false,
                     success: function(response) {
-                        alert(response.message);
+                        successMessage(response.message);
                         table.ajax.reload();
                         $("#id").val('');
                         $("#action").val("insert");
+                        $("#category_icon_id").attr("required",true);
                         $("#submitForm")[0].reset();
                     },
+                    error: function(response) {
+
+                        errorMessage(response.responseJSON.message);
+                    },
                     failure: function(response) {
-                        alert(response.message);
+                        errorMessage(response.message);
                     }
                 });
             });
         });
 
-        function deleteGallery(id) {
+        function deleteItem(id) {
             if (id) {
                 Swal.fire({
                     title: 'Are you sure?',
@@ -220,7 +135,7 @@
                     if (result.isConfirmed) {
                         $.ajax({
                             type: 'POST',
-                            url: '{{ route('addGalleryItems') }}',
+                            url: '{{ route("addLibraryCategories") }}',
                             data: {
                                 id: id,
                                 action: "delete",

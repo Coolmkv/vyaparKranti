@@ -43,6 +43,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get("web-site-elements",[AdminController::class,"webSiteElements"])->name("webSiteElements");
     Route::get('library-categories',[Library::class,"manageLibraryCategories"])->name("LibraryCategories");
     Route::post('add-library-categories',[Library::class,"addLibraryCategories"])->name("addLibraryCategories");
+    Route::post("libraryCategoryDataTable",[Library::class,"categoryDetailsDataTable"])->name("categoryDetailsDataTable");
 });
 
 require __DIR__.'/auth.php';
