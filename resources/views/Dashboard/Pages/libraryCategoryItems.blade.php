@@ -1,15 +1,15 @@
 @extends('layouts.dashboardLayout')
-@section('title', 'Manage Categories')
+@section('title', 'Manage Categories Items')
 @section('content')
     <div class="container-xxl flex-grow-1 container-p-y">
-        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Manage Library Categories</h4>
+        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Manage Library Category Items</h4>
 
         <!-- Basic Layout -->
         <div class="row">
             <div class="col-md-12">
                 <div class="card mb-4">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <h5 class="mb-0">Add Library Categories</h5>
+                        <h5 class="mb-0">Add Library Category Items</h5>
                         {{-- <small class="text-muted float-end">Default label</small> --}}
                     </div>
                     <div class="alert-success card-body">
@@ -17,20 +17,30 @@
                             <input type="hidden" name="id" id="id" value="">
                             <input type="hidden" name="action" id="action" value="insert">
                             <div class="row">
-                                <x-input-group-element title="Category Name" placeholder="Category Name" id="category_name_id" name="category_name"  required></x-input-group-element>
+                                <x-select title="Library Category" name="library_category_id" id="library_category_id" required>
+                                    @if (!empty($categories))
+                                    <option value="">Select Option</option>
+                                        @foreach ($categories as $item)
+                                            <option value="{{ $item->id }}">{{ $item->category_name }}</option>
+        
+                                        @endforeach
+                                    @endif
+                                </x-select>
+                                <x-input-group-element title="Item Title" placeholder="Item Title" id="item_title_id" name="item_title" ></x-input-group-element>
                                 
-                                <x-input-group-element title="Category Icon" type="file" accept="image/*" placeholder="Category Name" id="category_icon_id" name="category_icon"  required></x-input-group-element>
+                                <x-input-group-element title="Item Image" type="file" accept="image/*" placeholder="Item Image" id="item_image_id" name="item_image"  required></x-input-group-element>
                                 
-                                <x-text-area-group-element title="Category Details" id="category_details" name="category_details" ></x-text-area-group-element>
+                                <x-text-area-group-element title="Item Details" id="item_details" name="item_details" placeholder="Item Details"></x-text-area-group-element>
                             </div>
                         </x-form>                         
                     </div>
                 </div>
                 <x-data-table-card card_title="Library Data">
                     <th >Action</th>
-                    <th>Name</th>
-                    <th>Icon</th>
-                    <th>Details</th>
+                    <th>Library Category</th>
+                    <th>Item Title</th>
+                    <th>Item Image</th>
+                    <th>Item Details</th>
                 </x-data-table-card>                 
             </div>
         </div>
@@ -47,7 +57,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: "{{ route('categoryDetailsDataTable') }}",
+                    url: "{{ route('categoryItemDetailsDataTable') }}",
                     type: 'POST',
                     data: {
                         '_token': '{{ csrf_token() }}'
@@ -66,17 +76,24 @@
                     },
                     
                     {
-                        data: '{{ \App\Models\LibraryCategories::CATEGORY_NAME }}',
-                        name: '{{ \App\Models\LibraryCategories::CATEGORY_NAME }}'
+                        data: 'library_category.category_name',
+                        name: '{{ \App\Models\CategoryItems::LIBRARY_CATEGORY_ID }}'
+                    },
+                    {
+                        data: '{{ \App\Models\CategoryItems::ITEM_TITLE }}',
+                        name: '{{ \App\Models\CategoryItems::ITEM_TITLE }}'
                     },
                     {
                         data: 'iconImage',
-                        name: '{{ \App\Models\LibraryCategories::CATEGORY_ICON }}'
+                        name: '{{ \App\Models\CategoryItems::ITEM_IMAGE }}',
+                        orderable: false,
+                        searchable: false
                     },
                     {
-                        data: '{{ \App\Models\LibraryCategories::CATEGORY_DETAILS }}',
-                        name: '{{ \App\Models\LibraryCategories::CATEGORY_DETAILS }}'
+                        data: '{{ \App\Models\CategoryItems::ITEM_DETAILS }}',
+                        name: '{{ \App\Models\CategoryItems::ITEM_DETAILS }}'
                     }
+                    
                 ]
             });
 
@@ -88,7 +105,7 @@
                 $("#category_name_id").val(row['category_name']);
                 $("#category_details").val(row['category_details']);
                 $("#action").val("update");
-                $("#category_icon_id").attr("required",false);
+                $("#item_image_id").attr("required",false);
 
             }
         });
@@ -97,7 +114,7 @@
                 var form = new FormData(this);
                 $.ajax({
                     type: 'POST',
-                    url: '{{ route("addLibraryCategories") }}',
+                    url: '{{ route("addLibraryCategoriesItems") }}',
                     data: form,
                     cache: false,
                     contentType: false,
@@ -107,7 +124,7 @@
                         table.ajax.reload();
                         $("#id").val('');
                         $("#action").val("insert");
-                        $("#category_icon_id").attr("required",true);
+                        $("#item_image_id").attr("required",true);
                         $("#submitForm")[0].reset();
                     },
                     error: function(response) {
@@ -135,7 +152,7 @@
                     if (result.isConfirmed) {
                         $.ajax({
                             type: 'POST',
-                            url: '{{ route("addLibraryCategories") }}',
+                            url: '{{ route("addLibraryCategoriesItems") }}',
                             data: {
                                 id: id,
                                 action: "enable",
@@ -175,7 +192,7 @@
                     if (result.isConfirmed) {
                         $.ajax({
                             type: 'POST',
-                            url: '{{ route("addLibraryCategories") }}',
+                            url: '{{ route("addLibraryCategoriesItems") }}',
                             data: {
                                 id: id,
                                 action: "delete",

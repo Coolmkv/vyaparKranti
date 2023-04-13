@@ -20,14 +20,14 @@ trait ResponseAPI
         // Send the response
         if($isSuccess) {
             return response()->json([
-                'status' => false,
+                'status' => true,
                 'message' => $message,
                 'code' => $statusCode,
                 'data' => $data
             ], $statusCode);
         } else {
             return response()->json([
-                'status' => true,
+                'status' => false,
                 'message' => $message,
                 'code' => $statusCode,
                 'data'=>$data

@@ -22,4 +22,9 @@ class LibraryCategories extends Model
     const CREATED_AT = "created_at";
     const UPDATED_AT = "updated_at";
 
+    public function categoryItem(){
+        return $this->hasMany(CategoryItems::class,CategoryItems::LIBRARY_CATEGORY_ID,self::ID)
+        ->where(CategoryItems::STATUS,1);
+    }
+
 }

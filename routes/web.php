@@ -41,9 +41,15 @@ Route::middleware(['auth'])->group(function () {
     Route::post("addGalleryDataTable",[AdminController::class,"addGalleryDataTable"])->name("addGalleryDataTable");
 
     Route::get("web-site-elements",[AdminController::class,"webSiteElements"])->name("webSiteElements");
+
     Route::get('library-categories',[Library::class,"manageLibraryCategories"])->name("LibraryCategories");
     Route::post('add-library-categories',[Library::class,"addLibraryCategories"])->name("addLibraryCategories");
     Route::post("libraryCategoryDataTable",[Library::class,"categoryDetailsDataTable"])->name("categoryDetailsDataTable");
+
+    Route::get("category-items",[Library::class,"viewCategoryItems"])->name("viewCategoryItems");
+    Route::post('add-library-categories-items',[Library::class,"addLibraryCategoryItems"])->name("addLibraryCategoriesItems");
+    Route::post("library-category-items-dataTable",[Library::class,"categoryItemsDataTable"])->name("categoryItemDetailsDataTable");
+ 
 });
 
 require __DIR__.'/auth.php';

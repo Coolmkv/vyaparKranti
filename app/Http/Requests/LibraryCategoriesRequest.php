@@ -29,11 +29,11 @@ class LibraryCategoriesRequest extends FormRequest
     public function rules()
     {
         return [
-            "category_name"=>"required_if:action,insert,update|string|max:255",
+            "category_name"=>"required_if:action,insert,update,delete|string|max:255",
             "category_icon"=>"required_if:action,insert|image|max:1024",
             "category_details"=>"nullable|string",
-            "action"=>"nullable|in:insert,update,delete",
-            "id"=>"required_if:action,update|exists:".LibraryCategories::TABLE_NAME.",".LibraryCategories::ID
+            "action"=>"nullable|in:insert,update,delete,enable",
+            "id"=>"required_if:action,update,enable|exists:".LibraryCategories::TABLE_NAME.",".LibraryCategories::ID
         ];
     }
 
