@@ -21,7 +21,8 @@ Route::get('about-us', [WebSitePages::class,"aboutUs"])->name("aboutUs");
 Route::get('services', [WebSitePages::class,"ourServices"])->name("ourServices");
 Route::get('library', [WebSitePages::class,"ourPortfolio"])->name("ourPortfolio");
 Route::get('contact-us', [WebSitePages::class,"contactUs"])->name("contactUs");
-Route::get('library-category',[WebSitePages::class,"libraryCategory"]);
+Route::get('library-category',[WebSitePages::class,"libraryCategory"])->name("libraryCategory");
+//Route::get('library-category-details/{id}',[WebSitePages::class,"libraryCategoryDetails"]);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

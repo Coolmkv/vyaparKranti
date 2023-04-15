@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Library\Library;
 use App\Http\Requests\LibraryRequest;
-use Illuminate\Http\Request;
-
+use App\Models\LibraryCategories;
 class WebSitePages extends Controller
 {
     
@@ -23,7 +22,14 @@ class WebSitePages extends Controller
     }
     
     public function ourPortfolio(){
-        return view("WebSitePages.ourPortfolio");
+        $categories = LibraryCategories::where(LibraryCategories::STATUS,1)->get([
+            LibraryCategories::CATEGORY_NAME,
+            LibraryCategories::ID,
+            LibraryCategories::CATEGORY_ICON,
+            LibraryCategories::CATEGORY_DETAILS,
+        ]);
+        
+        return view("WebSitePages.ourPortfolio",compact('categories'));
     }
     
     public function contactUs(){
@@ -31,6 +37,8 @@ class WebSitePages extends Controller
     }
 
     public function libraryCategory(LibraryRequest $request){
+        
          return (new Library())->viewLibrary($request);
     }
+
 }

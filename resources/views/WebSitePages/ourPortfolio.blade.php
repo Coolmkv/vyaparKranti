@@ -34,20 +34,24 @@
                 </div>
             </div>
             <div class="row margin-top_30">
-                
-                <div class="col-md-4" onclick="gotTo('http://www.vyapar-kranti.local/library-category?id=1')">
-                    <div class="service_blog">
-                        <div class="service_icons">
-                            <img width="75" height="75" src="assets/img/icon-6.png" alt="#">
-                        </div>
-                        <div class="full">
-                            <h4>ADMINISTRATIVE SERVICES</h4>
-                        </div>
-                        <div class="full">
-                             
-                        </div>
-                    </div>
-                </div>
+                @if (!empty($categories))
+                    @foreach ($categories as $item)
+                        <div class="col-md-4" onclick="gotTo('{{ route('libraryCategory',['id'=>$item->{App\Models\LibraryCategories::ID}] ) }}')">
+                            <div class="service_blog">
+                                <div class="service_icons">
+                                    <img width="75" height="75" src="{{ $item->{App\Models\LibraryCategories::CATEGORY_ICON} }}" alt="#">
+                                </div>
+                                <div class="full">
+                                    <h4>{{ $item->{App\Models\LibraryCategories::CATEGORY_NAME} }}</h4>
+                                </div>
+                                <div class="full">
+                                   <p>{{ $item->{App\Models\LibraryCategories::CATEGORY_DETAILS} }}</p>
+                                </div>
+                            </div>
+                        </div>            
+                    @endforeach
+                @endif
+                 
             </div>
         </div>
     </div>
