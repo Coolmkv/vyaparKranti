@@ -2,7 +2,54 @@
 @section('title', $category_name??"")
 @section('bodyClass', 'inner_page')
 @section('content')
-
+<style>
+    /*
+     * Custom Control:
+     * ---------------
+     */
+    /* custom classes are always prefixed by "spl-" automatically */
+    .spl-like{
+        background-image: url(demo/gallery/heart-outline.svg);
+        background-size: 23px;
+    }
+    /* optionally, additional state to toggle the button: */
+    .spl-like.on{
+        background-image: url(demo/gallery/heart.svg);
+    }
+    /*
+     * Custom Animation:
+     * -----------------
+     */
+    /* custom scene transition (slide effect) */
+    .only-this-gallery.show .spl-scene{
+        transition: transform 0.2s ease;
+    }
+    /* custom animation "visible state" (css context by custom classname "only-this-gallery" to apply these animation just on a specific gallery) */
+    .only-this-gallery.show .spl-pane > *{
+        clip-path: circle(100% at center);
+        transition: transform 0.35s ease,
+                    opacity 0.65s ease,
+                    clip-path 0.8s ease;
+    }
+    /* custom animation "hidden state" ("custom" is the name of the animation you pass as gallery option) */
+    .only-this-gallery .spl-pane .custom {
+        clip-path: circle(0px at center) ;
+        transition: transform 0.65s ease,
+                    opacity 0.65s ease;
+    }
+    /* animation state when gallery is hidden */
+    #spotlight.only-this-gallery{
+        clip-path: circle(0px at center);
+    }
+    /* animation state when gallery will open */
+    #spotlight.only-this-gallery.show{
+        clip-path: circle(100% at center);
+        transition: clip-path 0.65s ease 0.15s;
+    }
+    .slider-img-w50{
+        width: 50%;
+    }
+</style>
     <!-- Start Banner -->
     <div class="section inner_page_header">
         <div class="container">
@@ -34,23 +81,18 @@
                 </div>
             </div>
             <div class="row margin-top_30">
-                @if (!empty($categories))
-                    @foreach ($categories as $item)
-                        <div class="col-md-4"  >
-                            <div class="service_blog">
-                                <div class="service_icons">
-                                    <img width="75" height="75" src="{{ $item->{App\Models\LibraryCategories::CATEGORY_ICON} }}" alt="#">
-                                </div>
-                                <div class="full">
-                                    <h4>{{ $item->{App\Models\LibraryCategories::CATEGORY_NAME} }}</h4>
-                                </div>
-                                <div class="full">
-                                   <p>{{ $item->{App\Models\LibraryCategories::CATEGORY_DETAILS} }}</p>
-                                </div>
-                            </div>
-                        </div>            
-                    @endforeach
-                @endif                
+                 
+
+                <div class="spotlight-group row" data-fit="cover" data-autohide="all">
+                    @if (isset($categoriesItems))
+                        @foreach ($categoriesItems as $item)
+                            <a class="spotlight p-3" href="{{ $item->{App\Models\CategoryItems::ITEM_IMAGE} }}" data-button="Enquire Now" data-button-href="javascript:alert('You can open an URL or execute some Javascript here.')" 
+                                data-description="{{  $item->{App\Models\CategoryItems::ITEM_TITLE}." ".$item->{App\Models\CategoryItems::ITEM_DETAILS} }}">
+                                <img class="slider-img-w50" src="{{ $item->{App\Models\CategoryItems::ITEM_IMAGE} }}" alt="Category Image">
+                            </a>                                
+                        @endforeach
+                    @endif
+                </div>            
             </div>
         </div>
     </div>
@@ -60,6 +102,7 @@
 @endsection
 
 @section('pageScript')
+<script src="dist/spotlight.bundle.js"></script>
     <script>
         function gotTo(link){
             window.location = link;
