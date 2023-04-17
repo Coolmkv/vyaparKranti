@@ -33,7 +33,7 @@ class LibraryCategoriesRequest extends FormRequest
             "category_icon"=>"required_if:action,insert|image|max:1024",
             "category_details"=>"nullable|string",
             "action"=>"nullable|in:insert,update,delete,enable",
-            "id"=>"required_if:action,update,enable|exists:".LibraryCategories::TABLE_NAME.",".LibraryCategories::ID
+            "id"=>"required_if:action,update,enable|nullable|exists:".LibraryCategories::TABLE_NAME.",".LibraryCategories::ID
         ];
     }
 
