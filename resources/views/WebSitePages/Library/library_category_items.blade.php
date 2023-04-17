@@ -83,7 +83,7 @@
             <div class="row margin-top_30">
                  
 
-                <div class="spotlight-group row" data-fit="cover" data-autohide="all">
+                <div class="spotlight-group row" data-fit="contain" data-autohide="all">
                     @if (isset($categoriesItems))
                         @foreach ($categoriesItems as $item)
                             <a class="spotlight p-3" href="{{ $item->{App\Models\CategoryItems::ITEM_IMAGE} }}" data-button="Enquire Now" data-button-href="javascript:alert('You can open an URL or execute some Javascript here.')" 
