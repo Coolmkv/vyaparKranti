@@ -5,6 +5,8 @@ namespace App\Http\Requests;
 use App\Models\CategoryItems;
 use App\Models\LibraryCategories;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Http\Exceptions\HttpResponseException;
 
 class LibraryCategoryItemsRequest extends FormRequest
 {
@@ -33,5 +35,14 @@ class LibraryCategoryItemsRequest extends FormRequest
             "action"=>"nullable|in:insert,update,delete,enable",
             CategoryItems::ITEM_IMAGE=>"required_if:action,insert|image|max:1024",
         ];
+    }
+
+    /**
+    * Get the error messages for the defined validation rules.*
+    * @return array
+    */
+    protected function failedValidation(Validator $validator)
+    {
+        throw new HttpResponseException($this->error($validator->getMessageBag()->first(),200));
     }
 }

@@ -43,6 +43,6 @@ class LibraryCategoriesRequest extends FormRequest
     */
     protected function failedValidation(Validator $validator)
     {
-        throw new HttpResponseException($this->error($validator->getMessageBag()->first(),400));
+        throw new HttpResponseException($this->error($validator->getMessageBag()->first(),200));
     }
 }
