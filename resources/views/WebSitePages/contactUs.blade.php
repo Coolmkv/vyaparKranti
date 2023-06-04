@@ -84,7 +84,7 @@
                            </div>
                            <div class="media-body dit-right">
                                <h4>Address</h4>
-                               <p>Fleming 196 Woodside Circle Mobile, FL 36602</p>
+                               <p>RZ-40, Najafgarh, District Dwarka, New Delhi 110043</p>
                            </div>
                        </div>
                        <div class="media cont-line">
@@ -93,8 +93,8 @@
                            </div>
                            <div class="media-body dit-right">
                                <h4>Email</h4>
-                               <a href="#">demoinfo@gmail.com</a><br>
-                               <a href="#">demoinfo@gmail.com</a>
+                               <a href="mailto:care@vyaparkrant.com">care@vyaparkranti.com</a><br>
+                               <a href="mailto:bd@vyaparkrant.com">bd@vyaparkrant.com</a>
                            </div>
                        </div>
                        <div class="media cont-line">
@@ -103,8 +103,8 @@
                            </div>
                            <div class="media-body dit-right">
                                <h4>Phone Number</h4>
-                               <a href="#">12345 67890</a><br>
-                               <a href="#">12345 67890</a>
+                               <a href="tel:+919958224825" >+91 995 822 4825</a><br>
+                               
                            </div>
                        </div>
                    </div>
