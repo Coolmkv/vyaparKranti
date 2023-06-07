@@ -2,7 +2,24 @@
 @section("title","Contact Us")
 @section("bodyClass","inner_page")
 @section("content")
+<style>
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white !important;
+  opacity: 1; /* Firefox */
+}
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white !important;
+}
+.form-control{
+    color :white !important;
+    
+}
+</style>
     <!-- Start Banner -->
     <div class="section inner_page_header">
         <div class="container">
