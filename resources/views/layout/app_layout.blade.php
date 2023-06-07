@@ -4,6 +4,15 @@
 
 <head>
     @include('includes.head')
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FY39RJP7SH"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FY39RJP7SH');
+    </script>
 </head>
 
 <body id="home" class="@yield("bodyClass")" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
