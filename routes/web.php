@@ -24,6 +24,8 @@ Route::get('contact-us', [WebSitePages::class,"contactUs"])->name("contactUs");
 Route::get('library-category',[WebSitePages::class,"libraryCategory"])->name("libraryCategory");
 //Route::get('library-category-details/{id}',[WebSitePages::class,"libraryCategoryDetails"]);
 
+Route::get('refresh-captcha',[WebSitePages::class,"refreshCapthca"])->name("refreshCaptcha");
+Route::post('subscribe-news-letter',[WebSitePages::class,"subscribeNewsLetter"])->name("subscribeNewsLetter");
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
