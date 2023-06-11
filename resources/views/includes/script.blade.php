@@ -7,7 +7,7 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/jquery.pogo-slider.min.js"></script>
     <script src="assets/js/slider-index.js"></script>
-    <script src="assets/js/smoothscroll.js"></script>
+    {{-- <script src="assets/js/smoothscroll.js"></script> --}}
     <script src="assets/js/form-validator.min.js"></script>
     <script src="assets/js/contact-form-script.js"></script>
     <script src="assets/js/isotope.min.js"></script>

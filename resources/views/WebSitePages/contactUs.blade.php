@@ -148,7 +148,8 @@
                         </div>
                         <div class="media-body dit-right">
                             <h4>Address</h4>
-                            <p>RZ-40, Najafgarh, District Dwarka, New Delhi 110043</p>
+                            <p>India : RZ-40, Najafgarh, District Dwarka, New Delhi 110043</p>
+                            <p>Canada : 14102, 72A avenue, Surrey, British Columbia, CANADA</p>
                         </div>
                     </div>
                     <div class="media cont-line">

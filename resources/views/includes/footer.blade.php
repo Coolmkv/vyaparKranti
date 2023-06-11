@@ -15,7 +15,8 @@
                             <img src="assets/images/social1.png">
                         </div>
                         <div class="full white_fonts">
-                            <p>RZ-40, Najafgarh, District Dwarka, New Delhi 110043
+                            <p>India : RZ-40, Najafgarh, District Dwarka, New Delhi 110043<br>
+                                Canada : 14102, 72A avenue, Surrey, British Columbia, CANADA
                             </p>
                         </div>
                     </div>

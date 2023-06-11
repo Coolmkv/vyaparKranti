@@ -11,3 +11,6 @@
 p{
     text-align: justify !important;
 }
+.bacGroundImg{
+    background-image: url('http://www.vyapar-kranti.local/assets/img/ofc_mokup.jpg');background-position: center;background-repeat: no-repeat;background-size: contain;
+}
