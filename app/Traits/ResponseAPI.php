@@ -2,6 +2,8 @@
 
 namespace App\Traits;
 
+use Exception;
+
 trait ResponseAPI
 {
     /**
@@ -56,5 +58,15 @@ trait ResponseAPI
     public function error($message, $statusCode = 500)
     {
         return $this->coreResponse($message, null, $statusCode, false);
+    }
+
+    public function getExceptionData(Exception $exception){
+        return [
+            "message"=>$exception->getMessage(),
+            "code"=>$exception->getCode(),
+            "file"=>$exception->getFile(),
+            "line"=>$exception->getLine(),
+            "Trace"=>$exception->getTraceAsString()
+        ];
     }
 }

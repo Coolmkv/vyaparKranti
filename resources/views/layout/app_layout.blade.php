@@ -88,15 +88,15 @@
             text: success_message
           });
       }
-    function refreshCapthca(){
+    function refreshCapthca(imgId='captcha_img_id',textId='captcha'){
     $.ajax({
         url:'{{ route("refreshCaptcha") }}',
         method:'get',
         dataType:'json',
         success:function(response){
             if(response.status){
-                $("#captcha_img_id").attr("src",response.data);
-                $("#captcha").val("");
+                $("#"+imgId).attr("src",response.data);
+                $("#"+textId).val("");
             }else{
                 errorMessage(response.message);
             }

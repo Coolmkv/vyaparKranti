@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Library\Library;
+use App\Http\Requests\ContactUsFormRequest;
 use App\Http\Requests\LibraryRequest;
 use App\Http\Requests\NewsLetterSubscriptionRequest;
 use App\Models\LibraryCategories;
+use App\Repositories\ContactUsRepository;
 use App\Repositories\NewsLetterRepository;
 use Exception;
 use Captcha;
@@ -58,5 +60,9 @@ class WebSitePages extends Controller
 
     public function subscribeNewsLetter(NewsLetterSubscriptionRequest $request){
         return (new NewsLetterRepository)->subscribe($request);
+    }
+
+    public function contactUsFormSubmit(ContactUsFormRequest $request){
+        return (new ContactUsRepository)->submitContactUs($request);
     }
 }
