@@ -56,7 +56,7 @@
                                 <li><a href="{{ route("aboutUs") }}">About Us</a></li>
                                 <li><a href="{{ route("ourServices") }}">Services</a></li>
                                 <li><a href="{{ route("ourPortfolio") }}">Library</a></li>
-                                <li><a href="{{ route("contactUs") }}">Contact us</a></li>
+                                {{-- <li><a href="{{ route("contactUs") }}">Contact us</a></li> --}}
                             </ul>
                         </div>
                         
