@@ -137,6 +137,7 @@
                         </form>
                     </div>
                 </div>
+                <div class="col-lg-5 col-sm-5 col-xs-12 margin-top_30 bacGroundImg"></div>
             </div>
 
 
@@ -148,8 +149,8 @@
                         </div>
                         <div class="media-body dit-right">
                             <h4>Address</h4>
-                            <p>India : RZ-40, Najafgarh, District Dwarka, New Delhi 110043</p>
-                            <p>Canada : 14102, 72A avenue, Surrey, British Columbia, CANADA</p>
+                            <p><strong>INDIA</strong> : RZ-40, Najafgarh, District Dwarka, New Delhi 110043</p>
+                            <p><strong>CANADA</strong> : 14102, 72A avenue, Surrey, British Columbia, Canada</p>
                         </div>
                     </div>
                     <div class="media cont-line">
