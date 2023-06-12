@@ -10,7 +10,7 @@
                     {{-- <div class="col-md-12 white_fonts margin-bottom_30">
                         <h3>Contact Us</h3>
                     </div> --}}
-                    <div class="col-md-4 text-center">
+                    {{-- <div class="col-md-4 text-center">
                         <div class="full icon">
                             <img src="assets/images/social1.png">
                         </div>
@@ -19,8 +19,8 @@
                                 Canada : 14102, 72A avenue, Surrey, British Columbia, CANADA
                             </p>
                         </div>
-                    </div>
-                    <div class="col-md-4 text-center">
+                    </div> --}}
+                    <div class="col-md-6 text-center">
                         <div class="full icon">
                             <img src="assets/images/social2.png">
                         </div>
@@ -28,7 +28,7 @@
                             <a class="text-light" href="mailto:care@vyaparkranti.com" >care@vyaparkranti.com</a>
                         </div>
                     </div>
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-6 text-center">
                         <div class="full icon">
                             <img src="assets/images/social3.png">
                         </div>
@@ -38,10 +38,10 @@
                     </div>
                     <div class="col-md-12">
                         <ul class="full social_icon margin-top_20">
-                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://www.facebook.com/vyaparkranti" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/vyaparkranti/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/vyapar-kranti/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://wa.me/919958224825" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                                 <li><a href="{{ route("aboutUs") }}">About Us</a></li>
                                 <li><a href="{{ route("ourServices") }}">Services</a></li>
                                 <li><a href="{{ route("ourPortfolio") }}">Library</a></li>
-                                {{-- <li><a href="{{ route("contactUs") }}">Contact us</a></li> --}}
+                                <li><a href="{{ route("contactUs") }}">Contact us</a></li>
                             </ul>
                         </div>
                         
