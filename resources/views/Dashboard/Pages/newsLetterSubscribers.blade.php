@@ -64,34 +64,7 @@
 
         });
         
-        $(document).ready(function() {
-            $("#submitForm").on("submit", function() {
-                var form = new FormData(this);
-                $.ajax({
-                    type: 'POST',
-                    url: '{{ route("addLibraryCategoriesItems") }}',
-                    data: form,
-                    cache: false,
-                    contentType: false,
-                    processData: false,
-                    success: function(response) {
-                        successMessage(response.message);
-                        table.ajax.reload();
-                        $("#id").val('');
-                        $("#action").val("insert");
-                        $("#item_image_id").attr("required",true);
-                        $("#submitForm")[0].reset();
-                    },
-                    error: function(response) {
-
-                        errorMessage(response.responseJSON.message);
-                    },
-                    failure: function(response) {
-                        errorMessage(response.message);
-                    }
-                });
-            });
-        });
+        
 
         function enableItem(id){
             if (id) {
@@ -107,7 +80,7 @@
                     if (result.isConfirmed) {
                         $.ajax({
                             type: 'POST',
-                            url: '{{ route("addLibraryCategoriesItems") }}',
+                            url: '{{ route("enableDisableNewsLetter") }}',
                             data: {
                                 id: id,
                                 action: "enable",
@@ -147,10 +120,10 @@
                     if (result.isConfirmed) {
                         $.ajax({
                             type: 'POST',
-                            url: '{{ route("addLibraryCategoriesItems") }}',
+                            url: '{{ route("enableDisableNewsLetter") }}',
                             data: {
                                 id: id,
-                                action: "delete",
+                                action: "disable",
                                 '_token': '{{ csrf_token() }}'
                             },
                             success: function(response) {

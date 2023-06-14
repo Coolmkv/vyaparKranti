@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\LibraryCategoriesRequest;
 use App\Http\Requests\LibraryCategoryItemsRequest;
 use App\Http\Requests\LibraryRequest;
+use App\Http\Requests\NewsLetterSubscriptionEnableDisable;
 use App\Models\CategoryItems;
 use App\Models\LibraryCategories;
 use App\Repositories\AddCategoryItemsRepository;
@@ -63,5 +64,9 @@ class Library extends Controller
     public function newsLetterItemsDataTable()
     {
         return (new NewsLetterRepository)->viewNewsLetterItemsDataTable();
+    }
+
+    public function enableDisableNewsLetter(NewsLetterSubscriptionEnableDisable $request){
+        return (new NewsLetterRepository)->enableDisableNewsLetter($request);
     }
 }

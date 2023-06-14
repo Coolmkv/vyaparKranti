@@ -58,6 +58,7 @@ Route::middleware(['auth'])->group(function () {
  
     Route::get("news-letter-subscribers",[Library::class,"newsLetterSubscribers"])->name("viewNewsLetterSubscribers");
     Route::post("news-letter-items-dataTable",[Library::class,"newsLetterItemsDataTable"])->name("newsLetterDetailsDataTable");
+    Route::post("enable-disable-newletter",[Library::class,"enableDisableNewsLetter"])->name("enableDisableNewsLetter");
  
 });
 
