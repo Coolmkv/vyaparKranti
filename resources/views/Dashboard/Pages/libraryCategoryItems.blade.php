@@ -13,35 +13,39 @@
                         {{-- <small class="text-muted float-end">Default label</small> --}}
                     </div>
                     <div class="alert-success card-body">
-                        <x-form enctype="multipart/form-data" action="javascript:" >
+                        <x-form enctype="multipart/form-data" action="javascript:">
                             <input type="hidden" name="id" id="id" value="">
                             <input type="hidden" name="action" id="action" value="insert">
                             <div class="row">
-                                <x-select title="Library Category" name="library_category_id" id="library_category_id" required>
+                                <x-select title="Library Category" name="library_category_id" id="library_category_id"
+                                    required>
                                     @if (!empty($categories))
-                                    <option value="">Select Option</option>
+                                        <option value="">Select Option</option>
                                         @foreach ($categories as $item)
                                             <option value="{{ $item->id }}">{{ $item->category_name }}</option>
-        
                                         @endforeach
                                     @endif
                                 </x-select>
-                                <x-input-group-element title="Item Title" placeholder="Item Title" id="item_title_id" name="item_title" ></x-input-group-element>
-                                
-                                <x-input-group-element title="Item Image" type="file" accept="image/*" placeholder="Item Image" id="item_image_id" name="item_image"  required></x-input-group-element>
-                                
-                                <x-text-area-group-element title="Item Details" id="item_details" name="item_details" placeholder="Item Details"></x-text-area-group-element>
+                                <x-input-group-element title="Item Title" placeholder="Item Title" id="item_title_id"
+                                    name="item_title"></x-input-group-element>
+
+                                <x-input-group-element title="Item Image" type="file" accept="image/*"
+                                    placeholder="Item Image" id="item_image_id" name="item_image" required>
+                                </x-input-group-element>
+
+                                <x-text-area-group-element title="Item Details" id="item_details" name="item_details"
+                                    placeholder="Item Details"></x-text-area-group-element>
                             </div>
-                        </x-form>                         
+                        </x-form>
                     </div>
                 </div>
                 <x-data-table-card card_title="Library Data">
-                    <th >Action</th>
+                    <th>Action</th>
                     <th>Library Category</th>
                     <th>Item Title</th>
                     <th>Item Image</th>
                     <th>Item Details</th>
-                </x-data-table-card>                 
+                </x-data-table-card>
             </div>
         </div>
     </div>
@@ -67,14 +71,13 @@
                 "order": [
                     [1, 'desc']
                 ],
-                columns: [
-                    {
+                columns: [{
                         data: 'action',
                         name: 'action',
                         orderable: false,
                         searchable: false
                     },
-                    
+
                     {
                         data: 'library_category.category_name',
                         name: '{{ \App\Models\CategoryItems::LIBRARY_CATEGORY_ID }}'
@@ -93,7 +96,7 @@
                         data: '{{ \App\Models\CategoryItems::ITEM_DETAILS }}',
                         name: '{{ \App\Models\CategoryItems::ITEM_DETAILS }}'
                     }
-                    
+
                 ]
             });
 
@@ -105,7 +108,7 @@
                 $("#category_name_id").val(row['category_name']);
                 $("#category_details").val(row['category_details']);
                 $("#action").val("update");
-                $("#item_image_id").attr("required",false);
+                $("#item_image_id").attr("required", false);
 
             }
         });
@@ -114,18 +117,22 @@
                 var form = new FormData(this);
                 $.ajax({
                     type: 'POST',
-                    url: '{{ route("addLibraryCategoriesItems") }}',
+                    url: '{{ route('addLibraryCategoriesItems') }}',
                     data: form,
                     cache: false,
                     contentType: false,
                     processData: false,
                     success: function(response) {
-                        successMessage(response.message);
-                        table.ajax.reload();
-                        $("#id").val('');
-                        $("#action").val("insert");
-                        $("#item_image_id").attr("required",true);
-                        $("#submitForm")[0].reset();
+                        if (response.status) {
+                            successMessage(response.message);
+                            table.ajax.reload()
+                            $("#id").val('');
+                            $("#action").val("insert");
+                            $("#item_image_id").attr("required", true);
+                            $("#submitForm")[0].reset();
+                        } else {
+                            errorMessage(response.message);
+                        }
                     },
                     error: function(response) {
 
@@ -138,7 +145,7 @@
             });
         });
 
-        function enableItem(id){
+        function enableItem(id) {
             if (id) {
                 Swal.fire({
                     title: 'Are you sure?',
@@ -152,7 +159,7 @@
                     if (result.isConfirmed) {
                         $.ajax({
                             type: 'POST',
-                            url: '{{ route("addLibraryCategoriesItems") }}',
+                            url: '{{ route('addLibraryCategoriesItems') }}',
                             data: {
                                 id: id,
                                 action: "enable",
@@ -192,7 +199,7 @@
                     if (result.isConfirmed) {
                         $.ajax({
                             type: 'POST',
-                            url: '{{ route("addLibraryCategoriesItems") }}',
+                            url: '{{ route('addLibraryCategoriesItems') }}',
                             data: {
                                 id: id,
                                 action: "delete",

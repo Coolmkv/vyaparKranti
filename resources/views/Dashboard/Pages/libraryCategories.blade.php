@@ -13,25 +13,29 @@
                         {{-- <small class="text-muted float-end">Default label</small> --}}
                     </div>
                     <div class="alert-success card-body">
-                        <x-form enctype="multipart/form-data" action="javascript:" >
+                        <x-form enctype="multipart/form-data" action="javascript:">
                             <input type="hidden" name="id" id="id" value="">
                             <input type="hidden" name="action" id="action" value="insert">
                             <div class="row">
-                                <x-input-group-element title="Category Name" placeholder="Category Name" id="category_name_id" name="category_name"  required></x-input-group-element>
-                                
-                                <x-input-group-element title="Category Icon" type="file" accept="image/*" placeholder="Category Name" id="category_icon_id" name="category_icon"  required></x-input-group-element>
-                                
-                                <x-text-area-group-element title="Category Details" id="category_details" name="category_details" ></x-text-area-group-element>
+                                <x-input-group-element title="Category Name" placeholder="Category Name"
+                                    id="category_name_id" name="category_name" required></x-input-group-element>
+
+                                <x-input-group-element title="Category Icon" type="file" accept="image/*"
+                                    placeholder="Category Name" id="category_icon_id" name="category_icon" required>
+                                </x-input-group-element>
+
+                                <x-text-area-group-element title="Category Details" id="category_details"
+                                    name="category_details"></x-text-area-group-element>
                             </div>
-                        </x-form>                         
+                        </x-form>
                     </div>
                 </div>
                 <x-data-table-card card_title="Library Data">
-                    <th >Action</th>
+                    <th>Action</th>
                     <th>Name</th>
                     <th>Icon</th>
                     <th>Details</th>
-                </x-data-table-card>                 
+                </x-data-table-card>
             </div>
         </div>
     </div>
@@ -57,14 +61,13 @@
                 "order": [
                     [1, 'desc']
                 ],
-                columns: [
-                    {
+                columns: [{
                         data: 'action',
                         name: 'action',
                         orderable: false,
                         searchable: false
                     },
-                    
+
                     {
                         data: '{{ \App\Models\LibraryCategories::CATEGORY_NAME }}',
                         name: '{{ \App\Models\LibraryCategories::CATEGORY_NAME }}'
@@ -88,7 +91,7 @@
                 $("#category_name_id").val(row['category_name']);
                 $("#category_details").val(row['category_details']);
                 $("#action").val("update");
-                $("#category_icon_id").attr("required",false);
+                $("#category_icon_id").attr("required", false);
 
             }
         });
@@ -97,18 +100,23 @@
                 var form = new FormData(this);
                 $.ajax({
                     type: 'POST',
-                    url: '{{ route("addLibraryCategories") }}',
+                    url: '{{ route('addLibraryCategories') }}',
                     data: form,
                     cache: false,
                     contentType: false,
                     processData: false,
                     success: function(response) {
-                        successMessage(response.message);
-                        table.ajax.reload();
-                        $("#id").val('');
-                        $("#action").val("insert");
-                        $("#category_icon_id").attr("required",true);
-                        $("#submitForm")[0].reset();
+                        if (response.status) {
+                            successMessage(response.message);
+                            table.ajax.reload();
+                            $("#id").val('');
+                            $("#action").val("insert");
+                            $("#category_icon_id").attr("required", true);
+                            $("#submitForm")[0].reset();
+                        } else {
+                            errorMessage(response.message);
+                        }
+
                     },
                     error: function(response) {
 
@@ -121,7 +129,7 @@
             });
         });
 
-        function enableItem(id){
+        function enableItem(id) {
             if (id) {
                 Swal.fire({
                     title: 'Are you sure?',
@@ -135,7 +143,7 @@
                     if (result.isConfirmed) {
                         $.ajax({
                             type: 'POST',
-                            url: '{{ route("addLibraryCategories") }}',
+                            url: '{{ route('addLibraryCategories') }}',
                             data: {
                                 id: id,
                                 action: "enable",
@@ -175,7 +183,7 @@
                     if (result.isConfirmed) {
                         $.ajax({
                             type: 'POST',
-                            url: '{{ route("addLibraryCategories") }}',
+                            url: '{{ route('addLibraryCategories') }}',
                             data: {
                                 id: id,
                                 action: "delete",
