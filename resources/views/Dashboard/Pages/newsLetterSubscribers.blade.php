@@ -63,17 +63,7 @@
             });
 
         });
-        $(document).on("click", ".edit", function() {
-            let row = $.parseJSON(atob($(this).data("row")));
-            if (row['id']) {
-                $("#id").val(row['id']);
-                $("#category_name_id").val(row['category_name']);
-                $("#category_details").val(row['category_details']);
-                $("#action").val("update");
-                $("#item_image_id").attr("required",false);
-
-            }
-        });
+        
         $(document).ready(function() {
             $("#submitForm").on("submit", function() {
                 var form = new FormData(this);

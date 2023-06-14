@@ -49,11 +49,11 @@ class NewsLetterRepository
         ))
             ->addIndexColumn()
             ->addColumn('action', function ($row) {
-                $btn = '<a data-row="' . base64_encode(json_encode($row)) . '" href="javascript:void(0)" class="edit btn btn-primary btn-sm">Edit</a>';
+                $btn = '';
                 if ($row->{NewsLetter::STATUS} == 1) {
-                    $btn .= '<a href="javascript:void(0)" onclick="deleteItem(\'' . $row->{NewsLetter::ID} . '\')" class="edit btn btn-danger btn-sm">Disable</a>';
+                    //$btn .= '<a href="javascript:void(0)" onclick="deleteItem(\'' . $row->{NewsLetter::ID} . '\')" class="edit btn btn-danger btn-sm">Disable</a>';
                 } else {
-                    $btn .= '<a href="javascript:void(0)" onclick="enableItem(\'' . $row->{NewsLetter::ID} . '\')" class="edit btn btn-info btn-sm">Enable</a>';
+                    //$btn .= '<a href="javascript:void(0)" onclick="enableItem(\'' . $row->{NewsLetter::ID} . '\')" class="edit btn btn-info btn-sm">Enable</a>';
                 }
                 return $btn;
             })->rawColumns(['action'])
