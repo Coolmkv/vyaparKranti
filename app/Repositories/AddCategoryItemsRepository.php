@@ -131,7 +131,7 @@ class AddCategoryItemsRepository{
 
     public function viewCategoryItemsDataTable(){
         return Datatables::of(CategoryItems::select(CategoryItems::STATUS,CategoryItems::ID,CategoryItems::ITEM_TITLE,
-         CategoryItems::ITEM_DETAILS, CategoryItems::ITEM_IMAGE, CategoryItems::LIBRARY_CATEGORY_ID)->with("libraryCategory"))
+         CategoryItems::ITEM_DETAILS, CategoryItems::ITEM_IMAGE, CategoryItems::LIBRARY_CATEGORY_ID)->has("libraryCategory")->with("libraryCategory"))
             ->addIndexColumn()
             ->addColumn('action', function ($row) {
                 $btn = '<a data-row="' . base64_encode(json_encode($row)) . '" href="javascript:void(0)" class="edit btn btn-primary btn-sm">Edit</a>';
