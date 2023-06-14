@@ -110,6 +110,14 @@
                   <div data-i18n="Analytics">Library Category Items</div>
                 </a>
               </li>
+
+              <!-- News Letter View -->
+              <li class="menu-item">
+                <a href="{{route("viewNewsLetterSubscribers")}}" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-images"></i>
+                  <div data-i18n="Analytics">News Letter Subscribers</div>
+                </a>
+              </li>
               
               <!-- Layouts -->
               {{-- <li class="menu-item active open">

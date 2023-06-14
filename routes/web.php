@@ -56,6 +56,9 @@ Route::middleware(['auth'])->group(function () {
     Route::post('add-library-categories-items',[Library::class,"addLibraryCategoryItems"])->name("addLibraryCategoriesItems");
     Route::post("library-category-items-dataTable",[Library::class,"categoryItemsDataTable"])->name("categoryItemDetailsDataTable");
  
+    Route::get("news-letter-subscribers",[Library::class,"newsLetterSubscribers"])->name("viewNewsLetterSubscribers");
+    Route::post("news-letter-items-dataTable",[Library::class,"newsLetterItemsDataTable"])->name("newsLetterDetailsDataTable");
+ 
 });
 
 require __DIR__.'/auth.php';

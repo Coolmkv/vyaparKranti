@@ -10,6 +10,7 @@ use App\Models\CategoryItems;
 use App\Models\LibraryCategories;
 use App\Repositories\AddCategoryItemsRepository;
 use App\Repositories\AddLibraryCategories;
+use App\Repositories\NewsLetterRepository;
 
 class Library extends Controller
 {
@@ -54,5 +55,13 @@ class Library extends Controller
     public function categoryItemsDataTable()
     {
         return (new AddCategoryItemsRepository)->viewCategoryItemsDataTable();
+    }
+
+    public function newsLetterSubscribers(){
+        return (new NewsLetterRepository)->viewNewsLetterSubscribers();
+    }
+    public function newsLetterItemsDataTable()
+    {
+        return (new NewsLetterRepository)->viewNewsLetterItemsDataTable();
     }
 }

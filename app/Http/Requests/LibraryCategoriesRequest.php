@@ -29,7 +29,7 @@ class LibraryCategoriesRequest extends FormRequest
     public function rules()
     {
         return [
-            "category_name"=>"required_if:action,insert,update,delete|string|max:255",
+            "category_name"=>"required_if:action,insert,update|string|max:255",
             "category_icon"=>"required_if:action,insert|image|max:1024",
             "category_details"=>"nullable|string",
             "action"=>"nullable|in:insert,update,delete,enable",
