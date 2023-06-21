@@ -7,15 +7,44 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FY39RJP7SH"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-FY39RJP7SH');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FY39RJP7SH');
     </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '277363754826126');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=277363754826126&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
-<body id="home" class="@yield("bodyClass")" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+<body id="home" class="@yield('bodyClass')" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
     <!-- LOADER -->
     <div id="preloader">
@@ -29,83 +58,86 @@
     <!-- Start header -->
     @include('includes.header')
     <!-- End header -->
-    @yield("content")
-    
-    @include("includes.footer")
+    @yield('content')
 
-    
+    @include('includes.footer')
+
+
 
     <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
-    @include("includes.script")
+    @include('includes.script')
     <!-- Start Page script -->
-    @yield("pageScript")
+    @yield('pageScript')
     <!-- End Page script -->
 
 </body>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
+
 <script>
-    $("#newsletter_form").submit(function(){
-        $("#submit_newsletter_form").attr("disable",true);
+    $("#newsletter_form").submit(function() {
+        $("#submit_newsletter_form").attr("disable", true);
         $.ajax({
-        url:'{{ route("subscribeNewsLetter") }}',
-        method:'post',
-        data:{
-            email:$("#subscription_email").val(),
-            captcha_text:$("#captcha_text").val(),
-            _token:$("input[name='_token']").val()
-        },
-        dataType:'json',
-        success:function(response){
-            refreshCapthca();
-            if(response.status){
-                successMessage(response.message);
-                $("#newsletter_form")[0].reset();
-                $("#submit_newsletter_form").attr("disable",false);
-            }else{
-                errorMessage(response.message);                
-                $("#submit_newsletter_form").attr("disable",false);
+            url: '{{ route('subscribeNewsLetter') }}',
+            method: 'post',
+            data: {
+                email: $("#subscription_email").val(),
+                captcha_text: $("#captcha_text").val(),
+                _token: $("input[name='_token']").val()
+            },
+            dataType: 'json',
+            success: function(response) {
+                refreshCapthca();
+                if (response.status) {
+                    successMessage(response.message);
+                    $("#newsletter_form")[0].reset();
+                    $("#submit_newsletter_form").attr("disable", false);
+                } else {
+                    errorMessage(response.message);
+                    $("#submit_newsletter_form").attr("disable", false);
+                }
+            },
+            error: function(err) {
+                refreshCapthca();
+                errorMessage("error occurred");
+                $("#submit_newsletter_form").attr("disable", false);
             }
-        },
-        error:function(err){
-            refreshCapthca();
-            errorMessage("error occurred");
-            $("#submit_newsletter_form").attr("disable",false);
-        }
+        });
     });
-    });
-    function errorMessage(error_message){
+
+    function errorMessage(error_message) {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: error_message             
-          });
-      }
-      function successMessage(success_message){
+            text: error_message
+        });
+    }
+
+    function successMessage(success_message) {
         Swal.fire({
             icon: 'success',
             title: 'Success',
             text: success_message
-          });
-      }
-    function refreshCapthca(imgId='captcha_img_id',textId='captcha'){
-    $.ajax({
-        url:'{{ route("refreshCaptcha") }}',
-        method:'get',
-        dataType:'json',
-        success:function(response){
-            if(response.status){
-                $("#"+imgId).attr("src",response.data);
-                $("#"+textId).val("");
-            }else{
-                errorMessage(response.message);
+        });
+    }
+
+    function refreshCapthca(imgId = 'captcha_img_id', textId = 'captcha') {
+        $.ajax({
+            url: '{{ route('refreshCaptcha') }}',
+            method: 'get',
+            dataType: 'json',
+            success: function(response) {
+                if (response.status) {
+                    $("#" + imgId).attr("src", response.data);
+                    $("#" + textId).val("");
+                } else {
+                    errorMessage(response.message);
+                }
+            },
+            error: function(err) {
+                errorMessage("error occurred");
             }
-        },
-        error:function(err){
-            errorMessage("error occurred");
-        }
-    });
-}
+        });
+    }
 </script>
 
 </html>

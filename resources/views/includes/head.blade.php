@@ -8,6 +8,8 @@
     <title>@yield('title','VyaparKranti.com')</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset("assets/images/favicon.ico")}}" />
     <meta name="author" content="">
 
     <!-- Site Icons -->
