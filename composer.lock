@@ -2048,7 +2048,6 @@
             "time": "2023-02-06T13:44:46+00:00"
         },
         {
-            "require": {
             "name": "nesbot/carbon",
             "version": "2.67.0",
             "source": {
@@ -2714,9 +2713,9 @@
                 "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
                 "shasum": ""
             },
+            "require": {
                 "php": "^7.2 || ^8.0"
             },
-                "laravel",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -3041,9 +3040,9 @@
             "description": "A package containing handy helpers for your Laravel-application.",
             "homepage": "https://github.com/ralphjsmit/laravel-helpers",
             "keywords": [
-                "ralphjsmit"
+                "laravel",
                 "laravel-helpers",
-                "grapheme",
+                "ralphjsmit"
             ],
             "support": {
                 "issues": "https://github.com/ralphjsmit/laravel-helpers/issues",
@@ -4454,14 +4453,14 @@
             "homepage": "https://symfony.com",
             "keywords": [
                 "compatibility",
-            ],
+                "grapheme",
                 "intl",
                 "polyfill",
                 "portable",
                 "shim"
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.27.0"
+            ],
             "support": {
-            "version": "v1.27.0",
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.27.0"
             },
             "funding": [
                 {
@@ -4735,7 +4734,7 @@
         },
         {
             "name": "symfony/polyfill-php72",
-            "require-dev": {
+            "version": "v1.27.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
@@ -5486,10 +5485,10 @@
             "conflict": {
                 "symfony/console": "<4.4"
             },
-                "symfony/process": "^4.4|^5.0|^6.0",
+            "require-dev": {
                 "ext-iconv": "*",
                 "symfony/console": "^4.4|^5.0|^6.0",
-            },
+                "symfony/process": "^4.4|^5.0|^6.0",
                 "symfony/uid": "^5.1|^6.0",
                 "twig/twig": "^2.13|^3.0.4"
             },
@@ -7389,10 +7388,10 @@
                 "branch-alias": {
                     "dev-master": "2.0-dev"
                 }
-                "classmap": [
+            },
             "autoload": {
+                "classmap": [
                     "src/"
-                "issues": "https://github.com/sebastianbergmann/lines-of-code/issues",
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -7866,6 +7865,7 @@
             "description": "Library for counting the lines of code in PHP source code",
             "homepage": "https://github.com/sebastianbergmann/lines-of-code",
             "support": {
+                "issues": "https://github.com/sebastianbergmann/lines-of-code/issues",
                 "source": "https://github.com/sebastianbergmann/lines-of-code/tree/1.0.3"
             },
             "funding": [
@@ -8346,6 +8346,5 @@
         "php": "^7.3|^8.0|^8.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
-
