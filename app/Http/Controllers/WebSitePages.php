@@ -7,6 +7,7 @@ use App\Http\Requests\ContactUsFormRequest;
 use App\Http\Requests\LibraryRequest;
 use App\Http\Requests\NewsLetterSubscriptionRequest;
 use App\Models\LibraryCategories;
+use App\Models\WebSitePagesModel;
 use App\Repositories\ContactUsRepository;
 use App\Repositories\NewsLetterRepository;
 use Exception;
@@ -15,16 +16,19 @@ class WebSitePages extends Controller
 {
     
     public function homePage(){
-        return view("WebSitePages.home_page");
+        $page = WebSitePagesModel::where("route_name",'homePage')->first();
+        return view("WebSitePages.home_page",compact('page'));
     }
 
     
     public function aboutUs(){
-        return view("WebSitePages.aboutUs");
+        $page = WebSitePagesModel::where("route_name",'aboutUs')->first();
+        return view("WebSitePages.aboutUs",compact('page'));
     }
     
     public function ourServices(){
-        return view("WebSitePages.ourServices");
+        $page = WebSitePagesModel::where("route_name",'ourServices')->first();
+        return view("WebSitePages.ourServices",compact('page'));
     }
     
     public function ourPortfolio(){
@@ -34,12 +38,14 @@ class WebSitePages extends Controller
             LibraryCategories::CATEGORY_ICON,
             LibraryCategories::CATEGORY_DETAILS,
         ]);
+        $page = WebSitePagesModel::where("route_name",'ourPortfolio')->first();
         
-        return view("WebSitePages.ourPortfolio",compact('categories'));
+        return view("WebSitePages.ourPortfolio",compact('categories','page'));
     }
     
     public function contactUs(){
-        return view("WebSitePages.contactUs");
+        $page = WebSitePagesModel::where("route_name",'contactUs')->first();
+        return view("WebSitePages.contactUs",compact("page"));
     }
 
     public function libraryCategory(LibraryRequest $request){
@@ -65,4 +71,5 @@ class WebSitePages extends Controller
     public function contactUsFormSubmit(ContactUsFormRequest $request){
         return (new ContactUsRepository)->submitContactUs($request);
     }
+
 }

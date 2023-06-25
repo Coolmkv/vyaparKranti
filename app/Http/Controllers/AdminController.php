@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SEORequest;
 use App\Models\GalleryItem;
 use App\Models\NavMenu;
 use App\Models\User;
+use App\Repositories\SEORepository;
 use App\Traits\CommonFunctions;
 use Exception;
 use Illuminate\Http\Request;
@@ -290,5 +292,16 @@ class AdminController extends Controller
     public function webSiteElements(){
         return view("Dashboard.Pages.webSiteElements");
     }
-    
+ 
+    public function seoManagement(){
+        return (new SEORepository())->addSEO();
+    }
+
+    public function saveSEODetails(SEORequest $request){
+        return (new SEORepository())->saveSEODetails($request);
+    }
+
+    public function seoDataTable(){
+        return (new SEORepository())->seoDataTable();
+    }
 }

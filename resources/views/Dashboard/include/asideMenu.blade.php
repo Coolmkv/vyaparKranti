@@ -119,6 +119,14 @@
                 </a>
               </li>
               
+              <!-- SEO -->
+              <li class="menu-item">
+                <a href="{{route("seoManagement")}}" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-book-content"></i>
+                  <div data-i18n="Analytics">SEO Management</div>
+                </a>
+              </li>
+              
               <!-- Layouts -->
               {{-- <li class="menu-item active open">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">

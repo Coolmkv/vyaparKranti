@@ -29,6 +29,7 @@ Route::post('subscribe-news-letter',[WebSitePages::class,"subscribeNewsLetter"])
 
 Route::post('contact-us-form-submit',[WebSitePages::class,"contactUsFormSubmit"])->name("contactUsForm");
 
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
@@ -60,6 +61,11 @@ Route::middleware(['auth'])->group(function () {
     Route::post("news-letter-items-dataTable",[Library::class,"newsLetterItemsDataTable"])->name("newsLetterDetailsDataTable");
     Route::post("enable-disable-newletter",[Library::class,"enableDisableNewsLetter"])->name("enableDisableNewsLetter");
  
+    Route::get('seo-management',[AdminController::class,"seoManagement"])->name("seoManagement");
+    
+    Route::post('add-seo-details',[AdminController::class,"saveSEODetails"])->name("addSEODetails");
+    Route::post("seo-dataTable",[AdminController::class,"seoDataTable"])->name("seoDataTable");
+    
 });
 
 require __DIR__.'/auth.php';
