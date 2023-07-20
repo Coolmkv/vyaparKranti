@@ -114,4 +114,5 @@
                 $this.countTo(options);
             }
         });
+         
     </script>

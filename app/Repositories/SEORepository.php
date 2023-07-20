@@ -38,21 +38,41 @@ class SEORepository{
 
     public function saveSEODetails(SEORequest $request){
         $input =  $request->all();
+        
         $this->setSEOImage($request);
         if(!empty($input["id"])){
             $check = SEO::where([
                 "id"=>$input["id"]
             ])->first();
             if($check){
-                $check->model_type = self::MODEL_TYPE_VALUE;
-                $check->model_id = $input["model_id"];
-                $check->description = $input["description"];
-                $check->title = $input["title"];
-                $check->image = $this->seo_image;
-                $check->author = $input["author"];
-                $check->robots = $input["robots"];
-                $check->save();
-                $return = $this->success("Updated Successfully",[]);
+                if($input["action"]=="enable"){
+                    if($check){
+                        $check->status = 1;
+                        $check->save();
+                        $return = $this->success("Enabled Successfully",[]);
+                    }
+                }elseif($input["action"]=="disable"){
+                    if($check){
+                        $check->status = 0;
+                        $check->save();
+                        $return = $this->success("Disabled Successfully",[]);
+                    }
+                }else{
+                    $check->model_type = self::MODEL_TYPE_VALUE;
+                    $check->model_id = $input["model_id"];
+                    $check->description = $input["description"];
+                    $check->title = $input["title"];
+                    if(empty($this->seo_image)){
+                        $check->image = $check->image;
+                    }else{
+                        $check->image = $this->seo_image;
+                    }
+                    $check->author = $input["author"];
+                    $check->robots = $input["robots"];
+                    $check->save();
+                    $return = $this->success("Updated Successfully",[]);
+                
+                }
             }else{
                 $return = $this->insertSEO($input);
             }
@@ -68,11 +88,15 @@ class SEORepository{
             $check->model_type = self::MODEL_TYPE_VALUE;
             $check->description = $input["description"];
             $check->title = $input["title"];
-            $check->image = $this->seo_image;
+            if(empty($this->seo_image)){
+                $check->image = $check->image;
+            }else{
+                $check->image = $this->seo_image;
+            }
             $check->author = $input["author"];
             $check->robots = $input["robots"];
             $check->save();
-            $return = $this->success("Updated Successfully",[]);
+            $return = $this->success("Updated Successfully.",[]);
         }else{
             $check = new SEO();
             $check->model_type = self::MODEL_TYPE_VALUE;
@@ -108,7 +132,13 @@ class SEORepository{
             ->addIndexColumn()
             ->addColumn('action', function ($row) {
                 $btn = '';
-                $btn .= '<a href="javascript:void(0)" onclick="deleteItem(\'' . $row->{WebSitePagesModel::ID} . '\')" class="edit btn btn-danger btn-sm">Disable</a>';
+                if($row->seo->status==1){
+                    $btn .= '<a href="javascript:void(0)" onclick="deleteItem(\'' . $row->{WebSitePagesModel::ID} . '\')" class="btn btn-danger btn-sm">Disable</a>';
+                
+                }else{
+                    $btn .= '<a href="javascript:void(0)" onclick="enableItem(\'' . $row->{WebSitePagesModel::ID} . '\')" class="btn btn-info btn-sm">Enable</a>';
+                
+                }
                 $btn .= '<a data-row="'.base64_encode(json_encode($row)).'" href="javascript:void(0)" class="edit btn btn-primary btn-sm">Edit</a>';
                 return $btn;
             })

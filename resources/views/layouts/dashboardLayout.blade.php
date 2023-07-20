@@ -104,7 +104,7 @@
       }
       function scrollToDiv(id){
         if(id){
-          $("html, body").animate({ scrollTop: $("#elementID").offset().top }, "slow");
+          $("html, body").animate({ scrollTop: $("#"+id).offset().top }, "slow");
         }else{
           $("html, body").animate({ scrollTop: 0 }, "slow");
         }        
