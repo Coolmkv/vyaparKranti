@@ -124,11 +124,15 @@
             let row = $.parseJSON(atob($(this).data("row")));
             if (row['id']) {
                 $("#id").val(row['id']);
-                $("#category_name_id").val(row['category_name']);
-                $("#category_details").val(row['category_details']);
+                $("#model_id").val(row['seo_data']['model_id']);
+                $("#description_id").val(row['seo_data']['description']);
+                $("#title_id").val(row['seo_data']['title']);
+                $("#author_id").val(row['seo_data']['author']);
+                $("#robots_id").val(row['seo_data']['robots']);
                 $("#action").val("update");
-                $("#item_image_id").attr("required", false);
-
+                scrollToDiv("layout-navbar");
+            }else{
+                errorMessage("Invalid data");
             }
         });
         $(document).ready(function() {
@@ -221,7 +225,7 @@
                             url: '{{ route('addSEODetails') }}',
                             data: {
                                 id: id,
-                                action: "delete",
+                                action: "disable",
                                 '_token': '{{ csrf_token() }}'
                             },
                             success: function(response) {

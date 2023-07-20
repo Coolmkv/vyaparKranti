@@ -28,9 +28,9 @@ class SEORequest extends FormRequest
     public function rules()
     {
         return [
-            "id"=>"required_if:action,update",
-            "model_id"=>"required",
-            "description"=>"required|string",
+            "id"=>"required_if:action,update,enable,disable",
+            "model_id"=>"required_if:action,insert,update",
+            "description"=>"required_if:action,insert,update|string",
             "title"=>"nullable|string|max:255",
             "image"=>"nullable|image|max:1024",
             "author"=>"nullable|string|max:255",
