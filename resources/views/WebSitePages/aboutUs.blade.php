@@ -47,7 +47,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 text_align_center padding_0">
                     <div class="full">
-                        <img class="img-responsive" src="assets/img/img-2png.png" alt="#" />
+                        <img class="img-responsive" src="assets/img/img-2png.png" alt="digital transformation" />
                     </div>
                 </div>
 

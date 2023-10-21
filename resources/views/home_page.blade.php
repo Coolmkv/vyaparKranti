@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12 text_align_center padding_0">
                     <div class="full">
-                        <img class="img-responsive" src="assets/img/img-2png.png" alt="#" />
+                        <img class="img-responsive" src="assets/img/img-2png.png" alt="digital transformation" />
                     </div>
                 </div>
 
@@ -73,7 +73,7 @@
                 <div class="col-sm-6 col-md-4">
                     <div class="service_blog">
                         <div class="service_icons">
-                            <img width="75" height="75" src="assets/img/icon-1.png" alt="#">
+                            <img width="75" height="75" src="assets/img/icon-1.png" alt="Website design and development">
                         </div>
                         <div class="full">
                             <h4>DIGITAL marketing</h4>
@@ -88,7 +88,7 @@
                 <div class="col-sm-6 col-md-4">
                     <div class="service_blog">
                         <div class="service_icons">
-                            <img width="75" height="75" src="assets/img/icon-2.png" alt="#">
+                            <img width="75" height="75" src="assets/img/icon-2.png" alt="ecommerce website building">
                         </div>
                         <div class="full">
                             <h4>DIGITAL marketing</h4>
@@ -103,7 +103,7 @@
                 <div class="col-sm-6 col-md-4">
                     <div class="service_blog">
                         <div class="service_icons">
-                            <img width="75" height="75" src="assets/img/icon-3.png" alt="#">
+                            <img width="75" height="75" src="assets/img/icon-3.png" alt="Content Management Service">
                         </div>
                         <div class="full">
                             <h4>DIGITAL marketing</h4>

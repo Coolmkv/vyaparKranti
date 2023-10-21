@@ -42,7 +42,7 @@
                 <div class="col-md-12">
                     <div class="service_blog">
                         <div class="service_icons">
-                            <img width="75" height="75" src="assets/img/icon-1.png" alt="#">
+                            <img width="75" height="75" src="assets/img/icon-1.png" alt="Website design and development">
                         </div>
                         <div class="full">
                             <h4>WEBSITE DESGIN AND DEVLOPMENT</h4>
@@ -75,7 +75,7 @@
                 <div class="col-md-12">
                     <div class="service_blog">
                         <div class="service_icons">
-                            <img width="75" height="75" src="assets/img/icon-2.png" alt="#">
+                            <img width="75" height="75" src="assets/img/icon-2.png" alt="ecommerce website building">
                         </div>
                         <div class="full">
                             <h4>e-Commerce Platform DEVLOPMENT</h4>
@@ -100,7 +100,7 @@
                 <div class="col-md-12">
                     <div class="service_blog">
                         <div class="service_icons">
-                            <img width="75" height="75" src="assets/img/icon-3.png" alt="#">
+                            <img width="75" height="75" src="assets/img/icon-3.png" alt="Content Management Service">
                         </div>
                         <div class="full">
                             <h4>CONTENT MANAGEMENT SERVICE</h4>

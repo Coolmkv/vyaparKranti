@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 margin-bottom_30">
-                <img src="assets/img/logo_3d.png" alt="#" style="height:100px" />
+                <img src="assets/img/logo_3d.png" alt="Vyaparkranti" style="height:100px" />
             </div>
             <div class="col-xl-6 white_fonts">
                 <div class="row">
