@@ -71,4 +71,4 @@ Route::middleware(['auth'])->group(function () {
 require __DIR__.'/auth.php';
 Route::get("login",[AdminController::class,"Login"])->name("login");
 Route::post("AdminUserLogin",[AdminController::class,"AdminLoginUser"])->name("AdminLogin");
-Route::get("getmenu-items",[HomePageController::class,"getMenu"]);
+// Route::get("getmenu-items",[HomePageController::class,"getMenu"]);
