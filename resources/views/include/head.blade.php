@@ -7,9 +7,16 @@
 
  <!-- Site Metas -->
  <title>@yield('title')</title>
- <meta name="keywords" content="">
- <meta name="description" content="">
+ <meta name="keywords" content="@yield('description')">
+ <meta name="description" content="@yield('keywords')">
  <meta name="author" content="">
+ <meta property="og:title" content=VYAPARKRANTI, Helping entrepreneurs to transform their businesses into digital platforms.>
+<meta property="og:site_name" content=Vyaparkranti>
+<meta property="og:url" content=https://vyaparkranti.com/>
+<meta property="og:description" content=At VYAPAR KRANTI we specialize in creating beautiful and functional websites for businesses of all sizes. We create unique designs for each of our clients, tailored to their brand.>
+<meta property="og:type" content=website>
+<meta property="og:image" content=https://vyaparkranti.com/assets/img/logo_3d.png>
+
 
  <!-- Site Icons -->
  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />

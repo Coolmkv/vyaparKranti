@@ -1,5 +1,7 @@
 @extends('layout.app_layout')
-@section('title', 'Home Page')
+@section('title','Best Web Development & Digital Marketing Company | Provide Best Digital Marketing & Website Designing Services- Vyapar Kranti')
+@section('description', 'Vyapar Kranti provides best DIGITAL MARKETING & WEBSITE DEVELOPMENT services. Get your BUSINESS ONLINE & boost up your BUSINESS GROWTH. CONTACT US FOR MORE')
+@section('keywords', 'Website Design & Development, Digital Marketing, Best website designing company')
 @section('content')
     @include('includes.slider')
     <!-- section -->
