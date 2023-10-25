@@ -1,5 +1,10 @@
 @extends('layout.app_layout')
-@section('title', 'Contact Us')
+@section('title', 'Contact us for the Best Web Designing Services')
+@section('keywords', 'Best website designing company in India, internet marketing services')
+@section('description', 'The best web designing services for custom business websites. Get in touch with us today! We are here to help. Call now.
+
+Get your BUSINESS ONLINE easily & Be visible to your BUYERS
+')
 @section('bodyClass', 'inner_page')
 @section('content')
     <style>

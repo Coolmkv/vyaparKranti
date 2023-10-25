@@ -1,5 +1,5 @@
 @extends('layout.app_layout')
-@section('title', 'Library')
+@section('title', 'Choose unique & professional WEBSITE DESIGNS')
 @section('bodyClass', 'inner_page')
 @section('content')
 

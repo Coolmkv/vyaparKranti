@@ -1,5 +1,7 @@
 @extends('layout.app_layout')
-@section('title', 'About Us')
+@section('title', 'Transform your BUSINESS into a DIGITAL PLATFORM')
+@section('description', 'Want a WEBSITE but don't know where to start? Our team can help you DESIGN and develop an online presence that will reflect your brand perfectly.')
+@section('keywords', 'Digital Marketing, E-commerce platform, Custom Web Applications')
 @section('bodyClass', 'inner_page')
 @section('content')
 

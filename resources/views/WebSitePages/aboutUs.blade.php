@@ -1,5 +1,7 @@
 @extends('layout.app_layout')
-@section('title', 'About Us')
+@section('title', 'Transform your BUSINESS into a DIGITAL PLATFORM')
+@section('description', 'Are you looking to take your BUSINESS to the next level? Transform your business with our high-quality WEB DEVELOPMENT SERVICES today')
+@section('keywords', 'Develop new Website, Improve online presence ')
 @section('bodyClass', 'inner_page')
 @section('content')
 

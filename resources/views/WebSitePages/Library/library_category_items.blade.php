@@ -1,5 +1,7 @@
 @extends('layout.app_layout')
-@section('title', $category_name??"")
+@section('title', Choose unique & professional WEBSITE DESIGNS)
+@section('description', 'Choose from unique & professional website designs, custom templates, and e-commerce website designs to create a stunning website for your business. Get started now!')
+@section('keywords', 'Business Website Designs, Real estate website designs, Jewellery website designs, custom website designs, Website Templates')
 @section('bodyClass', 'inner_page')
 @section('content')
 <style>
