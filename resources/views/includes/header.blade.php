@@ -2,7 +2,7 @@
     <nav class="navbar header-nav navbar-expand-lg">
         <div class="container-fluid bg-light">
             <a class="navbar-brand" href="{{ url("/") }}">
-                <img src="{{asset("assets/img/logo_3d.png")}}" style="height: 75px;" alt="Vyaparkranti">
+                <img src="{{asset("assets/img/logo_3d.png")}}" style="height: 95px;" alt="Vyaparkranti">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
