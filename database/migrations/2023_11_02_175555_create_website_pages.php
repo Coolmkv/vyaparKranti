@@ -14,11 +14,11 @@ class CreateWebsitePages extends Migration
     public function up()
     {
         Schema::create('websitePages', function (Blueprint $table) {
-            $table->integer('id',true,false)->primary();
+            $table->integerIncrements('id');
             $table->string('route_name',255)->nullable(true)->default(NULL);
             $table->integer('status')->nullable(true)->default(1);
-            $table->bigIncrements("created_by")->default(NULL);
-            $table->bigIncrements("updated_by")->default(NULL);
+            $table->bigInteger("created_by")->default(NULL);
+            $table->bigInteger("updated_by")->default(NULL);
             $table->timestamps();
         });
     }
