@@ -72,3 +72,8 @@ require __DIR__.'/auth.php';
 Route::get("login",[AdminController::class,"Login"])->name("login");
 Route::post("AdminUserLogin",[AdminController::class,"AdminLoginUser"])->name("AdminLogin");
 Route::get("getmenu-items",[HomePageController::class,"getMenu"]);
+
+Route::fallback(function(){
+return "<h1> Page not found . </h1>";
+
+});
