@@ -14,7 +14,7 @@ use App\Http\Controllers\WebSitePages;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+*///inteial name is admincontroller//inteial name is admincontroller
 
 Route::get('/', [WebSitePages::class,"homePage"])->name("homePage");
 Route::get('about-us', [WebSitePages::class,"aboutUs"])->name("aboutUs");
@@ -77,3 +77,100 @@ Route::fallback(function(){
 return "<h1> Page not found . </h1>";
 
 });
+
+
+
+
+
+
+
+// routes added from hprimers
+//************************************************************************************************************ */
+
+
+// use App\Http\Controllers\BookingsController;
+// use App\Http\Controllers\HomePageController;
+// use App\Http\Controllers\MenuItemsController;
+// use App\Http\Controllers\SliderController;
+// use App\Http\Controllers\TestimonialsController;
+// use App\Http\Controllers\WebSiteElementsController;
+// //use Illuminate\Foundation\Application; //initial commented
+// // use Illuminate\Support\Facades\Route; //initial commented
+// use Inertia\Inertia;
+
+// /*
+// |--------------------------------------------------------------------------
+// | Web Routes
+// |--------------------------------------------------------------------------
+// |
+// | Here is where you can register web routes for your application. These
+// | routes are loaded by the RouteServiceProvider within a group which
+// | contains the "web" middleware group. Now create something great!
+// |
+// */
+
+// // Route::get('/', function () {
+// //     return Inertia::render('Welcome', [
+// //         'canLogin' => Route::has('login'),
+// //         'canRegister' => Route::has('register'),
+// //         'laravelVersion' => Application::VERSION,
+// //         'phpVersion' => PHP_VERSION,
+// //     ]);
+// // });
+// Route::get("/", [HomePageController::class, "homePage"]);
+// Route::get("gallery-page", [HomePageController::class, "galleryPage"])->name("Gallery");
+// Route::get("adminLogin", [AdminController::class, "adminLogin"]);//inteial name is admincontroller
+// Route::get("about-us", [HomePageController::class, "aboutUs"])->name("aboutUs");
+// Route::get("service", [HomePageController::class, "servicePage"])->name("servicePage");
+// Route::get("menu", [HomePageController::class, "menuPage"])->name("menuPage");
+// Route::get("reservation", [HomePageController::class, "reservationPage"])->name("reservationPage");
+// Route::get("testimonials", [HomePageController::class, "testimonialsPage"])->name("testimonialsPage");
+// Route::get("contact-us", [HomePageController::class, "contactUsPage"])->name("contactUs");
+// Route::get('refresh-captcha',[HomePageController::class,"refreshCapthca"])->name("refreshCaptcha");
+// Route::post('save-testimonials',[HomePageController::class,"saveTestimonials"])->name("saveTestimonials");
+// Route::post('submit-booking',[BookingsController::class,"submitBooking"])->name("submitBooking");
+
+// Route::get('/dashboard', function () {
+//     //return view("Dashboard.dashboard_home");
+//     return Inertia::render('Dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+// Route::middleware(['auth'])->group(function () {
+//     Route::get("/new-dashboard", [AdminController::class, "dashboard"])->name("new-dashboard");//inteial name is admincontroller
+//     Route::get("site-navigation", [AdminController::class, "siteNav"])->name("siteNav");//inteial name is admincontroller
+//     Route::post("addEditNavigation", [AdminController::class, "addEditNavigation"])->name("addNaviagtion");//inteial name is admincontroller
+//     Route::post("deleteNavigation", [AdminController::class, "deleteNavigation"])->name("deleteNavigation");//inteial name is admincontroller
+//     Route::post("navDataTable", [AdminController::class, "navDataTable"])->name("navDataTable");//inteial name is admincontroller
+
+//     Route::get("manage-gallery", [AdminController::class, "manageGallery"])->name("manageGallery");//inteial name is admincontroller
+//     Route::post("addGalleryItems", [AdminController::class, "addGalleryItems"])->name("addGalleryItems");//inteial name is admincontroller
+//     Route::post("addGalleryDataTable", [AdminController::class, "addGalleryDataTable"])->name("addGalleryDataTable");//inteial name is admincontroller
+
+//     Route::get("add-web-site-elements", [WebSiteElementsController::class, "addWebSiteElements"])->name("webSiteElements");
+//     Route::post("save-web-site-element", [WebSiteElementsController::class, "saveWebSiteElement"])->name("saveWebSiteElement");
+//     Route::post("web-site-elements-data", [WebSiteElementsController::class, "getWebElementsData"])->name("webSiteElementsData");
+    
+//     Route::get("add-menu-items", [MenuItemsController::class, "addMenuItems"])->name("menuItems");
+//     Route::post("save-menu-items", [MenuItemsController::class, "saveMenuItems"])->name("saveMenuItems");
+//     Route::post("menu-elements-data", [MenuItemsController::class, "menuItemsData"])->name("menuItemsData");
+
+//     Route::get("testimonials-admin", [TestimonialsController::class, "testimonials"])->name("Testimonials");
+//     Route::post("change-approval-status", [TestimonialsController::class, "changeApproval"])->name("changeApproval");
+//     Route::post("testimonials-data", [TestimonialsController::class, "testimonialsData"])->name("testimonialsData");
+
+//     Route::get("bookings-recieved", [BookingsController::class, "bookingsPage"])->name("bookingsPage");
+//     Route::post("bookings-data", [BookingsController::class, "bookingsData"])->name("bookingsData");
+
+//     Route::get("slider-admin", [SliderController::class, "slider"])->name("Slider");
+//     Route::post("save-Slide", [SliderController::class, "saveSlide"])->name("saveSlide");
+//     Route::post("slider-data", [SliderController::class, "sliderData"])->name("sliderData");
+
+// });
+
+
+// require __DIR__ . '/auth.php';
+
+// Route::get("login", [AdminController::class, "Login"])->name("login");//inteial name is admincontroller
+// Route::post("AdminUserLogin", [AdminController::class, "AdminLoginUser"])->name("AdminLogin");//inteial name is admincontroller2
+// Route::get("getmenu-items", [HomePageController::class, "getMenu"]);
+// //pages

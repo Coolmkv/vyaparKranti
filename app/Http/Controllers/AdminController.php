@@ -304,4 +304,22 @@ class AdminController extends Controller
     public function seoDataTable(){
         return (new SEORepository())->seoDataTable();
     }
-}
+
+    /* function addition from hprimers
+
+
+****************************************************************************************************************************************************************
+
+
+
+*/
+
+
+    
+   
+   
+    
+
+    
+    
+} 
