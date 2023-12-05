@@ -1,7 +1,3 @@
-
-
-
-// added from hprimers
 <?php
 
 namespace App\Http\Controllers;
