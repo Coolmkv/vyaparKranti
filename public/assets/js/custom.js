@@ -5,10 +5,15 @@
 	Loader 
     ................................................. */
 	
-	$(window).on('load', function() { 
-		$('.preloader').fadeOut(); 
-		$('#preloader').delay(550).fadeOut('slow'); 
-		$('body').delay(450).css({'overflow':'visible'});
+	$(window).on('load', function() {
+		const home = document.getElementById("home");
+		if(home.closest("#home")){
+			document.querySelector('.main-header').classList.add("common-home")
+		}
+
+		// $('.preloader').fadeOut(); 
+		// $('#preloader').delay(550).fadeOut('slow'); 
+		// $('body').delay(450).css({'overflow':'visible'});
 	});
     	
 	/* ..............................................
@@ -99,9 +104,110 @@
 		});
 
 	});
-	
-	
 
-	
+	var swiper = new Swiper(".home_testimonial", {
+		slidesPerView: 3,
+		loop: true,
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		breakpoints: {
+			320: {
+			  slidesPerView: 1,
+			  spaceBetween: 0,
+			},
+			768: {
+			  slidesPerView: 2,
+			  spaceBetween: 10,
+			},
+			1024: {
+			  slidesPerView: 3,
+			  spaceBetween: 30,
+			},
+		},
+	});
 }(jQuery));
+let menubar = document.querySelector('.main-navbar');
+let listmenu = document.querySelector('.navigation');
+let closemenu = document.querySelector('.closemenu');
+menubar.addEventListener("click", function(){
+	listmenu.classList.add('active');
+});
+closemenu.addEventListener("click", function(){
+	listmenu.classList.remove('active');
+});
 
+// let open_plus = document.querySelectorAll(".open-plus");
+// let clossest_class = open_plus.closest(".submenu-container");
+// open_plus.addEventListener('click',function(){
+// 	if(this.clossest_class){
+// 		clossest_class.add = "open";
+// 	} else {
+// 		clossest_class.remove = "open";
+// 	}
+// })
+
+//     let closest_class = this.nextElementSibling;
+// 	// console.log(closest_class);
+// 	let nextElementClass = closest_class.classList[0];
+// 	if (closest_class.classList.contains("opennav")){
+	// 		nextElementClass.classList.add("opennav");
+	// 	// }
+	// //     if (closest_class) {
+		// // 		nextElementClass.classList.add("opennav");
+		// //         // console.log(nextElementClass);
+		//     } else {
+			// 		nextElementClass.classList.remove("opennav");
+			//     }
+			
+// let opens = document.querySelectorAll(".open-plus");
+// opens.forEach(function (toggleel) {
+// 	toggleel.addEventListener('click', function () {
+// 		opens.forEach(function (e) {
+// 			e.nextElementSibling.classList.remove('opennav');
+// 		})
+// 		toggleel.nextElementSibling.classList.add('opennav');
+//     });
+// });
+
+let opens = document.querySelectorAll(".open-plus");
+opens.forEach(function (toggleel) {
+    toggleel.addEventListener('click', function () {
+        opens.forEach(function (e) {
+			let nextElementSibling = e.nextElementSibling;
+            if (nextElementSibling) {
+                nextElementSibling.classList.remove('opennav');
+				e.classList.remove('active');
+            }
+		});
+        let nextElementSibling = toggleel.nextElementSibling;
+        if (nextElementSibling) {
+            nextElementSibling.classList.add('opennav');
+			toggleel.classList.add('active');
+        }
+	});
+});
+// Footer Section
+let footeropens = document.querySelectorAll(".plus-open");
+footeropens.forEach((toggleel) => {
+    toggleel.addEventListener('click', () => {
+        footeropens.forEach(function (e) {
+			// console.log(e);
+			let footerElementSibling = e.closest('.footer_title').nextElementSibling;
+            if (footerElementSibling) {
+				footerElementSibling.classList.remove('opennav');
+				e.innerHTML = "add";
+            }
+		});
+		let footerElementSibling = toggleel.closest('.footer_title').nextElementSibling;
+        if (footerElementSibling) {
+			footerElementSibling.classList.add('opennav');
+			toggleel.innerHTML = "remove";
+        }
+	});
+});

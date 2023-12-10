@@ -1,309 +1,201 @@
 @extends('layout.app_layout')
 @section('title', 'Home Page')
 @section('content')
-    @include('includes.slider')
-    <!-- section -->
-    <div class="section layout_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="full">
-                        <div class="heading_main text_align_left">
-                            <div class="left">
-                                <p class="section_count">01</p>
-                            </div>
-                            <div class="right">
-                                <p class="small_tag">About us</p>
-                                <h2><span class="theme_color">WE CAN</span> HELP YOUR business GROW</h2>
-                                <p class="large">Get your business online easily & Be visible to your buyers</p>
-                            </div>
-                        </div>
-                    </div>
+@include('includes.slider')
+<!-- Section  -->
+<section class="h_service">
+    <div class="main-container">
+        <div class="h_service-title">
+            <h4>Get your business online easily & be visible to your buyers</h4>
+            <p>We provide solutions that will help you to give a voice to your ideas.</p>
+        </div>
+        <div class="h_service-container">
+            <div class="h_service-inner">
+                <div class="h_service-item">
+                    <div class="h_serve_icon"><span class="material-symbols-outlined">colors</span></div>
+                    <h4>Design & Creatives</h4>
+                    <p>Elevate Your Digital Presence with Seamless Design Excellence:</p>
+                    <a href="/" class="lmore-btn">Learn More</a>
+                </div>
+                <div class="h_service-item">
+                    <div class="h_serve_icon"><span class="material-symbols-outlined">my_location</span></div>
+                    <h4>Web devlopment</h4>
+                    <p>Elevate Your Brand, Expand Your Reach: Your Growth, Our Expertise.</p>
+                    <a href="/" class="lmore-btn">Learn More</a>
+                </div>
+                <div class="h_service-item">
+                    <div class="h_serve_icon"><span class="material-symbols-outlined">collections_bookmark</span></div>
+                    <h4>Digital marketing</h4>
+                    <p>Building Tomorrow's Web Today: Elevate Your Business with Our Web Solutions</p>
+                    <a href="/" class="lmore-btn">Learn More</a>
+                </div>
+                <div class="h_service-item">
+                    <div class="h_serve_icon"><span class="material-symbols-outlined">campaign</span></div>
+                    <h4>Content writing</h4>
+                    <p>Empower Your Website with Compelling Content: Elevate Your Brand with Expert Content Solutions - Elevate, Engage, Excel.</p>
+                    <a href="/" class="lmore-btn">Learn More</a>
+                </div>
+                <div class="h_service-item">
+                    <div class="h_serve_icon"><span class="material-symbols-outlined">checkbook</span></div>
+                    <h4>Business inteligence & analytics</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quo quasi consectetur cumque, vero vitae.</p>
+                    <a href="/" class="lmore-btn">Learn More</a>
+                </div>
+                <div class="h_service-item">
+                    <div class="h_serve_icon"><span class="material-symbols-outlined">monitoring</span></div>
+                    <h4>Brand building</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quo quasi consectetur cumque, vero vitae.</p>
+                    <a href="/" class="lmore-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="h_service-more text-center"><a class="prime-btn" href="/">View More Services</a></div>
+        </div>
+    </div>
+</section>
+<!-- Section End -->
+
+<!-- Section Start -->
+<section class="h_aboutus">
+    <div class="main-container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/img/img-3png.png" width="100%" class="img-fluid" alt="Vyapar Kranti" />
+            </div>
+            <div class="col-md-6">
+                <div class="h_about-content">
+                    <h3>About <b>Vyapar Kranti</b></h3>
+                    <p>Welcome to VYPAR KRANTI, a leading Digital Marketing & IT company dedicated to helping entrepreneurs to transform their businesses into digital platforms.</p>
+                    <p>With our rich experience of more than 10 years in the Industry, we understand the importance of a strong online presence in today's digital age. Our team of experts specialize in Website development, Application development, Software development, Digital Marketing and Many more Verticals of Digital world. We strive to deliver innovative and effective solutions that drive growth and success for our clients.</p>
+                    <p>Let us help you take your business to the next level with our cutting-edge digital solutions.</p>
+                    <div class="h_about-more"><a class="prime-btn" href="{{ route('aboutUs') }}">View More About</a></div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end section -->
+</section>
+<!-- Section End -->
 
-    <!-- section -->
-    <div class="section dark_bg">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 text_align_center padding_0">
-                    <div class="full">
-                        <img class="img-responsive" src="assets/img/img-2png.png" alt="#" />
-                    </div>
+<!-- Section Start  -->
+<section class="h_technology">
+    <div class="main-container">
+        <div class="h_service-title mb-5 pb-3">
+            <h4><b>Everything</b> You need in one Solution</h4>
+            <p>We provide solutions that will help you to give a voice to your ideas</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="h_technology-box">
+                    <div class="h_technology-icons"><span class="material-symbols-outlined">tv_options_input_settings</span></div>
+                    <h4>IT Solutions</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorum impedit, beatae libero saepe facilis dolores! Deleniti dicta non repellendus.</p>
                 </div>
-
-                <div class="col-lg-6 col-md-12 white_fonts layout_padding padding_left_right">
-                    <h3 class="small_heading">EVERYTHING<br>YOU NEED IN ONE SOLUTION</h3>
-                    <p>Welcome to <b>VYPAR KRANTI</b>, a leading Digital Marketing & IT company dedicated to helping
-                        entrepreneurs
-                        to transform their businesses into digital platforms.</p>
-
-                    <p>With our rich experience of more than 10 years in the Industry, we understand the importance of a
-                        strong online presence in today's digital age. Our team of experts specialize in Website
-                        development, Application development, Software development, Digital Marketing and Many more
-                        Verticals of Digital world. We strive to deliver innovative and effective solutions that drive
-                        growth and success for our clients.</p>
-
+            </div>
+            <div class="col-md-4">
+                <div class="h_technology-box">
+                    <div class="h_technology-icons"><span class="material-symbols-outlined">source_environment</span></div>
+                    <h4>ERP Solutions</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorum impedit, beatae libero saepe facilis dolores! Deleniti dicta non repellendus.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="h_technology-box">
+                    <div class="h_technology-icons"><span class="material-symbols-outlined">tv_options_input_settings</span></div>
+                    <h4>E-Commerce Website</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorum impedit, beatae libero saepe facilis dolores! Deleniti dicta non repellendus.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="h_technology-box">
+                    <div class="h_technology-icons"><span class="material-symbols-outlined">forum</span></div>
+                    <h4>Mobile Application Development</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorum impedit, beatae libero saepe facilis dolores! Deleniti dicta non repellendus.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="h_technology-box">
+                    <div class="h_technology-icons"><span class="material-symbols-outlined">public</span></div>
+                    <h4>Custom Application Development</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorum impedit, beatae libero saepe facilis dolores! Deleniti dicta non repellendus.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="h_technology-box">
+                    <div class="h_technology-icons"><span class="material-symbols-outlined">cloud</span></div>
+                    <h4>Cloud Solutions</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorum impedit, beatae libero saepe facilis dolores! Deleniti dicta non repellendus.</p>
                 </div>
             </div>
         </div>
+        <div class="h_service-more text-center"><a class="prime-btn" href="/">View More</a></div>
     </div>
-    <!-- end section -->
+</section>
+<!-- Section End  -->
 
-    <!-- section -->
-    <div class="section layout_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="full">
-                        <div class="heading_main text_align_left">
-                            <div class="left">
-                                <p class="section_count">02</p>
+<!-- Section Start -->
+<section class="h_testimonial">
+    <div class="main-container">
+        <div class="h_service-title mb-2 pb-3">
+            <h4><b>Testimonial</b> Words from our trusted clients</h4>
+            <p>We provide solutions that will help you to give a voice to your ideas We provide solutions that will help you to give a voice to your ideas. We provide solutions that will help you to give a voice to your ideas.</p>
+        </div>
+        <div class="h_testimonial-block swiper home_testimonial">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="h_testimonial-items">
+                        <div class="h_testimonial-innerblock">
+                            <div class="h_testimonial-pic"><img src="assets/img/img-7.png" alt="Vyapar Kranti" class="img-fluid" width="100" height="100" /></div>
+                            <div class="h_testimonial-content">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vero ullam accusantium magni soluta ipsa velit veritatis et molestias doloremque dicta deleniti, exercitationem impedit eaque enim voluptatem voluptatum quibusdam mollitia.</p>
                             </div>
-                            <div class="right">
-                                <p class="small_tag">SERVICES</p>
-                                <h2><span class="theme_color">WE PROVIDE SOLUTIONS</span> THAT WILL HELP YOU TO GIVE A VOICE
-                                    TO YOUR IDEAS</h2>
-                            </div>
+                            <div class="clearfix"></div>
                         </div>
+                        <div class="h_testimonial-clint">Manish Prajapati</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="h_testimonial-items">
+                        <div class="h_testimonial-innerblock">
+                            <div class="h_testimonial-pic"><img src="assets/img/img-9.png" alt="Vyapar Kranti" class="img-fluid" width="100" height="100" /></div>
+                            <div class="h_testimonial-content">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vero ullam accusantium magni soluta ipsa velit veritatis et molestias doloremque dicta deleniti, exercitationem impedit eaque enim voluptatem voluptatum quibusdam mollitia.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="h_testimonial-clint">Pawan arrora</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="h_testimonial-items">
+                        <div class="h_testimonial-innerblock">
+                            <div class="h_testimonial-pic"><img src="assets/img/img-8.png" alt="Vyapar Kranti" class="img-fluid" width="100" height="100" /></div>
+                            <div class="h_testimonial-content">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vero ullam accusantium magni soluta ipsa velit veritatis et molestias doloremque dicta deleniti, exercitationem impedit eaque enim voluptatem voluptatum quibusdam mollitia.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="h_testimonial-clint">Suraj</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="h_testimonial-items">
+                        <div class="h_testimonial-innerblock">
+                            <div class="h_testimonial-pic"><img src="assets/img/img-7.png" alt="Vyapar Kranti" class="img-fluid" width="100" height="100" /></div>
+                            <div class="h_testimonial-content">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vero ullam accusantium magni soluta ipsa velit veritatis et molestias doloremque dicta deleniti, exercitationem impedit eaque enim voluptatem voluptatum quibusdam mollitia.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="h_testimonial-clint">Chandan Sharma</div>
                     </div>
                 </div>
             </div>
-            <div class="row margin-top_30">
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="service_blog">
-                        <div class="service_icons">
-                            <img width="75" height="75" src="assets/img/icon-1.png" alt="#">
-                        </div>
-                        <div class="full">
-                            <h4>WEBSITE DESGIN AND DEVLOPMENT</h4>
-                        </div>
-                        <div class="full">
-                            <p class="text-justify">At VYAPAR KRANTI we specialize in creating beautiful and functional
-                                websites for businesses
-                                of all sizes. Our team of experienced designers and developers is dedicated to providing
-                                high-quality website design and development services that are tailored to meet your unique
-                                business needs.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="service_blog">
-                        <div class="service_icons">
-                            <img width="75" height="75" src="assets/img/icon-2.png" alt="#">
-                        </div>
-                        <div class="full">
-                            <h4>eCommerce Platform DEVLOPMENT</h4>
-                        </div>
-                        <div class="full">
-                            <p class="text-justify">We understand that having an online presence is essential for modern
-                                businesses, and we have
-                                the expertise to help you succeed in the competitive world of ecommerce. We can help you to
-                                create a custom ecommerce website that is
-                                designed to meet your unique business needs.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="service_blog">
-                        <div class="service_icons">
-                            <img width="75" height="75" src="assets/img/icon-3.png" alt="#">
-                        </div>
-                        <div class="full">
-                            <h4>CONTENT MANAGEMENT SERVICE</h4>
-                        </div>
-                        <div class="full">
-                            <p class="text-justify">At <b>VYAPAR KRANTI</b> we specialize in providing content management
-                                services
-                                for businesses of all shapes and sizes. We understand that managing content can be a
-                                daunting task,
-                                which is why we offer a range of services to help you streamline the process and make it
-                                more efficient.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="service_blog">
-                        <div class="service_icons">
-                            <img width="75" height="75" src="assets/img/icon-4.png" alt="#">
-                        </div>
-                        <div class="full">
-                            <h4>CUSTOM WEB APPLICATION DEVELOPMENT</h4>
-                        </div>
-                        <div class="full">
-                            <p class="text-justify">We specializes in creating custom web applications that are tailored to
-                                meet the unique needs of your business. We understand that having an online presence is
-                                essential for modern businesses, and we have the expertise to help you succeed in the
-                                competitive world of web applications.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="service_blog">
-                        <div class="service_icons">
-                            <img width="75" height="75" src="assets/img/icon-5.png" alt="#">
-                        </div>
-                        <div class="full">
-                            <h4>MOBILE APPLICATIONS</h4>
-                        </div>
-                        <div class="full">
-                            <p class="text-justify">At VYAPAR KRANTI we specialize in creating custom mobile applications
-                                that are designed to meet the unique needs of your business. With the increasing use of
-                                mobile devices, having a mobile application is essential for modern businesses, and we have
-                                the expertise to help you succeed in the competitive world of mobile apps.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="service_blog">
-                        <div class="service_icons">
-                            <img width="75" height="75" src="assets/img/icon-6.png" alt="#">
-                        </div>
-                        <div class="full">
-                            <h4>DIGITAL MARKETING</h4>
-                        </div>
-                        <div class="full">
-                            <p class="text-justify">
-                                Boost your business with our expert digital marketing services we specialise in creating
-                                customise digital marketing strategies that drive traffic engagement and sales to your
-                                website.
-                                Our Service array for the category is:
-                                Search Engine Optimization (SEO)
-                                Social Media Optimization (SMO)
-                                Pay Per Click (PPC)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="service_blog">
-                        <div class="service_icons">
-                            <img width="75" height="75" src="assets/img/icon-6.png" alt="#">
-                        </div>
-                        <div class="full">
-                            <h4>ADMINISTRATIVE SERVICES</h4>
-                        </div>
-                        <div class="full">
-                            <p class="text-justify">
-                                Vyapar Kranti is one stop solution for all of your digital needs.
-                                Following services are also available for your ease of doing business on Digital Platform.
-                            <ul>
-                                <li>Domain Registration</li>
-                                <li>Web Hosting</li>
-                                <li>SSL Certificates</li>
-                                <li>Technical Support</li>
-                            </ul>
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
-    <!-- end section -->
-
-    <!-- section -->
-    <div class="section layout_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="full">
-                        <div class="heading_main text_align_left">
-                            <div class="left">
-                                <p class="section_count">03</p>
-                            </div>
-                            <div class="right">
-                                <p class="small_tag">Library</p>
-                                <h2><span class="theme_color">CHOOSE A</span> PROFESSIONAL DESIGN</h2>
-                                <p class="large">Websites</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row margin-top_30">
-                <div class="col-lg-12 margin-top_30">
-                    <div id="demo" class="carousel slide" data-ride="carousel">
-
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="assets/images/img1.png" alt="#" />
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="assets/images/img2.png" alt="#" />
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="assets/images/img3.png" alt="#" />
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="assets/images/img4.png" alt="#" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="assets/images/img1.png" alt="#" />
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="assets/images/img2.png" alt="#" />
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="assets/images/img3.png" alt="#" />
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                        <img class="img-responsive" src="assets/images/img4.png" alt="#" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-12">
-                    <p>We don't believe in using premade templates. Instead we create unique design for each of our clients,
-                        tailored to their brand and their audience. A good website is more than just a pretty picture and
-                        colour. We focus on creating user-friendly experience that guide visitor through your content and
-                        encourage them to take action. </p>
-                    <p>we understand that every business is unique, which is why we work closely with each of our clients to
-                        create a website that meets the specific needs whether you are a small business in just getting
-                        started, or a large enterprise is looking to revamp your online presence. We are here to help.</p>
-                </div>
-
-                <div class="col-lg-12">
-                    <div class="full center">
-                        <a href="{{ route('ourPortfolio') }}" class="hvr-radial-out button-theme">See More ></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
- 
+</section>
+<!-- Section End -->
 @endsection
 
 @section('pageScript')

@@ -1,18 +1,25 @@
 
-    <!-- ALL JS FILES -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/jquery.pogo-slider.min.js"></script>
-    <script src="assets/js/slider-index.js"></script>
-    {{-- <script src="assets/js/smoothscroll.js"></script> --}}
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.js"></script>
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/images-loded.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+<!-- ALL JS FILES -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- ALL PLUGINS -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.pogo-slider.min.js"></script>
+<script src="assets/js/slider-index.js"></script>
+{{-- <script src="assets/js/smoothscroll.js"></script> --}}
+<script src="assets/js/form-validator.min.js"></script>
+<script src="assets/js/contact-form-script.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/typer.js"></script>
+<script src="assets/js/images-loded.min.js"></script>
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/app.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="assets/js/custom.js"></script>
+
     <script>
         /* counter js */
 

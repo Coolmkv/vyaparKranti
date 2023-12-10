@@ -44,14 +44,14 @@
     <!-- End Meta Pixel Code -->
 </head>
 
-<body id="home" class="@yield('bodyClass')" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+<body id="{{Request::is('/') ? 'home' : 'information' }}" class="@yield('bodyClass')" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
     <!-- LOADER -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="loader">
             <img src="assets/images/loader.gif" alt="#" />
         </div>
-    </div>
+    </div> -->
     <!-- end loader -->
     <!-- END LOADER -->
 
@@ -77,7 +77,7 @@
     $("#newsletter_form").submit(function() {
         $("#submit_newsletter_form").attr("disable", true);
         $.ajax({
-            url: '{{ route('subscribeNewsLetter') }}',
+            url: "{{ route('subscribeNewsLetter') }}",
             method: 'post',
             data: {
                 email: $("#subscription_email").val(),
@@ -122,7 +122,7 @@
 
     function refreshCapthca(imgId = 'captcha_img_id', textId = 'captcha') {
         $.ajax({
-            url: '{{ route('refreshCaptcha') }}',
+            url: "{{ route('refreshCaptcha') }}",
             method: 'get',
             dataType: 'json',
             success: function(response) {
