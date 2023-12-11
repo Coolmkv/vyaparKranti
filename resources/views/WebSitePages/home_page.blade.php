@@ -15,40 +15,40 @@
                     <div class="h_serve_icon"><span class="material-symbols-outlined">colors</span></div>
                     <h4>Design & Creatives</h4>
                     <p>Elevate Your Digital Presence with Seamless Design Excellence:</p>
-                    <a href="/" class="lmore-btn">Learn More</a>
+                    <a href="/" class="lmore-btn">See More</a>
                 </div>
                 <div class="h_service-item">
                     <div class="h_serve_icon"><span class="material-symbols-outlined">my_location</span></div>
                     <h4>Web devlopment</h4>
-                    <p>Elevate Your Brand, Expand Your Reach: Your Growth, Our Expertise.</p>
-                    <a href="/" class="lmore-btn">Learn More</a>
-                </div>
-                <div class="h_service-item">
-                    <div class="h_serve_icon"><span class="material-symbols-outlined">collections_bookmark</span></div>
-                    <h4>Digital marketing</h4>
                     <p>Building Tomorrow's Web Today: Elevate Your Business with Our Web Solutions</p>
-                    <a href="/" class="lmore-btn">Learn More</a>
+                    <a href="/" class="lmore-btn">See More</a>
                 </div>
                 <div class="h_service-item">
                     <div class="h_serve_icon"><span class="material-symbols-outlined">campaign</span></div>
-                    <h4>Content writing</h4>
-                    <p>Empower Your Website with Compelling Content: Elevate Your Brand with Expert Content Solutions - Elevate, Engage, Excel.</p>
-                    <a href="/" class="lmore-btn">Learn More</a>
+                    <h4>Digital Marketing</h4>
+                    <p>From Clicks to Conversions Transform Your Business with Vyapar Kranti’s Expert Digital Marketing Services</p>
+                    <a href="/" class="lmore-btn">See More</a>
                 </div>
                 <div class="h_service-item">
                     <div class="h_serve_icon"><span class="material-symbols-outlined">checkbook</span></div>
-                    <h4>Business inteligence & analytics</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quo quasi consectetur cumque, vero vitae.</p>
-                    <a href="/" class="lmore-btn">Learn More</a>
+                    <h4>Content writing</h4>
+                    <p>Fuel your brand's story with <b>VYAPAR KRANTI’s</b> content writing mastery, driving engagement, and sparking networks that boom your BUSINESS.</p>
+                    <a href="/" class="lmore-btn">See More</a>
+                </div>
+                <div class="h_service-item">
+                    <div class="h_serve_icon"><span class="material-symbols-outlined">collections_bookmark</span></div>
+                    <h4>Business Intelligence (BI) and Analytics</h4>
+                    <p>Unlock actionable visions to take strategic decisions with our Business Intelligence (BI) and Analytics solutions – Turning data into a weapon to compete.</p>
+                    <a href="/" class="lmore-btn">See More</a>
                 </div>
                 <div class="h_service-item">
                     <div class="h_serve_icon"><span class="material-symbols-outlined">monitoring</span></div>
                     <h4>Brand building</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quo quasi consectetur cumque, vero vitae.</p>
-                    <a href="/" class="lmore-btn">Learn More</a>
+                    <p>Elevate your brand presence and captivate audiences with our cutting-edge media solutions – where creativity meets engagement for unparalleled storytelling.</p>
+                    <a href="/" class="lmore-btn">See More</a>
                 </div>
             </div>
-            <div class="h_service-more text-center"><a class="prime-btn" href="/">View More Services</a></div>
+            <div class="h_service-more text-center"><a class="prime-btn" href="{{ route('ourServices') }}">View More Services</a></div>
         </div>
     </div>
 </section>
