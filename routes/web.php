@@ -22,6 +22,18 @@ Route::get('services', [WebSitePages::class,"ourServices"])->name("ourServices")
 Route::get('library', [WebSitePages::class,"ourPortfolio"])->name("ourPortfolio");
 Route::get('contact-us', [WebSitePages::class,"contactUs"])->name("contactUs");
 Route::get('library-category',[WebSitePages::class,"libraryCategory"])->name("libraryCategory");
+
+// Create Inner Page
+Route::get('content-writing',[WebSitePages::class,"contentwriting"])->name("contentwriting");
+Route::get('brand-building',[WebSitePages::class,"brandBuilding"])->name("brandBuilding");
+Route::get('business-analytics',[WebSitePages::class,"businessAnalytics"])->name("businessAnalytics");
+Route::get('designs-creatives',[WebSitePages::class,"designCreatives"])->name("designCreatives");
+Route::get('digital-marketing',[WebSitePages::class,"digitalMarketing"])->name("digitalMarketing");
+Route::get('web-development',[WebSitePages::class,"webDevelopment"])->name("webDevelopment");
+
+
+
+
 //Route::get('library-category-details/{id}',[WebSitePages::class,"libraryCategoryDetails"]);
 
 Route::get('refresh-captcha',[WebSitePages::class,"refreshCapthca"])->name("refreshCaptcha");

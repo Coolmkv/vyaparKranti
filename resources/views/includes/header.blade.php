@@ -30,37 +30,49 @@
                 <ul class="navigation-list">
                     <li><a class="nav-list active" href="{{ url('/') }}">Home</a></li>
                     <li><a class="nav-list" href="{{ route('aboutUs') }}">About Us</a></li>
-                    <li class="mega-menu"><a class="nav-list" href="{{ route('ourServices') }}">Services</a>
+                    <li class="mega-menu"><a class="nav-list" href="{{ route('ourServices') }}">Solutions</a>
                         <span hidden class="fa fa-plus open-plus"></span>
-                        <div class="submenu-container" hidden>
+                        <div class="submenu-container">
                             <div class="submenu-inner">
                                 <div class="sub-navigation-list">
-                                    <h3 class="menu-title">Menu One<i hidden class="fa fa-plus open-plus"></i></h3>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Web Design</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Web Development</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">SEO</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Digital Markating</a></div>
+                                    <h3 class="menu-title">Web Development<i hidden class="fa fa-plus open-plus"></i></h3>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Web Solutions </a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">E-Commerce Website</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">ERP Solutions </a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Portal Development</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">MLM Development</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Content Management System </a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Salesforce</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">UI/UX</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">API Solutions </a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Portal Development</a></div>
                                 </div>
                                 <div class="sub-navigation-list">
-                                    <h3 class="menu-title">Menu Two<i hidden class="fa fa-plus open-plus"></i></h3>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Web Design</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Web Development</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">SEO</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Digital Markating</a></div>
+                                    <h3 class="menu-title">Mobile App<i hidden class="fa fa-plus open-plus"></i></h3>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Mobile Application Development </a></div>
                                 </div>
                                 <div class="sub-navigation-list">
-                                    <h3 class="menu-title">Menu Three<i hidden class="fa fa-plus open-plus"></i></h3>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Web Design</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Web Development</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">SEO</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Digital Markating</a></div>
+                                    <h3 class="menu-title">Digital Marketing<i hidden class="fa fa-plus open-plus"></i></h3>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Search Engine Optimization (SEO)</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Pay Per Click (PPC) Advertising</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Social Media Marketing (SMM)</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Content Marketing</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">E-Mail Marketing</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Whatsapp Marketing</a></div>
                                 </div>
                                 <div class="sub-navigation-list">
-                                    <h3 class="menu-title">Menu four<i hidden class="fa fa-plus open-plus"></i></h3>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Web Design</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Web Development</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">SEO</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Digital Markating</a></div>
+                                    <h3 class="menu-title">Hosting/Server<i hidden class="fa fa-plus open-plus"></i></h3>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Cloud Solutions</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Hosting Solutions</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">IT Infra Support </a></div>
+                                </div>
+                                <div class="sub-navigation-list">
+                                    <h3 class="menu-title">Business Assistance<i hidden class="fa fa-plus open-plus"></i></h3>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Digital Transformation Strategy </a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Business Process Outsourcing</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Business Intelligence & Analytics</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Brand Building</a></div>
+                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Media Support (I.E. Print, Radio, Tv)</a></div>
                                 </div>
                             </div>
                         </div>

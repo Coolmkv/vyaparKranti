@@ -48,6 +48,31 @@ class WebSitePages extends Controller
         return view("WebSitePages.contactUs",compact("page"));
     }
 
+    public function contentwriting(){
+        $page = WebSitePagesModel::where("route_name",'contentwriting')->first();
+        return view("WebSitePages.contentwriting",compact('page'));
+    }
+    public function brandBuilding(){
+        $page = WebSitePagesModel::where("route_name",'brandBuilding')->first();
+        return view("WebSitePages.brandBuilding",compact('page'));
+    }
+    public function businessAnalytics(){
+        $page = WebSitePagesModel::where("route_name",'businessAnalytics')->first();
+        return view("WebSitePages.businessAnalytics",compact('page'));
+    }
+    public function designCreatives(){
+        $page = WebSitePagesModel::where("route_name",'designCreatives')->first();
+        return view("WebSitePages.designCreatives",compact('page'));
+    }
+    public function digitalMarketing(){
+        $page = WebSitePagesModel::where("route_name",'digitalMarketing')->first();
+        return view("WebSitePages.digitalMarketing",compact('page'));
+    }
+    public function webDevelopment(){
+        $page = WebSitePagesModel::where("route_name",'webDevelopment')->first();
+        return view("WebSitePages.webDevelopment",compact('page'));
+    }
+
     public function libraryCategory(LibraryRequest $request){
         
          return (new Library())->viewLibrary($request);

@@ -15,37 +15,37 @@
                     <div class="h_serve_icon"><span class="material-symbols-outlined">colors</span></div>
                     <h4>Design & Creatives</h4>
                     <p>Elevate Your Digital Presence with Seamless Design Excellence:</p>
-                    <a href="/" class="lmore-btn">See More</a>
+                    <a href="{{ route('designCreatives') }}" class="lmore-btn">See More</a>
                 </div>
                 <div class="h_service-item">
-                    <div class="h_serve_icon"><span class="material-symbols-outlined">my_location</span></div>
+                    <div class="h_serve_icon"><span class="material-symbols-outlined">settings</span></div>
                     <h4>Web devlopment</h4>
                     <p>Building Tomorrow's Web Today: Elevate Your Business with Our Web Solutions</p>
-                    <a href="/" class="lmore-btn">See More</a>
+                    <a href="{{ route('webDevelopment') }}" class="lmore-btn">See More</a>
                 </div>
                 <div class="h_service-item">
                     <div class="h_serve_icon"><span class="material-symbols-outlined">campaign</span></div>
                     <h4>Digital Marketing</h4>
                     <p>From Clicks to Conversions Transform Your Business with Vyapar Kranti’s Expert Digital Marketing Services</p>
-                    <a href="/" class="lmore-btn">See More</a>
+                    <a href="{{ route('digitalMarketing') }}" class="lmore-btn">See More</a>
                 </div>
                 <div class="h_service-item">
                     <div class="h_serve_icon"><span class="material-symbols-outlined">checkbook</span></div>
                     <h4>Content writing</h4>
                     <p>Fuel your brand's story with <b>VYAPAR KRANTI’s</b> content writing mastery, driving engagement, and sparking networks that boom your BUSINESS.</p>
-                    <a href="/" class="lmore-btn">See More</a>
-                </div>
-                <div class="h_service-item">
-                    <div class="h_serve_icon"><span class="material-symbols-outlined">collections_bookmark</span></div>
-                    <h4>Business Intelligence (BI) and Analytics</h4>
-                    <p>Unlock actionable visions to take strategic decisions with our Business Intelligence (BI) and Analytics solutions – Turning data into a weapon to compete.</p>
-                    <a href="/" class="lmore-btn">See More</a>
+                    <a href="{{ route('contentwriting') }}" class="lmore-btn">See More</a>
                 </div>
                 <div class="h_service-item">
                     <div class="h_serve_icon"><span class="material-symbols-outlined">monitoring</span></div>
+                    <h4>Business Intelligence (BI) and Analytics</h4>
+                    <p>Unlock actionable visions to take strategic decisions with our Business Intelligence (BI) and Analytics solutions – Turning data into a weapon to compete.</p>
+                    <a href="{{ route('businessAnalytics') }}" class="lmore-btn">See More</a>
+                </div>
+                <div class="h_service-item">
+                    <div class="h_serve_icon"><span class="material-symbols-outlined">collections_bookmark</span></div>
                     <h4>Brand building</h4>
                     <p>Elevate your brand presence and captivate audiences with our cutting-edge media solutions – where creativity meets engagement for unparalleled storytelling.</p>
-                    <a href="/" class="lmore-btn">See More</a>
+                    <a href="{{ route('brandBuilding') }}" class="lmore-btn">See More</a>
                 </div>
             </div>
             <div class="h_service-more text-center"><a class="prime-btn" href="{{ route('ourServices') }}">View More Services</a></div>
@@ -79,50 +79,50 @@
 <section class="h_technology">
     <div class="main-container">
         <div class="h_service-title mb-5 pb-3">
-            <h4><b>Everything</b> You need in one Solution</h4>
-            <p>We provide solutions that will help you to give a voice to your ideas</p>
+            <h4><b>One Platform</b> for All of Your Business Needs.</h4>
+            <p>We offer solutions that will enable you to express your ideas.</p>
         </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="h_technology-box">
                     <div class="h_technology-icons"><span class="material-symbols-outlined">tv_options_input_settings</span></div>
-                    <h4>IT Solutions</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorum impedit, beatae libero saepe facilis dolores! Deleniti dicta non repellendus.</p>
+                    <h4>Web Solutions</h4>
+                    <p>Enabling businesses with cutting-edge web solutions that successfully combine innovation, technology, and user experience for success online.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="h_technology-box">
                     <div class="h_technology-icons"><span class="material-symbols-outlined">source_environment</span></div>
-                    <h4>ERP Solutions</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorum impedit, beatae libero saepe facilis dolores! Deleniti dicta non repellendus.</p>
+                    <h4>E-Commerce Website</h4>
+                    <p>With our skillfully designed e-commerce websites, you can take your online business to new heights. We combine strong functionality with elegant design to achieve unmatched online success.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="h_technology-box">
                     <div class="h_technology-icons"><span class="material-symbols-outlined">tv_options_input_settings</span></div>
-                    <h4>E-Commerce Website</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorum impedit, beatae libero saepe facilis dolores! Deleniti dicta non repellendus.</p>
+                    <h4>ERP Solutions </h4>
+                    <p>With the help of our custom ERP systems, you can revolutionize the efficiency of your business by optimizing workflows and achieving unmatched productivity for a forward-thinking organization.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="h_technology-box">
                     <div class="h_technology-icons"><span class="material-symbols-outlined">forum</span></div>
-                    <h4>Mobile Application Development</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorum impedit, beatae libero saepe facilis dolores! Deleniti dicta non repellendus.</p>
+                    <h4>Mobile Application Development </h4>
+                    <p>Encouraging digital ambitions, we create and develop powerful mobile apps that slickly combine creativity, usefulness, and user-centered experiences.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="h_technology-box">
                     <div class="h_technology-icons"><span class="material-symbols-outlined">public</span></div>
-                    <h4>Custom Application Development</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorum impedit, beatae libero saepe facilis dolores! Deleniti dicta non repellendus.</p>
+                    <h4>Portal Development</h4>
+                    <p>We are experts at creating digital gateways that improve user engagement, connectivity, and cooperation by providing clear portal solutions.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="h_technology-box">
                     <div class="h_technology-icons"><span class="material-symbols-outlined">cloud</span></div>
-                    <h4>Cloud Solutions</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolorum impedit, beatae libero saepe facilis dolores! Deleniti dicta non repellendus.</p>
+                    <h4>MLM Development</h4>
+                    <p>Utilize our MLM development experience to strengthen your network marketing strategy and provide solid solutions that drive expansion, openness, and success in the digital age.</p>
                 </div>
             </div>
         </div>
@@ -136,7 +136,7 @@
     <div class="main-container">
         <div class="h_service-title mb-2 pb-3">
             <h4><b>Testimonial</b> Words from our trusted clients</h4>
-            <p>We provide solutions that will help you to give a voice to your ideas We provide solutions that will help you to give a voice to your ideas. We provide solutions that will help you to give a voice to your ideas.</p>
+            <p>Customer satisfaction is a powerful indicator of success; read our testimonials to see firsthand how our solutions have benefited companies all over the world.</p>
         </div>
         <div class="h_testimonial-block swiper home_testimonial">
             <div class="swiper-wrapper">
