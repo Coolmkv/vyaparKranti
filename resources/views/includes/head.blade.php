@@ -12,6 +12,9 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/favicon-one.ico')}}" />
     <meta name="author" content="">
     <meta name="facebook-domain-verification" content="n5nd46grf0e004uc12mzbb9veftui7" />
+
+    <meta name="google-adsense-account" content="ca-pub-4915291902491386">
+    
     <!-- Site Icons -->
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <link rel="apple-touch-icon" href="#" />
