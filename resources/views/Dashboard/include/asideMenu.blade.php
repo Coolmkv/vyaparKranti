@@ -126,7 +126,13 @@
                   <div data-i18n="Analytics">SEO Management</div>
                 </a>
               </li>
-              
+              <!-- USer Roles -->
+              <li class="menu-item">
+                <a href="{{route("userRoles")}}" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-user-voice"></i>
+                  <div data-i18n="Analytics">User Roles</div>
+                </a>
+              </li>
               <!-- Layouts -->
               {{-- <li class="menu-item active open">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">

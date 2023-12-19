@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Library\Library;
+use App\Http\Controllers\UserManagementController;
 use App\Http\Controllers\WebSitePages;
 
 /*
@@ -74,13 +75,16 @@ Route::middleware(['auth'])->group(function () {
     Route::post("enable-disable-newletter",[Library::class,"enableDisableNewsLetter"])->name("enableDisableNewsLetter");
  
     Route::get('seo-management',[AdminController::class,"seoManagement"])->name("seoManagement");
-    
     Route::post('add-seo-details',[AdminController::class,"saveSEODetails"])->name("addSEODetails");
     Route::post("seo-dataTable",[AdminController::class,"seoDataTable"])->name("seoDataTable");
+    
+    Route::get('manage-user-roles',[UserManagementController::class,"userRoles"])->name("userRoles");
+    Route::post('add-user-roles',[UserManagementController::class,"addUserRoles"])->name("addUserRoles");
+    
     
 });
 
 require __DIR__.'/auth.php';
 Route::get("login",[AdminController::class,"Login"])->name("login");
 Route::post("AdminUserLogin",[AdminController::class,"AdminLoginUser"])->name("AdminLogin");
-Route::get("getmenu-items",[HomePageController::class,"getMenu"]);
+//Route::get("getmenu-items",[HomePageController::class,"getMenu"]);
