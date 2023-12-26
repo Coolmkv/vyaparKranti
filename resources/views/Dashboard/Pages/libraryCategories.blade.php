@@ -31,10 +31,7 @@
                     </div>
                 </div>
                 <x-data-table-card card_title="Library Data">
-                    <th>Action</th>
-                    <th>Name</th>
-                    <th>Icon</th>
-                    <th>Details</th>
+                   
                 </x-data-table-card>
             </div>
         </div>
@@ -61,22 +58,25 @@
                 "order": [
                     [1, 'desc']
                 ],
-                columns: [{
+                columns: [{ 
+                        title:"Action",
                         data: 'action',
                         name: 'action',
                         orderable: false,
                         searchable: false
-                    },
-
+                    },                   
                     {
+                        title:"Name",
                         data: '{{ \App\Models\LibraryCategories::CATEGORY_NAME }}',
                         name: '{{ \App\Models\LibraryCategories::CATEGORY_NAME }}'
                     },
                     {
+                        title:"Icon",
                         data: 'iconImage',
                         name: '{{ \App\Models\LibraryCategories::CATEGORY_ICON }}'
                     },
                     {
+                        title:"Details",
                         data: '{{ \App\Models\LibraryCategories::CATEGORY_DETAILS }}',
                         name: '{{ \App\Models\LibraryCategories::CATEGORY_DETAILS }}'
                     }

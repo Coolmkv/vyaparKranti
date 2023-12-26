@@ -8,11 +8,8 @@
         <div class="row">
             <div class="col-md-12">
                 <x-data-table-card card_title="News Letter Data">
-                    <th >Action</th>
-                    <th>Email Id</th>
-                    <th>Subscription Status</th>
-                    <th>Verification Status</th>
-                </x-data-table-card>                 
+
+                </x-data-table-card>
             </div>
         </div>
     </div>
@@ -38,35 +35,38 @@
                 "order": [
                     [1, 'desc']
                 ],
-                columns: [
-                    {
+                columns: [{
+                        title: "Action",
                         data: 'action',
                         name: 'action',
                         orderable: false,
                         searchable: false
                     },
-                    
+
                     {
+                        title: "Email Id",
                         data: '{{ \App\Models\NewsLetter::EMAIL_ID }}',
                         name: '{{ \App\Models\NewsLetter::EMAIL_ID }}'
                     },
                     {
+                        title: "Subscription Status",
                         data: '{{ \App\Models\NewsLetter::SUBSCRIPTION_STATUS }}',
                         name: '{{ \App\Models\NewsLetter::SUBSCRIPTION_STATUS }}'
                     },
                     {
+                        title: "Verification Status",
                         data: '{{ \App\Models\NewsLetter::VERIFICATION_STATUS }}',
                         name: '{{ \App\Models\NewsLetter::VERIFICATION_STATUS }}'
                     }
-                    
+
                 ]
             });
 
         });
-        
-        
 
-        function enableItem(id){
+
+
+        function enableItem(id) {
             if (id) {
                 Swal.fire({
                     title: 'Are you sure?',
@@ -80,7 +80,7 @@
                     if (result.isConfirmed) {
                         $.ajax({
                             type: 'POST',
-                            url: '{{ route("enableDisableNewsLetter") }}',
+                            url: '{{ route('enableDisableNewsLetter') }}',
                             data: {
                                 id: id,
                                 action: "enable",
@@ -120,7 +120,7 @@
                     if (result.isConfirmed) {
                         $.ajax({
                             type: 'POST',
-                            url: '{{ route("enableDisableNewsLetter") }}',
+                            url: '{{ route('enableDisableNewsLetter') }}',
                             data: {
                                 id: id,
                                 action: "disable",

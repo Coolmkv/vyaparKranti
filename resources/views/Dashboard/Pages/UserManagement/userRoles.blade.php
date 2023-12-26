@@ -2,7 +2,7 @@
 @section('title', 'User Roles Management')
 @section('content')
     <div class="container-xxl flex-grow-1 container-p-y">
-        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Manage SEO Details</h4>
+        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Manage User Roles</h4>
 
         <!-- Basic Layout -->
         <div class="row">
@@ -24,8 +24,7 @@
                         </x-form>
                     </div>
                 </div>
-                <x-data-table-card card_title="SEO Data">
-
+                <x-data-table-card card_title="User Roles Data">
                 </x-data-table-card>
             </div>
         </div>
@@ -42,7 +41,7 @@
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: "{{ route('seoDataTable') }}",
+                    url: "{{ route('userRolesDataTable') }}",
                     type: 'POST',
                     data: {
                         '_token': '{{ csrf_token() }}'
@@ -66,37 +65,11 @@
                         title: 'Id'
                     },
                     {
-                        data: 'route_name',
-                        name: 'Page',
-                        title: 'Page'
-                    },
-                    {
-                        data: 'seoImage',
-                        name: 'seo_data.seoImage',
-                        orderable: false,
-                        searchable: false,
-                        title: 'SEO Image'
-                    },
-                    {
-                        data: 'seo_data.description',
-                        name: 'seo_data.description',
-                        title: 'Description'
-                    },
-                    {
-                        data: 'seo_data.title',
-                        name: 'seo_data.title',
-                        title: 'Title'
-                    },
-                    {
-                        data: 'seo_data.author',
-                        name: 'seo_data.author',
-                        title: 'Author'
-                    },
-                    {
-                        data: 'seo_data.robots',
-                        name: 'seo_data.robots',
-                        title: 'Robots'
+                        data: 'role_name',
+                        name: 'role_name',
+                        title: 'Role Name'
                     }
+                    
 
                 ]
             });
@@ -106,11 +79,7 @@
             let row = $.parseJSON(atob($(this).data("row")));
             if (row['id']) {
                 $("#id").val(row['id']);
-                $("#model_id").val(row['seo_data']['model_id']);
-                $("#description_id").val(row['seo_data']['description']);
-                $("#title_id").val(row['seo_data']['title']);
-                $("#author_id").val(row['seo_data']['author']);
-                $("#robots_id").val(row['seo_data']['robots']);
+                $("#role_name").val(row['role_name']);
                 $("#action").val("update");
                 scrollToDiv("layout-navbar");
             } else {

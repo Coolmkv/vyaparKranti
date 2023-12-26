@@ -14,4 +14,8 @@ class UserManagementController extends Controller
     public function addUserRoles(Request $request){
         return (new UserRolesRepository())->addUpdateUserRoles($request);
     }
+
+    public function userRolesData(){
+        return (new UserRolesRepository())->getUserRolesData();
+    }
 }

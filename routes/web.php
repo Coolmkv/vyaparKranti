@@ -80,6 +80,7 @@ Route::middleware(['auth'])->group(function () {
     
     Route::get('manage-user-roles',[UserManagementController::class,"userRoles"])->name("userRoles");
     Route::post('add-user-roles',[UserManagementController::class,"addUserRoles"])->name("addUserRoles");
+    Route::post("user-roles-data",[UserManagementController::class,"userRolesData"])->name("userRolesDataTable");
     
     
 });

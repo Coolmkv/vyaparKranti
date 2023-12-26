@@ -40,11 +40,7 @@
                     </div>
                 </div>
                 <x-data-table-card card_title="Library Data">
-                    <th>Action</th>
-                    <th>Library Category</th>
-                    <th>Item Title</th>
-                    <th>Item Image</th>
-                    <th>Item Details</th>
+                   
                 </x-data-table-card>
             </div>
         </div>
@@ -71,28 +67,34 @@
                 "order": [
                     [1, 'desc']
                 ],
+                 
                 columns: [{
                         data: 'action',
+                        title:"Action",
                         name: 'action',
                         orderable: false,
                         searchable: false
                     },
 
                     {
+                        title:"Library Category",
                         data: 'library_category.category_name',
                         name: '{{ \App\Models\CategoryItems::LIBRARY_CATEGORY_ID }}'
                     },
                     {
+                        title:"Item Title",
                         data: '{{ \App\Models\CategoryItems::ITEM_TITLE }}',
                         name: '{{ \App\Models\CategoryItems::ITEM_TITLE }}'
                     },
                     {
+                        title:"Item Image",
                         data: 'iconImage',
                         name: '{{ \App\Models\CategoryItems::ITEM_IMAGE }}',
                         orderable: false,
                         searchable: false
                     },
                     {
+                        title:"Item Details",
                         data: '{{ \App\Models\CategoryItems::ITEM_DETAILS }}',
                         name: '{{ \App\Models\CategoryItems::ITEM_DETAILS }}'
                     }
