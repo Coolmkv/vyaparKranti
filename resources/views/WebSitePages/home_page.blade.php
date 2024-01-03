@@ -143,49 +143,49 @@
                 <div class="swiper-slide">
                     <div class="h_testimonial-items">
                         <div class="h_testimonial-innerblock">
-                            <div class="h_testimonial-pic"><img src="assets/img/img-7.png" alt="Vyapar Kranti" class="img-fluid" width="100" height="100" /></div>
+                            <div class="h_testimonial-pic"><img src="assets/img/dummy-man.png" alt="Vyapar Kranti" class="img-fluid" width="100" height="100" /></div>
                             <div class="h_testimonial-content">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vero ullam accusantium magni soluta ipsa velit veritatis et molestias doloremque dicta deleniti, exercitationem impedit eaque enim voluptatem voluptatum quibusdam mollitia.</p>
+                                <p>Working with VYAPAR KRANTI is a game-changer for our online presence. They effortlessly turned our vision into a visually stunning and user-friendly website. The team's expertise, attention to detail, and timely delivery exceeded our expectations. Our new site has not only garnered positive feedback but also positively impacted our business. Highly recommend VYAPAR KRANTI for exceptional website development."</p>
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        <div class="h_testimonial-clint">Manish Prajapati</div>
+                        <div class="h_testimonial-clint">Sujeet Mishra</div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="h_testimonial-items">
                         <div class="h_testimonial-innerblock">
-                            <div class="h_testimonial-pic"><img src="assets/img/img-9.png" alt="Vyapar Kranti" class="img-fluid" width="100" height="100" /></div>
+                            <div class="h_testimonial-pic"><img src="assets/img/gagan-vyas.png" alt="Vyapar Kranti" class="img-fluid" width="100" height="100" /></div>
                             <div class="h_testimonial-content">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vero ullam accusantium magni soluta ipsa velit veritatis et molestias doloremque dicta deleniti, exercitationem impedit eaque enim voluptatem voluptatum quibusdam mollitia.</p>
+                                <p>Our experience with VYAPAR KRANTI was phenomenal! They transformed our vision into a sleek and functional website. The team's expertise, attention to detail, and commitment to timelines exceeded our expectations. Our new site has boosted our online presence, and we highly recommend VYAPAR KRANTI for top-notch website development.</p>
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        <div class="h_testimonial-clint">Pawan arrora</div>
+                        <div class="h_testimonial-clint">Gagan Vyas</div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="h_testimonial-items">
                         <div class="h_testimonial-innerblock">
-                            <div class="h_testimonial-pic"><img src="assets/img/img-8.png" alt="Vyapar Kranti" class="img-fluid" width="100" height="100" /></div>
+                            <div class="h_testimonial-pic"><img src="assets/img/dummy-man.png" alt="Vyapar Kranti" class="img-fluid" width="100" height="100" /></div>
                             <div class="h_testimonial-content">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vero ullam accusantium magni soluta ipsa velit veritatis et molestias doloremque dicta deleniti, exercitationem impedit eaque enim voluptatem voluptatum quibusdam mollitia.</p>
+                                <p>We collaborated with VYAPAR KRANTI for our website development, and the results speak for themselves. Their team seamlessly translated our vision into a visually stunning and user-friendly site. The level of professionalism, expertise, and on-time delivery exceeded our expectations. We highly recommend VYAPAR KRANTI for anyone seeking top-tier website development.</p>
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        <div class="h_testimonial-clint">Suraj</div>
+                        <div class="h_testimonial-clint">Kundan Kumar</div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="h_testimonial-items">
                         <div class="h_testimonial-innerblock">
-                            <div class="h_testimonial-pic"><img src="assets/img/img-7.png" alt="Vyapar Kranti" class="img-fluid" width="100" height="100" /></div>
+                            <div class="h_testimonial-pic"><img src="assets/img/dummy-woman.png" alt="Vyapar Kranti" class="img-fluid" width="100" height="100" /></div>
                             <div class="h_testimonial-content">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vero ullam accusantium magni soluta ipsa velit veritatis et molestias doloremque dicta deleniti, exercitationem impedit eaque enim voluptatem voluptatum quibusdam mollitia.</p>
+                                <p>Our experience with VYAPAR KRANTI was nothing short of exceptional. Their team seamlessly translated our vision into a sleek and functional website. The attention to detail, efficient project management, and creative input made the entire process effortless. We're thrilled with the final result.</p>
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        <div class="h_testimonial-clint">Chandan Sharma</div>
+                        <div class="h_testimonial-clint">Priti Kohli</div>
                     </div>
                 </div>
             </div>
