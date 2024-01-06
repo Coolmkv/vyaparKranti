@@ -1,5 +1,5 @@
 @extends('layout.app_layout')
-@section('title', 'Home Page')
+@section('title', 'Web Designing & Development company | Digital Marketing - Vyapar Kranti')
 @section('content')
 @include('includes.slider')
 <!-- Section  -->

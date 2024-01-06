@@ -47,7 +47,7 @@
 	--vfont-quicksand: "Quicksand", sans-serif; 
 	--transition: 0.3s ease-in-out;
 }
-*,a {padding: 0 0;margin: 0 0;box-sizing: border-box;text-decoration: none !important;outline: none !important;}
+*,a {padding: 0 0;margin: 0 0;box-sizing: border-box;text-decoration: none !important;outline: none !important;-webkit-user-select: none;-ms-user-select: none;user-select: none;}
 body {font-family: var(--font-manrope) !important;}
 .main-container{max-width: 1300px;width: 100%;margin: 0 auto;padding: 0 15px;position: relative;}
 
@@ -629,7 +629,7 @@ section.h_aboutus {
 section.h_testimonial {
     padding: 2rem 0 5rem;
     background: linear-gradient(180deg, #f2bf5e4a, #2f4f4f4f) ,url(../img/testimonial-bg.jpg);
-    background-size: cover;
+    background-size: auto;
     background-attachment: fixed;
 }
 .h_testimonial-innerblock {
@@ -945,9 +945,9 @@ input.form-control {height: 45px;}
 		left: calc(100% - 40px);
 	}
 	section.section-one {padding: 1rem 0rem;}
-	.midd-msg-content > p {font-size: 18px;}
-	.h_service-title h4 {font-size: 24px;}
-	.h_service-title > p {font-size: 12px;}
+	.midd-msg-content > p {font-size: 20px;}
+	.h_service-title h4 {font-size: 26px;}
+	.h_service-title > p {font-size: 14px;}
 	.h_service-inner {grid-template-columns: repeat(2, 1fr);}
 
 	.h_service-inner > div:nth-child(2n+1) a.lmore-btn::after,
