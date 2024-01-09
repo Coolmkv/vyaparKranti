@@ -93,3 +93,18 @@
 <div class="copyright-section">
     <p>Copyright &copy; <a href="VyaparKranti.com">Vyapar Kranti</a> All Rights Reserved. <img src="assets/img/make-in-india.png" width="34px" style="filter: invert(1);-webkit-transform: scaleX(-1);transform: scaleX(-1);"></p>
 </div>
+<ul class="fixed-social">
+    <li>
+        <span class="soacial_icon"><i class="fa fa-share-alt"></i></span>
+        <span class="social_details"><a href="https://www.facebook.com/vyaparkranti/"><i class="fa fa-facebook"></i></a><a href="https://www.instagram.com/vyaparkranti/"><i class="fa fa-instagram"></i></a><a href="https://twitter.com/vyaparkranti"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/in/vyapar-kranti-0a0b64271/"><i class="fa fa-linkedin"></i></a><a href="https://www.youtube.com/@VyaparKranti"><i class="fa fa-youtube"></i></a></span>
+    </li>
+    <li>
+        <a href="https://wa.me/+919958224825?text=Let%27s+start+build+a+project" class="text-white"><span class="soacial_icon"><i class="fa fa-whatsapp"></i></span><span class="social_details">Send Hi on WhatsApp</span></a>
+    </li>
+    <li>
+        <a href="mailto:info@vyaparkranti.com" class="text-white"><span class="soacial_icon"><i class="fa fa-envelope-o"></i></span><span class="social_details">Info@vyaparkranti.com</span></a>
+    </li>
+    <li>
+        <a href="tel:+919958224825" class="text-white"><span class="soacial_icon"><i class="fa fa-phone"></i></span><span class="social_details">+91 995 822 4825</span></a>
+    </li>
+</ul>

@@ -141,40 +141,21 @@ menubar.addEventListener("click", function(){
 closemenu.addEventListener("click", function(){
 	listmenu.classList.remove('active');
 });
-
-// let open_plus = document.querySelectorAll(".open-plus");
-// let clossest_class = open_plus.closest(".submenu-container");
-// open_plus.addEventListener('click',function(){
-// 	if(this.clossest_class){
-// 		clossest_class.add = "open";
-// 	} else {
-// 		clossest_class.remove = "open";
-// 	}
-// })
-
-//     let closest_class = this.nextElementSibling;
-// 	// console.log(closest_class);
-// 	let nextElementClass = closest_class.classList[0];
-// 	if (closest_class.classList.contains("opennav")){
-	// 		nextElementClass.classList.add("opennav");
-	// 	// }
-	// //     if (closest_class) {
-		// // 		nextElementClass.classList.add("opennav");
-		// //         // console.log(nextElementClass);
-		//     } else {
-			// 		nextElementClass.classList.remove("opennav");
-			//     }
-			
-// let opens = document.querySelectorAll(".open-plus");
-// opens.forEach(function (toggleel) {
-// 	toggleel.addEventListener('click', function () {
-// 		opens.forEach(function (e) {
-// 			e.nextElementSibling.classList.remove('opennav');
-// 		})
-// 		toggleel.nextElementSibling.classList.add('opennav');
-//     });
-// });
-
+// Build project start
+let close_btn = document.querySelectorAll(".closer-btn");
+let open_btn = document.querySelectorAll(".build-project");
+let popup_box = document.getElementById("form-project-popup");
+open_btn.forEach(function(e){
+	e.addEventListener('click', function(){
+		popup_box.classList.add("open");
+	})
+});
+close_btn.forEach(function(e){
+	e.addEventListener('click', function(){
+		popup_box.classList.remove("open");
+	})
+});
+// Build project end
 let opens = document.querySelectorAll(".open-plus");
 opens.forEach(function (toggleel) {
     toggleel.addEventListener('click', function () {

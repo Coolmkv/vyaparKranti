@@ -102,9 +102,9 @@
 <!-- main header End -->
 <!-- Build Projects -->
 
-<div class="form-project" hidden id="form-project">
+<div id="form-project-popup">
     <div class="form-project-container">
-        <h3 class="f-project-navigation">Build a project <span class="close-btn material-symbols-outlined">close</span></h3>
+        <h3 class="f-project-navigation">Build a project <span class="close-btn material-symbols-outlined closer-btn">close</span></h3>
         <div class="form-project-inner">
             <h4>Please fill the form below:</h4>
             <form method="post" action="" class="form-project">
@@ -141,67 +141,6 @@
             </form>
         </div>
     </div>
-    <div class="build_project_closer"></div>
+    <div class="build_project_closer closer-btn"></div>
 </div>
-
 <!-- Build Projects End -->
-<style type="text/css">
-.form-project-container {position: fixed;top: 0;right: 0;bottom: 0;z-index: 9;background-color: #fff;min-width: 50%;box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.5);padding: 20px;overflow: auto;}
-.f-project-navigation {position: relative;font: 700 20px/normal sans-serif;color: var(--vbrown-color);margin: 0 0 1rem;}
-.f-project-navigation > span.close-btn {float: right;cursor: pointer;}
-.form-project-inner h4{font: 400 16px/normal sans-serif;margin: 1rem auto 0.5rem;}
-form.form-project {display: grid;grid-template-columns: repeat(2, 1fr);grid-gap: 15px;}
-form.form-project input,.form-project-inner textarea {outline: none;border-radius: 4px;}
-.form-project-inner textarea:focus{border-color: #333;}
-.form-project .form-group {margin: 0 0;}
-.form-project .form-group:nth-child(5) {grid-column: 1 / 3 ;grid-row: 3 / 4;}
-.form-project .form-group:nth-child(6) {grid-column: 1 / 3 ;grid-row: 4 / 5;}
-.form-project .form-group:nth-child(7) {grid-column: 1 / 3 ;grid-row: 5 / 6;}
-.build_project_closer{position: absolute;}
-
-</style>
-<script>
-var project_popup = document.getElementById('form-project');
-console.log(project_popup);
-// $(document).on("click", "#contact_form_st", function(i) {
-// var a = "#" + $(this).closest("form").attr("id")
-//     , e = new FormData($(a)[0])
-//     , b = 1
-//     , c = $("#email_contact").val()
-//     , d = $("#phone_contact").val()
-//     , f = mobilenumber(d)
-//     , g = isEmail(c);
-// $(a + " .validation_required").each(function() {
-//     this.value ? $(this).removeClass("error") : ($(this).addClass("error"),
-//     b = 0)
-// });
-// var h = [];
-// $.each($("input[name='LEADCF5[]']:checked"), function() {
-//     h.push($(this).val())
-// }),
-// "" == h ? (b = 0,
-// $(a + "_service_error").css("color", "red").text("Please Select the Services")) : $(a + "_service_error").text(""),
-// !g && c ? (b = 0,
-// $(a + "_email_error").css("color", "red").text("Please Enter a valid Email address")) : $(a + "_email_error").text(""),
-// !f && d ? (b = 0,
-// $(a + "_phone_error").css("color", "red").text("Please Enter a valid mobile number")) : $(a + "_phone_error").text(""),
-// b && ($(".loader_footer").css("display", "inline-block"),
-// $.ajax({
-//     url: siteURL + "Assets2014/includes/submit_form_digital.php",
-//     type: "POST",
-//     dataType: "json",
-//     data: e,
-//     contentType: !1,
-//     cache: !1,
-//     processData: !1,
-//     success: function(a) {
-//         200 == a.status_code ? (window.location.href = siteURL + "thankyou",
-//         $(".loader_footer").css("display", "none"),
-//         $("#contact_form_st").prop("disabled", !1)) : 402 == a.status_code && ($(".loader_footer").css("display", "none"),
-//         $("#contact_form_st").prop("disabled", !1),
-//         $("#form_error_contact").css("color", "red").text("Please Enter all the details & fill the captcha"),
-//         grecaptcha.reset())
-//     }
-// }))
-// })
-</script>
