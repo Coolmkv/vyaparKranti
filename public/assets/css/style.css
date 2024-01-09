@@ -122,8 +122,8 @@ ul.navigation-list {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
-.form-project .get-a-quote,
 #newsletter_form #subscribeSubmit{border: none;}
+.form-project .get-a-quote,
 #newsletter_form #subscribeSubmit,
 .build-project button,
 .navigation + .build-project > span,
