@@ -122,6 +122,9 @@ ul.navigation-list {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+.form-project .get-a-quote,
+#newsletter_form #subscribeSubmit{border: none;}
+#newsletter_form #subscribeSubmit,
 .build-project button,
 .navigation + .build-project > span,
 .navigation .navigation-list .build-project > span {
@@ -234,7 +237,7 @@ ul.navigation-list {
 /* Build Project CSS Start */
 #form-project-popup{display: none;}
 #form-project-popup.open{display: block;}
-.form-project-container {position: fixed;top: 0;right: 0;bottom: 0;z-index: 9;background-color: #fff;min-width: 50%;box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.5);padding: 20px;overflow: auto;}
+.form-project-container {position: fixed;top: 0;right: 0;bottom: 0;z-index: 9;background-color: rgb(255 255 255 / 93%);min-width: 50%;box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.5);padding: 20px;overflow: auto;max-width: 50%;}
 .f-project-navigation {position: relative;font: 700 20px/normal sans-serif;color: var(--vbrown-color);margin: 0 0 1rem;}
 .f-project-navigation > span.close-btn {float: right;cursor: pointer;}
 .form-project-inner h4{font: 400 16px/normal sans-serif;margin: 1rem auto 0.5rem;}
@@ -243,9 +246,12 @@ form.form-project input,.form-project-inner textarea {outline: none;border-radiu
 .form-project-inner textarea:focus{border-color: #333;}
 .form-project .form-group {margin: 0 0;}
 .form-project .form-group:nth-child(5) {grid-column: 1 / 3 ;grid-row: 3 / 4;}
-.form-project .form-group:nth-child(6) {grid-column: 1 / 3 ;grid-row: 4 / 5;}
+.form-project .form-group:nth-child(6) {grid-column: 1 / 3 ;grid-row: 4 / 5;column-count: 2;}
 .form-project .form-group:nth-child(7) {grid-column: 1 / 3 ;grid-row: 5 / 6;}
 .build_project_closer{position: fixed;background-color: rgba(0,0,0,0.3);left: 0;right: 0;top: 0;z-index: 8;bottom: 0;}
+.form-project .form-group:nth-child(6) .form-checkbox label {display: block;font: 700 14px/normal sans-serif;color: var(--vbrown-color);}
+.form-project .form-group:nth-child(6) .form-checkbox input{display: inline;margin-right: 5px; position: relative;top: 3px;}
+.form-project .form-group:nth-child(6) .form-checkbox{margin-bottom: 1rem;font-size: 14px;font-family: 'Quicksand';}
 /* Build Project CSS End */
 
 /* mega menu End */
@@ -1002,6 +1008,7 @@ input.form-control {height: 45px;}
 	section.page_contact_form {grid-template-columns: 1fr;grid-gap: 15px;}
 	.address_bar {min-height: 600px;}
 	.page_contact_form .page_contact_block:first-child {order: 2;}
+	.form-project-container{max-width: 100%;min-width: 100%;padding: 20px 10px;}
 }
 @media(max-width: 560px){
 	/* Mobile logo */

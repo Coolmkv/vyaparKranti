@@ -125,18 +125,33 @@
                 </div>
                 
                 <div class="form-group">
-                    <label class="title">Web</label>
                     <div class="form-checkbox">
-                        <input type="checkbox" name="web" />
-                        <span>Website Design & Development</span>
+                        <label class="title">Digital Marketing</label>
+                        <div class="checkbox-labels"><input type="checkbox" name="digital_marketing" /><span>SEO : Search Engine Optimisation</span></div>
+                        <div class="checkbox-labels"><input type="checkbox" name="digital_marketing" /><span>SMO : Social Media Optimisation</span></div>
+                        <div class="checkbox-labels"><input type="checkbox" name="digital_marketing" /><span>SEM : Search Engine Marketing</span></div>
                     </div>
                     <div class="form-checkbox">
-                        <input type="checkbox" name="web" />
-                        <span>Ecommerce Development</span>
+                        <label class="title">Media Services</label>
+                        <div class="checkbox-labels"><input type="checkbox" name="media_services" /><span>Interactive Presentations</span></div>
+                        <div class="checkbox-labels"><input type="checkbox" name="media_services" /><span>Video Services</span></div>
+                        <div class="checkbox-labels"><input type="checkbox" name="media_services" /><span>Branding Services</span></div>
+                    </div>
+                    <div class="form-checkbox">
+                        <label class="title">Web Development</label>
+                        <div class="checkbox-labels"><input type="checkbox" name="web" /><span>Website Design & Development</span></div>
+                        <div class="checkbox-labels"><input type="checkbox" name="web" /><span>Ecommerce Development</span></div>
+                        <div class="checkbox-labels"><input type="checkbox" name="web" /><span>Mobile APP Development</span></div>
+                        <div class="checkbox-labels"><input type="checkbox" name="web" /><span>Custom Web Applications</span></div>
+                    </div>
+                    <div class="form-checkbox">
+                        <label class="title">Elearning</label>
+                        <div class="checkbox-labels"><input type="checkbox" name="elearning" /><span>LMS Development</span></div>
+                        <div class="checkbox-labels"><input type="checkbox" name="elearning" /><span>Corporate Development</span></div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <button type="submit" name="submit" class="form-control">Get A Quote</button>
+                    <button type="submit" name="submit" class="form-control get-a-quote">Get A Quote</button>
                 </div>
             </form>
         </div>
