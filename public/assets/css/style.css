@@ -63,7 +63,7 @@ body {font-family: var(--font-manrope) !important;}
     padding: 4px 2px;
     margin: 0px 0px;
     display: inline-block;
-    font: 400 14px/normal sans-serif;
+    font: 400 14px/normal var(--vfont-quicksand);
 }
 .header-bar-left p > a span {
     font-weight: 700;

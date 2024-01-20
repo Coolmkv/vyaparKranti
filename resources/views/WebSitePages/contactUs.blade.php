@@ -22,7 +22,7 @@
             <div class="contect-dir">
                 <div class="dir-block">
                     <div class="dir-content">
-                        <span class="material-symbols-outlined">apartment</span>
+                        <span class="material-symbols-outlined">trending_up</span>
                         <h3 class="dir-title">Sales</h3>
                         <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, rem.</p> -->
                     </div>
@@ -42,7 +42,7 @@
                         <h3 class="dir-title">Technical Support</h3>
                         <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, rem.</p> -->
                     </div>
-                    <a class="link-forword" href="tel:+919958224825">Tech Support &nbsp;<i class="fa fa-angle-right"></i></a>
+                    <a class="link-forword" href="mailto:care@vyaparkrant.com">Tech Support &nbsp;<i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
             <div class="contect-dir">

@@ -31,7 +31,7 @@
             <div class="footer_item">
                 <h3 class="footer_title">Company <span hidden class="material-symbols-outlined plus-open">add</span></h3>
                 <ul class="footer-list">
-                    <li><a href="/">About Vyapar Kranti</a></li>
+                    <li><a href="{{ route('aboutUs') }}">About Vyapar Kranti</a></li>
                     <li><a href="/">Clients</a></li>
                     <li><a href="/">Success Stories</a></li>
                     <li><a href="/">Blog</a></li>
@@ -45,7 +45,7 @@
                 <ul class="footer-list">
                     <li><a href="/">Enterprise Applications</a></li>
                     <li><a href="/">Data & Analytics</a></li>
-                    <li><a href="/">Digital Marketings</a></li>
+                    <li><a href="{{ route('digitalMarketing') }}">Digital Marketings</a></li>
                     <li><a href="/">Product Engineering</a></li>
                     <li><a href="/">Cloud Solutions</a></li>
                 </ul>

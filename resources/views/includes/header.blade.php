@@ -53,12 +53,12 @@
                                 </div>
                                 <div class="sub-navigation-list">
                                     <h3 class="menu-title">Digital Marketing<i hidden class="fa fa-plus open-plus"></i></h3>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Search Engine Optimization (SEO)</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Pay Per Click (PPC) Advertising</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Social Media Marketing (SMM)</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Content Marketing</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">E-Mail Marketing</a></div>
-                                    <div class="sub-nav-list"><a href="{{ url('/') }}">Whatsapp Marketing</a></div>
+                                    <div class="sub-nav-list"><a href="{{ route('digitalMarketing') }}">Search Engine Optimization (SEO)</a></div>
+                                    <div class="sub-nav-list"><a href="{{ route('digitalMarketing') }}">Pay Per Click (PPC) Advertising</a></div>
+                                    <div class="sub-nav-list"><a href="{{ route('digitalMarketing') }}">Social Media Marketing (SMM)</a></div>
+                                    <div class="sub-nav-list"><a href="{{ route('digitalMarketing') }}">Content Marketing</a></div>
+                                    <div class="sub-nav-list"><a href="{{ route('digitalMarketing') }}">E-Mail Marketing</a></div>
+                                    <div class="sub-nav-list"><a href="{{ route('digitalMarketing') }}">Whatsapp Marketing</a></div>
                                 </div>
                                 <div class="sub-navigation-list">
                                     <h3 class="menu-title">Hosting/Server<i hidden class="fa fa-plus open-plus"></i></h3>
@@ -77,12 +77,12 @@
                             </div>
                         </div>
                     </li>
-                    <li><a class="nav-list" href="{{ route('ourPortfolio') }}">Library</a>
+                    <!-- <li><a class="nav-list" href="{{ route('ourPortfolio') }}">Library</a>
                         <span hidden class="fa fa-plus open-plus"></span>
                         <div class="submenu-container">
                             <div class="submenu-inner">
                                 <div class="sub-navigation-list">
-                                    <!-- <h3 class="menu-title">Menu One<i hidden class="fa fa-plus open-plus"></i></h3> -->
+                                    <-- <h3 class="menu-title">Menu One<i hidden class="fa fa-plus open-plus"></i></h3> --
                                     <div class="sub-nav-list"><a href="{{ url('/') }}">Web Design</a></div>
                                     <div class="sub-nav-list"><a href="{{ url('/') }}">Web Development</a></div>
                                     <div class="sub-nav-list"><a href="{{ url('/') }}">SEO</a></div>
@@ -90,7 +90,8 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
+                    <li><a class="nav-list" href="{{ route('packagePage') }}">Package</a></li>
                     <li><a class="nav-list" href="{{ route('contactUs') }}">Contact us</a></li>
                     <li class="build-project"><span class="nav-list simple-btn"><i class="fa fa-foursquare" aria-hidden="true"></i>&nbsp;&nbsp;Build Project</span></li>
                 </ul>
