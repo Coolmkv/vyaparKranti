@@ -1,9 +1,9 @@
   <!-- Start Footer -->
-  <footer class="footer-box">
+  <footer class="footer-box pb-4">
     <div class="main-container">
         <div class="footer-inner">
             <div class="footer_item">
-                <h3 class="footer_title">Industies <span hidden class="material-symbols-outlined plus-open">add</span></h3>
+                <h3 class="footer_title">Industries <span hidden class="material-symbols-outlined plus-open">add</span></h3>
                 <ul class="footer-list">
                     <li><a href="/">Automotive</a></li>
                     <li><a href="/">EduTech</a></li>
@@ -35,9 +35,9 @@
                     <li><a href="/">Clients</a></li>
                     <li><a href="/">Success Stories</a></li>
                     <li><a href="/">Blog</a></li>
-                    <li><a href="/">Career</a></li>
-                    <li><a href="/">Contact Us</a></li>
                     <li><a href="/">White Label Partnership</a></li>
+                    <li><a href="{{ route('contactUs') }}">Contact Us</a></li>
+                    <li><a href="{{ route('careerPage') }}">Career</a></li>
                 </ul>
             </div>
             <div class="footer_item">
@@ -56,8 +56,8 @@
                 </ul>
             </div>
             <div class="footer_item footer-logo">
-                <a href="/"><img src="assets/img/logo_3d.png" alt="Vyapar Kranti" width="140" height="100" class="img-fluid"  /></a>
-                <hr>
+                <!-- <a href="/"><img src="assets/img/logo_3d.png" alt="Vyapar Kranti" width="140" height="100" class="img-fluid"  /></a>
+                <hr> -->
                 <h3 class="footer_title">Newsletter</h3>
                 <div class="newsletter_form" >
                     <form action="javascript:" id="newsletter_form">
@@ -84,7 +84,9 @@
                 </div>
             </div>
         </div>
-        <div class="footer-outer">
+        <hr class="bg-white">
+        <p class="text-center text-white m-0">11C/1, Gate No.2, Metro Station, 3rd Floor, opposite Najafgarh, Naya Bazar, New Delhi, Delhi 110043</p>
+        <div class="footer-outer" style="visibility: hidden;display: none !important">
             <span>Andhra Pradesh</span><span>Amaravati</span><span>Arunachal Pradesh</span><span>Itanagar</span><span>Assam</span><span>Dispur</span><span>Bihar</span><span>Patna</span><span>Chhattisgarh</span><span>Raipur</span><span>Goa</span><span>Panaji</span><span>Gujarat</span><span>Gandhinagar</span><span>Haryana</span><span>Himachal Pradesh</span><span>Shimla</span><span>Jharkhand</span><span>Ranchi</span><span>Karnataka</span><span>Bengaluru</span><span>Kerala</span><span>Thiruvananthapuram</span><span>Madhya Pradesh</span><span>Bhopal</span><span>Maharashtra</span><span>Mumbai</span><span>Manipur</span><span>Imphal</span><span>Meghalaya</span><span>Shillong</span><span>Mizoram</span><span>Aizawl</span><span>Nagaland</span><span>Kohima</span><span>Odisha</span><span>Bhubaneswar</span><span>Punjab</span><span>Chandigarh</span><span>Rajasthan</span><span>Jaipur</span><span>Udaipur</span><span>Sikkim</span><span>Gangtok</span><span>Tamil Nadu</span><span>Chennai</span><span>Telangana</span><span>Hyderabad</span><span>Tripura</span><span>Agartala</span><span>Uttar Pradesh</span><span>Lucknow</span><span>Ayodhya</span><span>Kanpur</span><span>Uttarakhand</span><span>Dehradun</span><span>West Bengal</span><span>Kolkata</span><span>Andaman and Nicobar Island</span><span>Port Blair</span><span>Dadra Naga Haveli</span><span> Daman Diu</span><span>Daman</span><span>Delhi NCR</span><span>Ladakh</span><span>Lakshadweep</span><span>Kavaratti</span><span>Jammu and Kashmir</span><span>Pondicherry & many more places.</span>
         </div>
     </div>

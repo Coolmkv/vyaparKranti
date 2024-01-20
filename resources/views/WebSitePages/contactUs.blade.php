@@ -49,7 +49,7 @@
                 <div class="dir-blocks">
                     <div class="address_bar_content">
                         <label>Address</label>
-                        <p><strong>INDIA</strong> : Gate No.2, Metro Station, 11C/1, 3rd Floor, opposite Najafgarh, Naya Bazar, New Delhi, Delhi 110043</p>
+                        <p><strong>INDIA</strong> : 11C/1, Gate No.2, Metro Station, 3rd Floor, opposite Najafgarh, Naya Bazar, New Delhi, Delhi 110043</p>
                         <p><strong>CANADA</strong> : 14102, 72A avenue, Surrey, British Columbia, Canada</p>
                     </div>
                 </div>

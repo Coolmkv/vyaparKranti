@@ -30,6 +30,9 @@ Route::get('business-analytics',[WebSitePages::class,"businessAnalytics"])->name
 Route::get('designs-creatives',[WebSitePages::class,"designCreatives"])->name("designCreatives");
 Route::get('digital-marketing',[WebSitePages::class,"digitalMarketing"])->name("digitalMarketing");
 Route::get('web-development',[WebSitePages::class,"webDevelopment"])->name("webDevelopment");
+Route::get('career',[WebSitePages::class,"careerPage"])->name("careerPage");
+Route::get('career-details',[WebSitePages::class,"careerDetailPage"])->name("careerDetailPage");
+Route::get('package',[WebSitePages::class,"packagePage"])->name("packagePage");
 
 
 

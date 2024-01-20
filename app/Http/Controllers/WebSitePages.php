@@ -47,7 +47,6 @@ class WebSitePages extends Controller
         $page = WebSitePagesModel::where("route_name",'contactUs')->first();
         return view("WebSitePages.contactUs",compact("page"));
     }
-
     public function contentwriting(){
         $page = WebSitePagesModel::where("route_name",'contentwriting')->first();
         return view("WebSitePages.contentwriting",compact('page'));
@@ -71,6 +70,18 @@ class WebSitePages extends Controller
     public function webDevelopment(){
         $page = WebSitePagesModel::where("route_name",'webDevelopment')->first();
         return view("WebSitePages.webDevelopment",compact('page'));
+    }
+    public function careerPage(){
+        $page = WebSitePagesModel::where("route_name",'careerPage')->first();
+        return view("WebSitePages.careerPage",compact('page'));
+    }
+    public function careerDetailPage(){
+        $page = WebSitePagesModel::where("route_name",'careerDetailPage')->first();
+        return view("WebSitePages.careerDetailPage",compact('page'));
+    }
+    public function packagePage(){
+        $page = WebSitePagesModel::where("route_name",'packagePage')->first();
+        return view("WebSitePages.packagePage",compact('page'));
     }
 
     public function libraryCategory(LibraryRequest $request){
