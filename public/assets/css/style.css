@@ -138,6 +138,7 @@ ul.navigation-list {
 .readmore,
 .form-project .get-a-quote,
 #newsletter_form #subscribeSubmit,
+.select-packege-query button,
 .build-project button,
 .navigation + .build-project > span,
 .navigation .navigation-list .build-project > span {
@@ -368,6 +369,7 @@ a.prime-btn:hover::after {
 	display: inline-flex;
 	flex-wrap: wrap;
 	list-style: none;
+	justify-content: center;
 }
 #vp-slider:before {
     content: '';
@@ -992,7 +994,6 @@ span.career-icon + h5 {font: 700 14px/normal var(--vfont-poppins);text-transform
 		right: 0;
 		transform: translate(0%, -50%);
 	}
-	.slider-links{justify-content: center;}
 	.vp-slider-content h3 span {
 		font: 700 36px/36px var(--vfont-quicksand);
 	}

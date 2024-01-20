@@ -39,7 +39,7 @@
                                 <li><p>Social Media Integration</p></li>
                             </ul>
                         </div>
-                        <div class="select-packege-query build-project mt-3">
+                        <div class="select-packege-query  mt-3">
                             <button type="submit" class="btn btn-common">Get Started</button>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                                 <li><p>Conact us from</p></li>
                             </ul>
                         </div>
-                        <div class="select-packege-query build-project mt-3">
+                        <div class="select-packege-query  mt-3">
                             <button type="submit" class="btn btn-common">Get Started</button>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                                 <li><p>Logo Designing</p></li>
                             </ul>
                         </div>
-                        <div class="select-packege-query build-project mt-3">
+                        <div class="select-packege-query  mt-3">
                             <button type="submit" class="btn btn-common">Get Started</button>
                         </div>
                     </div>
@@ -138,7 +138,7 @@
                                 <li><p>24/7 Premium support</p></li>
                             </ul>
                         </div>
-                        <div class="select-packege-query build-project mt-3">
+                        <div class="select-packege-query  mt-3">
                             <button type="submit" class="btn btn-common">Get Started</button>
                         </div>
                     </div>
