@@ -19,7 +19,7 @@
                 </div>
                 <div class="h_service-item">
                     <div class="h_serve_icon"><span class="material-symbols-outlined">settings</span></div>
-                    <h4>Web devleopment</h4>
+                    <h4>Web development</h4>
                     <p>Building Tomorrow's Web Today: Elevate Your Business with Our Web Solutions</p>
                     <a href="{{ route('webDevelopment') }}" class="lmore-btn">See More</a>
                 </div>
