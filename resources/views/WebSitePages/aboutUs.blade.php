@@ -21,7 +21,7 @@
             </div><br>
             <div class="midd-section">
                 <h3><b>Everything</b> you need in one solution</h3>
-                <p>Welcome to <b>VYPAR KRANTI</b>, a leading Digital Marketing & IT company dedicated to helping entrepreneurs to transform their businesses into digital platforms.</p>
+                <p>Welcome to <b>VYAPAR KRANTI</b>, a leading Digital Marketing & IT company dedicated to helping entrepreneurs to transform their businesses into digital platforms.</p>
                 <p>With our rich experience of more than 10 years in the Industry, we understand the importance of a strong online presence in today's digital age. Our team of experts specialize in Website development, Application development, Software development, Digital Marketing and Many more Verticals of Digital world. We strive to deliver innovative and effective solutions that drive growth and success for our clients.</p>
             </div>
             <div class="row">
@@ -33,7 +33,7 @@
                 <div class="col-md-7 col-sm-12">
                     <div class="midd-section">
                         <p>Our mission is to empower businesses with the digital tools they need to thrive in today's market. Whether you're looking to develop a new website, launch a mobile app, or improve your online visibility, we have the expertise and resources to help you achieve your goals.</p>
-                        <p> At VYPAR KRANTI, we are dedicated to helping our clients achieve their business goals and stay ahead of the competition in the ever-evolving digital landscape. We pride ourselves on delivering high-quality work and excellent customer service. Whether you're looking to build a new website, develop a new app, or improve your digital marketing efforts, we're here to help. Contact us today to learn more about how we can help your business grow.</p>
+                        <p> At Vyapar KRANTI, we are dedicated to helping our clients achieve their business goals and stay ahead of the competition in the ever-evolving digital landscape. We pride ourselves on delivering high-quality work and excellent customer service. Whether you're looking to build a new website, develop a new app, or improve your digital marketing efforts, we're here to help. Contact us today to learn more about how we can help your business grow.</p>
                         <p>Let us help you take your business to the next level with our cutting-edge digital solutions.</p>
                     </div>
                 </div>

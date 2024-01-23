@@ -64,7 +64,7 @@
                         <div class="col-md-8">
                             <h3>Social Media Marketing (SMM) </h3>
                             <p>In today's digital age, social media platforms play a crucial role in connecting businesses with their target audience. <b>VYAPAR KRANTI's</b> social media marketing services help businesses build a strong online presence, engage with customers, and drive brand awareness.</p>
-                            <h4>Benefits of smm services by <b>vypar kranti</b></h4>
+                            <h4>Benefits of smm services by <b>Vyapar kranti</b></h4>
                             <ul>
                                 <li><p><i>Increased brand awareness:</i> VYAPAR KRANTI harnesses the power of social media platforms to increase your brand's visibility and reach a wider audience.</p></li>
                                 <li><p><i>Customer engagement:</i> By creating compelling content and engaging with your audience, VYAPAR KRANTI helps build meaningful relationships with customers.</p></li>
@@ -110,7 +110,7 @@
                             <img src="./assets/img/digital-marketing/whatsapp-marketing-3.png" class="img-fluid" alt="Blog Writing Services">
                         </div>
                         <div class="col-md-8">
-                            <h3>Whatsapp Marketing</h3>
+                            <h3>WhatsApp Marketing</h3>
                             <p>VYAPAR KRANTI's WhatsApp Marketing services are designed to revolutionize your outreach strategy, leveraging the power of WhatsApp to connect with your audience effectively. India has the most WhatsApp users at 487 million, it’s a high potential market.</p>
                             <h4>Benefits of WhatsApp marketing</h4>
                             <ul>

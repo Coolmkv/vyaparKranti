@@ -13,13 +13,13 @@
             <div class="h_service-inner">
                 <div class="h_service-item">
                     <div class="h_serve_icon"><span class="material-symbols-outlined">colors</span></div>
-                    <h4>Design & Creatives</h4>
+                    <h4>Designs & Creatives</h4>
                     <p>Elevate Your Digital Presence with Seamless Design Excellence:</p>
                     <a href="{{ route('designCreatives') }}" class="lmore-btn">See More</a>
                 </div>
                 <div class="h_service-item">
                     <div class="h_serve_icon"><span class="material-symbols-outlined">settings</span></div>
-                    <h4>Web devlopment</h4>
+                    <h4>Web devleopment</h4>
                     <p>Building Tomorrow's Web Today: Elevate Your Business with Our Web Solutions</p>
                     <a href="{{ route('webDevelopment') }}" class="lmore-btn">See More</a>
                 </div>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="h_service-item">
                     <div class="h_serve_icon"><span class="material-symbols-outlined">collections_bookmark</span></div>
-                    <h4>Brand building</h4>
+                    <h4>Brand Solutions</h4>
                     <p>Elevate your brand presence and captivate audiences with our cutting-edge media solutions – where creativity meets engagement for unparalleled storytelling.</p>
                     <a href="{{ route('brandBuilding') }}" class="lmore-btn">See More</a>
                 </div>
@@ -63,8 +63,8 @@
             </div>
             <div class="col-md-6">
                 <div class="h_about-content">
-                    <h3>About <b>Vyapar Kranti</b></h3>
-                    <p>Welcome to VYPAR KRANTI, a leading Digital Marketing & IT company dedicated to helping entrepreneurs to transform their businesses into digital platforms.</p>
+                    <h3>About <b>VYAPAR KRANTI</b></h3>
+                    <p>Welcome to Vyapar KRANTI, a leading Digital Marketing & IT company dedicated to helping entrepreneurs to transform their businesses into digital platforms.</p>
                     <p>With our rich experience of more than 10 years in the Industry, we understand the importance of a strong online presence in today's digital age. Our team of experts specialize in Website development, Application development, Software development, Digital Marketing and Many more Verticals of Digital world. We strive to deliver innovative and effective solutions that drive growth and success for our clients.</p>
                     <p>Let us help you take your business to the next level with our cutting-edge digital solutions.</p>
                     <div class="h_about-more"><a class="prime-btn" href="{{ route('aboutUs') }}">View More About</a></div>
@@ -101,7 +101,7 @@
                 <div class="h_technology-box">
                     <div class="h_technology-icons"><span class="material-symbols-outlined">tv_options_input_settings</span></div>
                     <h4>ERP Solutions </h4>
-                    <p>With the help of our custom ERP systems, you can revolutionize the efficiency of your business by optimizing workflows and achieving unmatched productivity for a forward-thinking organization.</p>
+                    <p>With the help of our custom ERP systems, you can revolutionize the efficiency of your business by optimizing workflow and achieving unmatched productivity for a forward-thinking organization.</p>
                 </div>
             </div>
             <div class="col-md-4">

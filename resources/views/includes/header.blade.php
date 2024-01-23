@@ -26,7 +26,7 @@
                 <a href="{{ url('/') }}"><img src="{{asset('assets/img/logo_3d.png')}}" srcset="{{asset('assets/img/logo_3d.png')}}, {{asset('assets/img/logo_3d.png')}} 767w" alt="Vyapar Kranti" title="Vyapar kranti" /></a>
             </div>
             <div class="navigation">
-                <div class="closemenu" hidden><h2>Vypar Kranti</h2><span class="material-symbols-outlined">close</span></div>
+                <div class="closemenu" hidden><h2>Vyapar Kranti</h2><span class="material-symbols-outlined">close</span></div>
                 <ul class="navigation-list">
                     <li><a class="nav-list active" href="{{ url('/') }}">Home</a></li>
                     <li><a class="nav-list" href="{{ route('aboutUs') }}">About Us</a></li>
@@ -58,7 +58,7 @@
                                     <div class="sub-nav-list"><a href="{{ route('digitalMarketing') }}">Social Media Marketing (SMM)</a></div>
                                     <div class="sub-nav-list"><a href="{{ route('digitalMarketing') }}">Content Marketing</a></div>
                                     <div class="sub-nav-list"><a href="{{ route('digitalMarketing') }}">E-Mail Marketing</a></div>
-                                    <div class="sub-nav-list"><a href="{{ route('digitalMarketing') }}">Whatsapp Marketing</a></div>
+                                    <div class="sub-nav-list"><a href="{{ route('digitalMarketing') }}">WhatsApp Marketing</a></div>
                                 </div>
                                 <div class="sub-navigation-list">
                                     <h3 class="menu-title">Hosting/Server<i hidden class="fa fa-plus open-plus"></i></h3>
@@ -91,7 +91,7 @@
                             </div>
                         </div>
                     </li> -->
-                    <li><a class="nav-list" href="{{ route('packagePage') }}">Package</a></li>
+                    <li><a class="nav-list" href="{{ route('packagePage') }}">Packages</a></li>
                     <li><a class="nav-list" href="{{ route('contactUs') }}">Contact us</a></li>
                     <li class="build-project"><span class="nav-list simple-btn"><i class="fa fa-foursquare" aria-hidden="true"></i>&nbsp;&nbsp;Build Project</span></li>
                 </ul>
