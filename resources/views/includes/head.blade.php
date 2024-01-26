@@ -6,8 +6,6 @@
 
     <!-- Site Metas -->
     <title>@yield('title','VyaparKranti.com')</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/favicon-one.ico')}}" />
     <meta name="author" content="">
@@ -37,7 +35,23 @@
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4915291902491386"
      crossorigin="anonymous"></script>
-
+     <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Vyapar Kranti",
+        "alternateName": "Website Development & Digital Marketing Agency",
+        "url": "https://vyaparkranti.com/",
+        "logo": "https://vyaparkranti.com/assets/img/logo_3d.png",
+        "sameAs": [
+          "https://www.facebook.com/vyaparkranti/",
+          "https://twitter.com/vyaparkranti",
+          "https://www.instagram.com/vyaparkranti/",
+          "https://www.youtube.com/@VyaparKranti",
+          "https://www.linkedin.com/in/vyapar-kranti-332570284/"
+        ]
+      }
+      </script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
