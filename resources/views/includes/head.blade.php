@@ -2,7 +2,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=2">
 
     <!-- Site Metas -->
     <!-- <title>@yield('title','VyaparKranti.com')</title> -->
