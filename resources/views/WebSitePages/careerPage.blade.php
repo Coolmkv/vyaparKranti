@@ -5,7 +5,7 @@
      <!-- Start Banner -->
      <section class="pagee-strip">
         <div class="main-container">
-            <h3>Career</h3>        
+            <h1>Career</h1>        
         </div>
     </section>
     <!-- end Banner -->
@@ -88,7 +88,7 @@
                                 <div class="row">
                                     <div class="col-md-12 form-group form-inline">
                                         <div class="col-8 p-0">
-                                            <img src="{{ captcha_src() }}" class="img-thumbnail" name="captcha_img"
+                                            <img src="{{ captcha_src() }}" class="img-thumbnail" name="captcha_img" alt="Vyapar Kranti"
                                                 id="captcha_img_id_contact_us">
                                         </div>
                                         <div class="col-4">

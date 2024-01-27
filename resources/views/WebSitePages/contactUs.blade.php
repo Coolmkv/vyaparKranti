@@ -5,7 +5,7 @@
     <!-- Start Banner -->
     <section class="pagee-strip">
         <div class="main-container">
-            <h3>Contact Us</h3>        
+            <h1>Contact Us</h1>        
         </div>
     </section>
     <!-- end Banner -->
@@ -14,7 +14,7 @@
     <section class="page-details">
         <div class="main-container">
             <div class="h_service-title">
-                <h4>Get to Touch</h4>
+                <h2>Get to Touch</h2>
                 <p>How to provide tools that help anyone give a voice to their ideas</p>
             </div><br>
 
@@ -116,7 +116,7 @@
                             <div class="row">
                                 <div class="col-md-12 form-group form-inline">
                                     <div class="col-8 p-0">
-                                        <img src="{{ captcha_src() }}" class="img-thumbnail" name="captcha_img"
+                                        <img src="{{ captcha_src() }}" class="img-thumbnail" name="captcha_img" alt="Vyapar Kranti"
                                             id="captcha_img_id_contact_us">
                                     </div>
                                     <div class="col-4">

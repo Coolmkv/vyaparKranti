@@ -7,10 +7,10 @@
             </div>
             <div class="header-bar-right">
                 <ul class="header-social">
-                    <li><a href="https://www.facebook.com/vyaparkranti" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/vyaparkranti/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/vyapar-kranti/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://wa.me/919958224825" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.facebook.com/vyaparkranti" aria-label="Vyapar Kranti Facebook" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/vyaparkranti/" aria-label="Vyapar Kranti instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/vyapar-kranti/" aria-label="Vyapar Kranti linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://wa.me/919958224825" aria-label="Vyapar Kranti whatsapp" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
                 </ul>
             </div>
         </div>

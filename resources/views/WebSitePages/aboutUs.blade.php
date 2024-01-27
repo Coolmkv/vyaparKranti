@@ -7,7 +7,7 @@
      <!-- Start Banner -->
      <section class="pagee-strip">
         <div class="main-container">
-            <h3>About us</h3>        
+            <h1>About us</h1>        
         </div>
     </section>
     <!-- end Banner -->
@@ -16,7 +16,7 @@
     <section class="page-details">
         <div class="main-container">
             <div class="h_service-title">
-                <h4>We can help your <b>business grow</b></h4>
+                <h2>We can help your <b>business grow</b></h2>
                 <p>Get your business online easily & Be visible to your buyers</p>
             </div><br>
             <div class="midd-section">

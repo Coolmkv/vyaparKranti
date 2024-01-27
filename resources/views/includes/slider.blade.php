@@ -9,7 +9,7 @@
     <span class="vp-slider-polls" id="particles-js"></span>
     <div class="main-slide-container">
         <div class="vp-slider-content">
-            <h3><span class="typer" id="main" data-words="Hosting & Domain Registration,Website Design & Development,Digital Marketing Services" data-delay="0" data-deleteDelay="2000"></span><span  class="cursor" data-owner="main"></span></h3>
+            <h1><span class="typer" id="main" data-words="Hosting & Domain Registration,Website Design & Development,Digital Marketing Services" data-delay="0" data-deleteDelay="2000"></span><span  class="cursor" data-owner="main"></span></h1>
             <p class="text-white">Showcase your business to the world using the innovative WEB Solutions & boost up your business growth. Bridging the gap between seller and buyer to maximize the opportunity to serve.</p>
             <ul class="slider-links text-white text-center">
                 <li><a href="/"><span style="color: var(--vyellow-color);">#Website Designing</span></a></li>

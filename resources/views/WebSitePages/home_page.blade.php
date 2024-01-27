@@ -6,7 +6,7 @@
 <section class="h_service">
     <div class="main-container">
         <div class="h_service-title">
-            <h4>Get your business online easily & be visible to your buyers</h4>
+            <h2>Get your business online easily & be visible to your buyers</h2>
             <p>We provide solutions that will help you to give a voice to your ideas.</p>
         </div>
         <div class="h_service-container">
@@ -79,7 +79,7 @@
 <section class="h_technology">
     <div class="main-container">
         <div class="h_service-title mb-5 pb-3">
-            <h4><b>One Platform</b> for All of Your Business Needs.</h4>
+            <h2><b>One Platform</b> for All of Your Business Needs.</h2>
             <p>We offer solutions that will enable you to express your ideas.</p>
         </div>
         <div class="row">
@@ -135,7 +135,7 @@
 <section class="h_testimonial">
     <div class="main-container">
         <div class="h_service-title mb-2 pb-3">
-            <h4><b>Testimonial</b> Words from our trusted clients</h4>
+            <h2><b>Testimonial</b> Words from our trusted clients</h2>
             <p>Customer satisfaction is a powerful indicator of success; read our testimonials to see firsthand how our solutions have benefited companies all over the world.</p>
         </div>
         <div class="h_testimonial-block swiper home_testimonial">

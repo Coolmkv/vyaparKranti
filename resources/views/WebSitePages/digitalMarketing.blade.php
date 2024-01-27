@@ -6,7 +6,7 @@
     <!-- Start Banner -->
     <section class="pagee-strip">
         <div class="main-container">
-            <h3>Digital Marketing</h3>        
+            <h1>Digital Marketing</h1>        
         </div>
     </section>
     <!-- end Banner -->
@@ -15,7 +15,7 @@
     <section class="page-details digital-marketing">
         <div class="main-container">
             <div class="h_service-title">
-                <!-- <h4>Crafting Words to Manifest Your Ideas</h4>
+                <!-- <h2>Crafting Words to Manifest Your Ideas</h2>
                 <p>Fuel your brand's story with <b>VYAPAR KRANTI’s</b> content writing mastery, driving engagement, and sparking networks that boom your BUSINESS."</p> -->
             </div>
             <div class="midd-section">
@@ -124,7 +124,7 @@
                     </li>
                 </ol>
                 <div class="h_service-title">
-                    <h4>Why choose <b>vyapar kranti</b> for digital marketing of your brand</h4>
+                    <h2>Why choose <b>vyapar kranti</b> for digital marketing of your brand</h2>
                 </div>
                 <p>A good reason why businesses should choose <b>VYAPAR KRANTI</b> for digital marketing services is their commitment to constant monitoring and optimization. <b>VYAPAR KRANTI</b> understands that digital marketing is an ever-evolving landscape. They continuously monitor campaigns, analyze performance metrics, and optimize strategies as needed to ensure maximum effectiveness. This proactive mindset ensures that businesses partnering with <b>VYAPAR KRANTI</b> can stay ahead of their competition.</p>
             </div>

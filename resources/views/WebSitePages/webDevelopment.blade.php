@@ -6,7 +6,7 @@
     <!-- Start Banner -->
     <section class="pagee-strip">
         <div class="main-container">
-            <h3>Web Development</h3>        
+            <h1>Web Development</h1>        
         </div>
     </section>
     <!-- end Banner -->
@@ -15,7 +15,7 @@
     <section class="page-details digital-marketing">
         <div class="main-container">
             <div class="h_service-title">
-                <!-- <h4>Crafting Words to Manifest Your Ideas</h4>
+                <!-- <h2>Crafting Words to Manifest Your Ideas</h2>
                 <p>Fuel your brand's story with <b>VYAPAR KRANTI’s</b> content writing mastery, driving engagement, and sparking networks that boom your BUSINESS."</p> -->
             </div>
             <div class="midd-section">
@@ -43,7 +43,7 @@
                     <li><p><b>Scalability:</b> Grow your content without worries. Our CMS grows with you.</p></li>
                 </ul>
                 <div class="h_service-title">
-                    <h4>Get Started Today!</h4>
+                    <h2>Get Started Today!</h2>
                     <p class="text-center">Embrace efficiency and take charge of your content. Sign up now and experience the power of our Content Management System.</p>
                 </div><br>
                 <p><b>Quality Assurance:</b> Our commitment to quality doesn't finish with development. Our rigorous testing always ensures that your website is bug-free and performs optimally and delivering a seamless user experience in all user interface. For us Quality assurance is by default setting of our service.</p>

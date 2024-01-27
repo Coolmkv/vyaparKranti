@@ -6,7 +6,7 @@
     <!-- Start Banner -->
     <section class="pagee-strip">
         <div class="main-container">
-            <h3>Brand Building</h3>        
+            <h1>Brand Building</h1>        
         </div>
     </section>
     <!-- end Banner -->

@@ -5,7 +5,7 @@
      <!-- Start Banner -->
      <section class="pagee-strip">
         <div class="main-container">
-            <h3>Our Packages</h3>        
+            <h1>Our Packages</h1>        
         </div>
     </section>
     <!-- end Banner -->
@@ -14,7 +14,7 @@
     <section class="package-section">
         <div class="main-container top-align">
             <div class="h_service-title">
-                <h4>Make the wise decision for your business</h4>
+                <h2>Make the wise decision for your business</h2>
                 <p>choose for afordable 4 packages</p>
             </div>
             <div class="row m-4" id="mobile-package-slider">
@@ -22,7 +22,7 @@
                     <div class="package-container midd-section">
                         <div class="package-inner">
                             <h4 class="plance-title text-uppercase mt-2">Jump Starter</h4>
-                            <p class="package-price m-0 text-left"><span class="price-ammount"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;9999</span>&nbsp;/&nbsp;<span class="price-strike-ammount"><i class="fa fa-inr" aria-hidden="true"></i>6999</span>&nbsp;<label class="m-0">(30% OFF)</label></p>
+                            <p class="package-price m-0 text-left"><span class="price-ammount"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;6,999</span>&nbsp;/&nbsp;<span class="price-strike-ammount"><i class="fa fa-inr" aria-hidden="true"></i>9,999</span>&nbsp;<label class="m-0">(30% OFF)</label></p>
                             <p class="mt-1">This package is suitable for tearms 1-15 people</p>
                         </div>
                         <div class="package-list">
@@ -48,7 +48,7 @@
                     <div class="package-container midd-section">
                         <div class="package-inner">
                             <h4 class="plance-title text-uppercase mt-2">Business Booster</h4>
-                            <p class="package-price m-0 text-left"><span class="price-ammount"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;14999</span>&nbsp;/&nbsp;<span class="price-strike-ammount"><i class="fa fa-inr" aria-hidden="true"></i>9999</span>&nbsp;<label class="m-0">(30% OFF)</label></p>
+                            <p class="package-price m-0 text-left"><span class="price-ammount"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;10,499</span>&nbsp;/&nbsp;<span class="price-strike-ammount"><i class="fa fa-inr" aria-hidden="true"></i>14,999</span>&nbsp;<label class="m-0">(30% OFF)</label></p>
                             <p class="mt-1">This package is suitable for tearms 1-15 people</p>
                         </div>
                         <div class="package-list">
@@ -78,7 +78,7 @@
                     <div class="package-container midd-section">
                         <div class="package-inner">
                             <h4 class="plance-title text-uppercase mt-2">Brand Builder</h4>
-                            <p class="package-price m-0 text-left"><span class="price-ammount"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;29999</span>&nbsp;/&nbsp;<span class="price-strike-ammount"><i class="fa fa-inr" aria-hidden="true"></i>19999</span>&nbsp;<label class="m-0">(30% OFF)</label></p>
+                            <p class="package-price m-0 text-left"><span class="price-ammount"><i class="fa fa-inr" aria-hidden="true"></i>&nbsp;20,999</span>&nbsp;/&nbsp;<span class="price-strike-ammount"><i class="fa fa-inr" aria-hidden="true"></i>29,999</span>&nbsp;<label class="m-0">(30% OFF)</label></p>
                             <p class="mt-1">This package is suitable for tearms 1-15 people</p>
                         </div>
                         <div class="package-list">

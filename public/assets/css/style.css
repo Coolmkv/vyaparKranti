@@ -272,11 +272,11 @@ form.form-project input,.form-project-inner textarea {outline: none;border-radiu
 /* readmore btn */
 a.lmore-btn {
 	position: relative;
-	color: #d3941c;
+	color: #704900;
     font: 600 14px/normal var(--vfont-quicksand);
     padding: 6px 0px;
     border-radius: 8px 50px 50px 8px;
-    /* border: 1px solid #d3941c; */
+    /* border: 1px solid #704900; */
 	transition: var(--transition);
 }
 a.lmore-btn:after {
@@ -286,7 +286,7 @@ a.lmore-btn:after {
     top: 2px;
     margin-left: -10px;
     visibility: hidden;
-	color: #d3941c;
+	color: #704900;
 	transition: var(--transition);
 }
 .h_service-inner > div:hover a.lmore-btn::after,
@@ -295,7 +295,7 @@ a.lmore-btn:hover::after {
     margin: 2px;
 	visibility: visible;
 }
-.h_service-inner > div:hover a.lmore-btn, a.lmore-btn:hover {padding: 6px 8px; background-color: #d3941c;color: #fff;}
+.h_service-inner > div:hover a.lmore-btn, a.lmore-btn:hover {padding: 6px 8px; background-color: #704900;color: #fff;}
 /* readmore btn  end */
 /* prime-btn Start */
 a.prime-btn {
@@ -450,7 +450,7 @@ section.h_service {
 .h_service-title {
 	text-align: center;
 }
-.h_service-title h4{
+.h_service-title h2{
 	font: 600 24px/normal var(--vfont-quicksand);
 	color: var(--vbrown-color);
 }
@@ -709,7 +709,7 @@ section.h_testimonial {
 /* Testimonial Section End */
 /*################################################## New Site Rewamp ########################################### */
 /* Content writing page */
-section.pagee-strip h3 {
+section.pagee-strip h1 {
 	font: 700 24px/normal var(--vfont-quicksand);
     text-transform: capitalize;
     color: #fff;
@@ -1013,7 +1013,7 @@ span.career-icon + h5 {font: 700 14px/normal var(--vfont-poppins);text-transform
 	}
 	section.section-one {padding: 1rem 0rem;}
 	.midd-msg-content > p {font-size: 20px;}
-	.h_service-title h4 {font-size: 26px;}
+	.h_service-title h2 {font-size: 26px;}
 	.h_service-title > p {font-size: 14px;}
 	.h_service-inner {grid-template-columns: repeat(2, 1fr);}
 
@@ -1024,7 +1024,7 @@ span.career-icon + h5 {font: 700 14px/normal var(--vfont-poppins);text-transform
 		visibility: visible;
 	}
 	.h_service-inner > div:nth-child(2n+1) a.lmore-btn,
-	 a.lmore-btn:nth-child(2n+1) {padding: 6px 8px; background-color: #d3941c;color: #fff;font-size: 10px;}
+	 a.lmore-btn:nth-child(2n+1) {padding: 6px 8px; background-color: #704900;color: #fff;font-size: 10px;}
 	 .h_service-inner > div:nth-child(2n+1){
 		background-color: lightgrey;
 	}
