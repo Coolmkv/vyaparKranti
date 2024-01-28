@@ -104,10 +104,10 @@
 <ul class="fixed-social">
     <li>
         <span class="soacial_icon"><i class="fa fa-share-alt"></i></span>
-        <span class="social_details"><a href="https://www.facebook.com/vyaparkranti/"><i class="fa fa-facebook"></i></a><a href="https://www.instagram.com/vyaparkranti/"><i class="fa fa-instagram"></i></a><a href="https://twitter.com/vyaparkranti"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/in/vyapar-kranti-0a0b64271/"><i class="fa fa-linkedin"></i></a><a href="https://www.youtube.com/@VyaparKranti"><i class="fa fa-youtube"></i></a></span>
+        <span class="social_details"><a href="https://www.facebook.com/vyaparkranti/" aria-label="Read more about Vyapar Kranti Facebook" target="_blank"><i class="fa fa-facebook"></i></a><a href="https://www.instagram.com/vyaparkranti/" aria-label="Read more about Vyapar Kranti instagram" target="_blank"><i class="fa fa-instagram"></i></a><a href="https://twitter.com/vyaparkranti"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/in/vyapar-kranti-0a0b64271/" aria-label="Read more about Vyapar Kranti linkedin" target="_blank"><i class="fa fa-linkedin"></i></a><a href="https://www.youtube.com/@VyaparKranti" aria-label="Read more about Vyapar Kranti Youtube" target="_blank"><i class="fa fa-youtube"></i></a></span>
     </li>
     <li>
-        <a href="https://wa.me/+919958224825?text=Let%27s+start+build+a+project" class="text-white"><span class="soacial_icon"><i class="fa fa-whatsapp"></i></span><span class="social_details">Send Hi on WhatsApp</span></a>
+        <a href="https://wa.me/+919958224825?text=Let%27s+start+build+a+project" aria-label="Read more about Vyapar Kranti whatsapp" target="_blank" class="text-white"><span class="soacial_icon"><i class="fa fa-whatsapp"></i></span><span class="social_details">Send Hi on WhatsApp</span></a>
     </li>
     <li>
         <a href="mailto:info@vyaparkranti.com" class="text-white"><span class="soacial_icon"><i class="fa fa-envelope-o"></i></span><span class="social_details">Info@vyaparkranti.com</span></a>
