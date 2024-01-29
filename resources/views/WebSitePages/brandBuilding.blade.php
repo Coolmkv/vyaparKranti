@@ -15,7 +15,7 @@
     <section class="page-details brand-building">
         <div class="main-container">
             <div class="h_service-title">
-                <!-- <h4>Crafting Words to Manifest Your Ideas</h4>
+                <!-- <h2>Crafting Words to Manifest Your Ideas</h2>
                 <p>Fuel your brand's story with <b>VYAPAR KRANTI’s</b> content writing mastery, driving engagement, and sparking networks that boom your BUSINESS."</p> -->
             </div><br>
             <div class="midd-section">
@@ -87,5 +87,5 @@
 @endsection
 
 @section('pageScript')
-    <script></script>
+<script type="text/javascript"></script>
 @endsection

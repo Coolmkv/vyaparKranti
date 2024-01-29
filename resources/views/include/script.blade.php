@@ -17,7 +17,7 @@
     <script src="js/custom.js"></script>
     <script src="js/webSiteJs.js"></script>
     
-    <script>
+    <script type="text/javascript">
         $(document).ready(function(){
             loadMenu();
         });

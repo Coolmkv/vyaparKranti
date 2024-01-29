@@ -11,6 +11,7 @@
                     <li><a href="https://www.instagram.com/vyaparkranti/" aria-label="Read more about Vyapar Kranti instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="https://www.linkedin.com/company/vyapar-kranti/" aria-label="Read more about Vyapar Kranti linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                     <li><a href="https://wa.me/+919958224825?text=Let%27s+start+build+a+project" aria-label="Read more about Vyapar Kranti whatsapp" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.youtube.com/@VyaparKranti" aria-label="Read more about Vyapar Kranti Youtube" target="_blank"><i class="fa fa-youtube"></i></a></li>
                 </ul>
             </div>
         </div>

@@ -5,8 +5,8 @@
 <head>
     @include('includes.head')
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FY39RJP7SH"></script>
-    <script>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-FY39RJP7SH"></script>
+    <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -17,7 +17,7 @@
         gtag('config', 'G-FY39RJP7SH');
     </script>
     <!-- Meta Pixel Code -->
-    <script>
+    <script type="text/javascript">
         ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
             n = f.fbq = function() {
@@ -73,7 +73,7 @@
 </body>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<script>
+<script type="text/javascript">
     $("#newsletter_form").submit(function() {
         $("#submit_newsletter_form").attr("disable", true);
         $.ajax({

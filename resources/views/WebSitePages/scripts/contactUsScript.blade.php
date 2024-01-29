@@ -1,4 +1,4 @@
-<script>
+<script type="text/javascript">
     $("#contactFormSubmit").submit(function() {
         $("#submit").attr("disable", true);
         $.ajax({

@@ -145,5 +145,5 @@
 @endsection
 
 @section('pageScript')
-    <script></script>
+<script type="text/javascript"></script>
 @endsection

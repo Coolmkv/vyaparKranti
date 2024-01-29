@@ -61,7 +61,7 @@
 @endsection
 
 @section('pageScript')
-    <script>
+    <script type="text/javascript">
         function gotTo(link){
             window.location = link;
         }

@@ -103,7 +103,7 @@
 
 @section('pageScript')
 <script src="dist/spotlight.bundle.js"></script>
-    <script>
+    <script type="text/javascript">
         function gotTo(link){
             window.location = link;
         }
