@@ -69,7 +69,7 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
+    <script type="text/javascript">
       $(document).ready(function(){
         let currentLocation = window.location;
         $(".menu-link").each(function(){

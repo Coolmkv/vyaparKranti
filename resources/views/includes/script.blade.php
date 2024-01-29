@@ -20,7 +20,7 @@
 
 <script src="assets/js/custom.js"></script>
 
-    <script>
+<script type="text/javascript">
         /* counter js */
 
         (function($) {
