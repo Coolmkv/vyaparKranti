@@ -1,2 +1,6 @@
 User-agent: *
-Disallow:
+Allow: /
+
+
+Sitemap: https://vyaparkranti.com/sitemap.xml
+Sitemap: https://www.vyaparkranti.com/sitemap.xml
