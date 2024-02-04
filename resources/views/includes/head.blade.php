@@ -58,6 +58,8 @@
     <![endif]-->
 
     <!-- SEO Start -->
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ asset('assets/img/logo_3d.png')}}">
       {!! seo($page??null) !!}
     <!-- SEO END -->
     
