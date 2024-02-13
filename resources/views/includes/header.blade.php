@@ -172,56 +172,56 @@
                         <label class="title">Digital Marketing</label>
                         <div class="checkbox-labels"><input type="checkbox"
                                 name="selected_options['digital_marketing'][]"
-                                value="SEO : Search Engine Optimisation" required /><span>SEO : Search Engine
+                                value="SEO : Search Engine Optimisation"  /><span>SEO : Search Engine
                                 Optimisation</span></div>
                         <div class="checkbox-labels"><input type="checkbox"
                                 name="selected_options['digital_marketing'][]" value="SMO : Social Media Optimisation"
-                                required /><span>SMO : Social Media Optimisation</span>
+                                 /><span>SMO : Social Media Optimisation</span>
                         </div>
                         <div class="checkbox-labels"><input type="checkbox"
                                 name="selected_options['digital_marketing'][]" value="SEM : Search Engine Marketing"
-                                required /><span>SEM : Search Engine Marketing</span>
+                                 /><span>SEM : Search Engine Marketing</span>
                         </div>
                     </div>
                     <div class="form-checkbox">
                         <label class="title">Media Services</label>
                         <div class="checkbox-labels"><input type="checkbox"
                                 name="selected_options['media_services'][]" value="Interactive Presentations"
-                                required /><span>Interactive Presentations</span></div>
+                                 /><span>Interactive Presentations</span></div>
                         <div class="checkbox-labels"><input type="checkbox"
                                 name="selected_options['media_services'][]" value="Video Services"
-                                required /><span>Video
+                                 /><span>Video
                                 Services</span></div>
                         <div class="checkbox-labels"><input type="checkbox"
                                 name="selected_options['media_services'][]" value="Branding Services"
-                                required /><span>Branding
+                                 /><span>Branding
                                 Services</span></div>
                     </div>
                     <div class="form-checkbox">
                         <label class="title">Web Development</label>
                         <div class="checkbox-labels"><input type="checkbox" name="selected_options['web'][]"
-                                value="Website Design & Development" required /><span>Website Design &
+                                value="Website Design & Development"  /><span>Website Design &
                                 Development</span>
                         </div>
                         <div class="checkbox-labels">
                             <input type="checkbox" name="selected_options['web'][]" value="Ecommerce Development"
-                                required />
+                                 />
                             <span>Ecommerce Development</span>
                         </div>
                         <div class="checkbox-labels">
                             <input type="checkbox" name="selected_options['web'][]"
-                                value="Mobile APP Development"  required />
+                                value="Mobile APP Development"   />
                                 <span>Mobile APP Development</span></div>
                         <div class="checkbox-labels">
                             <input type="checkbox" name="selected_options['web'][]"
-                                value="Custom Web Applications" required /><span>Custom Web Applications</span></div>
+                                value="Custom Web Applications"  /><span>Custom Web Applications</span></div>
                     </div>
                     <div class="form-checkbox">
                         <label class="title">Elearning</label>
                         <div class="checkbox-labels"><input type="checkbox" name="selected_options['elearning'][]"
-                                value="LMS Development" required /><span>LMS Development</span></div>
+                                value="LMS Development"  /><span>LMS Development</span></div>
                         <div class="checkbox-labels"><input type="checkbox" name="selected_options['elearning'][]"
-                                value="Corporate Development" required /><span>Corporate Development</span></div>
+                                value="Corporate Development"  /><span>Corporate Development</span></div>
                     </div>
                 </div>
                 <div class="form-group">
