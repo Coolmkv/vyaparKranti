@@ -131,11 +131,10 @@
                     <li><a class="nav-list" href="{{ route('packagePage') }}">Packages</a></li>
                     <li><a class="nav-list" href="{{ route('contactUs') }}">Contact us</a></li>
                     <li class="build-project"><span class="nav-list simple-btn"><i class="fa fa-foursquare"
-                                aria-hidden="true"></i>&nbsp;&nbsp;Build Project</span></li>
+                                aria-hidden="true"></i>&nbsp;&nbsp;Get A Quote</span></li>
                 </ul>
             </div>
-            <div hidden class="build-project"><span class="nav-list simple-btn"><i class="fa fa-foursquare"
-                        aria-hidden="true"></i>&nbsp;&nbsp;Build Project</span></div>
+            <div hidden class="build-project"><span class="nav-list simple-btn"><i class="fa fa-foursquare" aria-hidden="true"></i>&nbsp;&nbsp;Get A Quote</span></div>
         </div>
     </div>
 </header>
@@ -144,7 +143,7 @@
 
 <div id="form-project-popup">
     <div class="form-project-container">
-        <h3 class="f-project-navigation">Build a project <span
+        <h3 class="f-project-navigation">Get A Quote <span
                 class="close-btn material-symbols-outlined closer-btn">close</span></h3>
         <div class="form-project-inner">
             <h4>Please fill the form below:</h4>
