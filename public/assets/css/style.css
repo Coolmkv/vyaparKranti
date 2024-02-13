@@ -55,7 +55,7 @@ form.form-project input,.form-project-inner textarea {outline: none;border-radiu
 .form-project .form-group {margin: 0 0;}
 .form-project .form-group:nth-child(5) {grid-column: 1 / 3 ;grid-row: 3 / 4;}
 .form-project .form-group:nth-child(6) {grid-column: 1 / 3 ;grid-row: 4 / 5;column-count: 2;}
-.form-project .form-group:nth-child(7) {grid-column: 1 / 3 ;grid-row: 5 / 6;}
+.form-project .form-group:nth-child(9) {grid-column: 1 / 3 ;grid-row: 8 / 9;}
 .build_project_closer{position: fixed;background-color: rgba(0,0,0,0.3);left: 0;right: 0;top: 0;z-index: 8;bottom: 0;}
 .form-project .form-group:nth-child(6) .form-checkbox label {display: block;font: 700 14px/normal sans-serif;color: var(--vbrown-color);}
 .form-project .form-group:nth-child(6) .form-checkbox input{display: inline;margin-right: 5px;position: relative;top: 3px;}

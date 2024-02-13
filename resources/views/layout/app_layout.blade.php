@@ -138,6 +138,32 @@
             }
         });
     }
+    $("#build_project_form").submit(function() {
+        $("#getQuote").attr("disable", true);
+        let data = $(this).serialize();
+        $.ajax({
+            url: "{{ route('buildProjectFormSubmit') }}",
+            method: 'post',
+            data: data,
+            dataType: 'json',
+            success: function(response) {
+                refreshCapthca('captcha_img_id_build_project','captcha_text_build');
+                if (response.status) {
+                    successMessage(response.message);
+                    $("#build_project_form")[0].reset();
+                    $("#getQuote").attr("disable", false);
+                } else {
+                    errorMessage(response.message);
+                    $("#getQuote").attr("disable", false);
+                }
+            },
+            error: function(err) {
+                refreshCapthca('captcha_img_id_build_project','captcha_text_build');
+                errorMessage("error occurred");
+                $("#getQuote").attr("disable", false);
+            }
+        });
+    });
 </script>
 
 </html>

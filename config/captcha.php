@@ -10,7 +10,7 @@ return [
         'height'    => 36,
         'quality'   => 100,
         'math'      => false,  //Enable Math Captcha
-        'expire'    => 60,    //Captcha expiration
+        'expire'    => 6000,    //Captcha expiration
     ],
     // ...
 ];

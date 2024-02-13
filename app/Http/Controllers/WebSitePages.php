@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Library\Library;
+use App\Http\Requests\BuildProjectFeedbacksRequest;
 use App\Http\Requests\ContactUsFormRequest;
 use App\Http\Requests\LibraryRequest;
 use App\Http\Requests\NewsLetterSubscriptionRequest;
 use App\Models\LibraryCategories;
 use App\Models\WebSitePagesModel;
+use App\Repositories\BuildProjectFeedbackRepository;
 use App\Repositories\ContactUsRepository;
 use App\Repositories\NewsLetterRepository;
 use Exception;
@@ -106,6 +108,10 @@ class WebSitePages extends Controller
 
     public function contactUsFormSubmit(ContactUsFormRequest $request){
         return (new ContactUsRepository)->submitContactUs($request);
+    }
+
+    public function buildProjectFormSubmit(BuildProjectFeedbacksRequest $request){
+        return (new BuildProjectFeedbackRepository)->submitFeedBackRequest($request);
     }
 
 }

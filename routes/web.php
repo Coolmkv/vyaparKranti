@@ -44,6 +44,8 @@ Route::post('subscribe-news-letter',[WebSitePages::class,"subscribeNewsLetter"])
 
 Route::post('contact-us-form-submit',[WebSitePages::class,"contactUsFormSubmit"])->name("contactUsForm");
 
+Route::post('build-project-form-submit',[WebSitePages::class,"buildProjectFormSubmit"])->name("buildProjectFormSubmit");
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -86,4 +88,3 @@ Route::middleware(['auth'])->group(function () {
 require __DIR__.'/auth.php';
 Route::get("login",[AdminController::class,"Login"])->name("login");
 Route::post("AdminUserLogin",[AdminController::class,"AdminLoginUser"])->name("AdminLogin");
-Route::get("getmenu-items",[HomePageController::class,"getMenu"]);

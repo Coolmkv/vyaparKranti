@@ -4,6 +4,7 @@
 @include('includes.slider')
 <!-- Section  -->
 <section class="h_service">
+
     <div class="main-container">
         <div class="h_service-title">
             <h2>Get your business online easily & be visible to your buyers</h2>
@@ -199,5 +200,6 @@
 @endsection
 
 @section('pageScript')
-<script type="text/javascript"></script>
+<script type="text/javascript">
+</script>
 @endsection
