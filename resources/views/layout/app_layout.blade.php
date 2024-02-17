@@ -138,6 +138,9 @@
             }
         });
     }
+    $(".build-project").on("click",function(){
+        refreshCapthca('captcha_img_id_build_project','captcha_text_build');
+    });
     $("#build_project_form").submit(function() {
         $("#getQuote").attr("disable", true);
         let data = $(this).serialize();

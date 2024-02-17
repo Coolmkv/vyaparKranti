@@ -262,3 +262,32 @@ section.h_technology, section.h_aboutus{padding-bottom: 0rem;}
 .footer-inner {grid-template-columns: repeat(1, 1fr);}
 .footer_item.footer-logo {grid-column-start: 1;grid-column-end: 2;}
 }
+
+.form-label-text{
+    padding: 0 0;
+    margin: 0 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    font-family: 'Quicksand';
+    
+}
+.form-label-text-heading{
+    display: block;
+    font: 700 14px/normal sans-serif;
+    color: var(--vbrown-color);
+}
+.get-a-quote-button{
+    cursor: pointer;
+    background-color: var(--vbrown-color);
+    border-radius: 6px;
+    color: #fff !important;
+    font: 700 10px/30px sans-serif;
+    padding: 4px 10px !important;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}

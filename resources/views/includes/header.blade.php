@@ -147,108 +147,98 @@
                 class="close-btn material-symbols-outlined closer-btn">close</span></h3>
         <div class="form-project-inner">
             <h4>Please fill the form below:</h4>
-            <form method="post" action="javascript:" id="build_project_form" class="form-project">
-                <div class="form-group">
-                    <input type="text" name="name" class="form-control" required placeholder="Name" />
-                </div>
-                <div class="form-group">
-                    <input type="text" name="company" class="form-control" required placeholder="Company Name" />
-                </div>
-                <div class="form-group">
-                    <input type="tel" name="phone_number" required maxlength="10" minlength="10"
-                        pattern="^[1-9][0-9]*$" class="form-control" placeholder="Mobile Number" />
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" required class="form-control"
-                        placeholder="E-mail Address" />
-                </div>
-                <div class="form-group">
-                    <textarea type="text" name="description" class="form-control" placeholder="Description" rows="10"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <div class="form-checkbox">
-                        <label class="title">Digital Marketing</label>
-                        <div class="checkbox-labels"><input type="checkbox"
-                                name="selected_options['digital_marketing'][]"
-                                value="SEO : Search Engine Optimisation"  /><span>SEO : Search Engine
-                                Optimisation</span></div>
-                        <div class="checkbox-labels"><input type="checkbox"
-                                name="selected_options['digital_marketing'][]" value="SMO : Social Media Optimisation"
-                                 /><span>SMO : Social Media Optimisation</span>
-                        </div>
-                        <div class="checkbox-labels"><input type="checkbox"
-                                name="selected_options['digital_marketing'][]" value="SEM : Search Engine Marketing"
-                                 /><span>SEM : Search Engine Marketing</span>
-                        </div>
+            <form method="post" action="javascript:" id="build_project_form" >
+                <div class="row">
+                    <div class="col-md-6 mt-2">
+                        <x-input type="text" name="name" class="form-control" required placeholder="Name"></x-input>
                     </div>
-                    <div class="form-checkbox">
-                        <label class="title">Media Services</label>
-                        <div class="checkbox-labels"><input type="checkbox"
-                                name="selected_options['media_services'][]" value="Interactive Presentations"
-                                 /><span>Interactive Presentations</span></div>
-                        <div class="checkbox-labels"><input type="checkbox"
-                                name="selected_options['media_services'][]" value="Video Services"
-                                 /><span>Video
-                                Services</span></div>
-                        <div class="checkbox-labels"><input type="checkbox"
-                                name="selected_options['media_services'][]" value="Branding Services"
-                                 /><span>Branding
-                                Services</span></div>
+                    
+                    <div class="col-md-6 mt-2">
+                        <x-input type="text" name="company" class="form-control" required placeholder="Company Name" ></x-input>
                     </div>
-                    <div class="form-checkbox">
-                        <label class="title">Web Development</label>
-                        <div class="checkbox-labels"><input type="checkbox" name="selected_options['web'][]"
-                                value="Website Design & Development"  /><span>Website Design &
-                                Development</span>
+                    
+                    <div class="col-md-6 mt-2">
+                        <x-input  type="text" name="phone_number" required maxlength="10" minlength="10" pattern="^[1-9][0-9]*$" class="form-control" placeholder="Mobile Number" ></x-input>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <x-input type="email" name="email" required class="form-control"
+                        placeholder="E-mail Address"></x-input>
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        <textarea type="text" name="description" class="form-control" placeholder="Description" rows="10"></textarea>
+                    </div>
+                    @php
+                        $selected_options = [
+                            "digital_marketing"=>[
+                            "title"=>"Digital Marketing",    
+                            "option"=>[
+                                "SEO : Search Engine Optimisation",
+                                "SMO : Social Media Optimisation",
+                                "SEM : Search Engine Marketing"
+                            ]
+                        ],
+                            "Media Services"=>
+                            ["title"=>"Media Services",    
+                            "option"=>[
+                                "Interactive Presentations",
+                                "Video Services",
+                                "Branding Services"
+                            ]],
+                            "web"=>["title"=>"Web Development",    
+                            "option"=>[
+                                "Website Design & Development",
+                                "Ecommerce Development",
+                                "Mobile APP Development",
+                                "Custom Web Applications"
+                            ]],
+                            "elearning"=>[
+                                "title"=>"Elearning",    
+                            "option"=>[
+                                "LMS Development",
+                                "Corporate Development"
+                            ]]
+                        ];
+                    @endphp
+                    @foreach ($selected_options as $key=>$cat)
+                    <div class="col-md-6 mt-2">
+                        <label class="form-label-text-heading">{{ $cat["title"] }}</label>
+                        @foreach ($cat["option"] as $key2=>$item)
+                        <div class="col-md-12 ">
+                            <input type="checkbox" id="{{ $key.$key2 }}" name="selected_options[{{$key}}][]"
+                                value="{{$item}}"  />
+                                <label class="form-label-text" for="{{ $key.$key2 }}">{{$item}}</label>
                         </div>
-                        <div class="checkbox-labels">
-                            <input type="checkbox" name="selected_options['web'][]" value="Ecommerce Development"
-                                 />
-                            <span>Ecommerce Development</span>
-                        </div>
-                        <div class="checkbox-labels">
-                            <input type="checkbox" name="selected_options['web'][]"
-                                value="Mobile APP Development"   />
-                                <span>Mobile APP Development</span></div>
-                        <div class="checkbox-labels">
-                            <input type="checkbox" name="selected_options['web'][]"
-                                value="Custom Web Applications"  /><span>Custom Web Applications</span></div>
+                        @endforeach
                     </div>
-                    <div class="form-checkbox">
-                        <label class="title">Elearning</label>
-                        <div class="checkbox-labels"><input type="checkbox" name="selected_options['elearning'][]"
-                                value="LMS Development"  /><span>LMS Development</span></div>
-                        <div class="checkbox-labels"><input type="checkbox" name="selected_options['elearning'][]"
-                                value="Corporate Development"  /><span>Corporate Development</span></div>
+                        
+                    @endforeach
+                    <div class="col-md-6 mt-2">
+                        <img src="{{ captcha_src() }}" class="img-thumbnail" name="captcha_img_build"
+                            alt="Vyapar Kranti" id="captcha_img_id_build_project">
+    
+                        <button style="padding:.6em" type="button" class="btn btn-common btn-group btn-info"
+                            onclick="refreshCapthca('captcha_img_id_build_project','captcha_text_build')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                            </svg>
+                        </button>
+    
+                    </div>
+                    <div class="col-md-6 mt-2">
+                        <input type="text" placeholder="Enter Text in image" class="form-control" name="captcha"
+                            id="captcha_text_build" required />
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="col-md-12 mt-2">
+                        <button type="submit" id="getQuote" name="submit" class="get-a-quote-button form-control get-a-quote">Get A
+                            Quote</button>
                     </div>
                 </div>
-                <div class="form-group">
-                    <img src="{{ captcha_src() }}" class="img-thumbnail" name="captcha_img_build"
-                        alt="Vyapar Kranti" id="captcha_img_id_build_project">
-
-                    <button style="padding:.6em" type="button" class="btn btn-common btn-group btn-info"
-                        onclick="refreshCapthca('captcha_img_id_build_project','captcha_text_build')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-arrow-repeat" viewBox="0 0 16 16">
-                            <path
-                                d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
-                            <path fill-rule="evenodd"
-                                d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
-                        </svg>
-                    </button>
-
-                </div>
-                <div class="form-group">
-                    <input type="text" placeholder="Enter Text in image" class="form-control" name="captcha"
-                        id="captcha_text_build" required />
-                    <div class="help-block with-errors"></div>
-                </div>
-                <div class="form-group">
-                    <button type="submit" id="getQuote" name="submit" class="form-control get-a-quote">Get A
-                        Quote</button>
-                </div>
-                @csrf
+ 
 
             </form>
         </div>

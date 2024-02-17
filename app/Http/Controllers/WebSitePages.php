@@ -13,7 +13,7 @@ use App\Repositories\BuildProjectFeedbackRepository;
 use App\Repositories\ContactUsRepository;
 use App\Repositories\NewsLetterRepository;
 use Exception;
-use Captcha;
+use Mews\Captcha\Facades\Captcha;
 class WebSitePages extends Controller
 {
     

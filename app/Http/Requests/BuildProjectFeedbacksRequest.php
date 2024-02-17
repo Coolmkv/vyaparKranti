@@ -42,7 +42,9 @@ class BuildProjectFeedbacksRequest extends FormRequest
     {
         return [
             "selected_options.required"=>"Please select some requirement options.",
-            "phone_number.digits_between"=>"Phone number should be 10 digits number."
+            "phone_number.digits_between"=>"Phone number should be 10 digits number.",
+            "captcha.required"=>"Captha is required.",
+            "captcha.captcha"=>"Captha is not valid."
         ];
     }
 
