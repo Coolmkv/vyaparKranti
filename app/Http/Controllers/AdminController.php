@@ -6,6 +6,7 @@ use App\Http\Requests\SEORequest;
 use App\Models\GalleryItem;
 use App\Models\NavMenu;
 use App\Models\User;
+use App\Repositories\BuildProjectFeedbackRepository;
 use App\Repositories\SEORepository;
 use App\Traits\CommonFunctions;
 use Exception;
@@ -303,5 +304,12 @@ class AdminController extends Controller
 
     public function seoDataTable(){
         return (new SEORepository())->seoDataTable();
+    }
+
+    public function buildAprojectData(){
+        return view("Dashboard.Pages.buildAProjectDataPage");
+    }
+    public function buildAprojectDataTable(){
+        return (new BuildProjectFeedbackRepository())->getAQuoteAllData();
     }
 }
