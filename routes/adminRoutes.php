@@ -44,6 +44,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('contact-us-data',[AdminController::class,"contactUsData"])->name("contactUsData");
     Route::post('build-a-project-datatable',[AdminController::class,"buildAprojectDataTable"])->name("buildAprojectDataTable");
     
+    Route::get('run-api',[AdminController::class,"runAPI"])->name("runAPI");
+    Route::get('run-api-form',[AdminController::class,"runAPIForm"])->name("runAPIForm");
+    
 });
 
 require __DIR__.'/auth.php';

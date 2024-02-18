@@ -132,6 +132,13 @@
                   <div data-i18n="Analytics">Build Project Data</div>
                 </a>
               </li>
+
+              <li class="menu-item">
+                <a href="{{route("runAPI")}}" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-notepad"></i>
+                  <div data-i18n="Analytics">runAPI</div>
+                </a>
+              </li>
               
               <!-- Layouts -->
               {{-- <li class="menu-item active open">
