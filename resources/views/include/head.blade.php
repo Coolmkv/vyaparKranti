@@ -7,9 +7,6 @@
 
  <!-- Site Metas -->
  <title>@yield('title')</title>
- <meta name="keywords" content="">
- <meta name="description" content="">
- <meta name="author" content="">
 
  <!-- Site Icons -->
  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -25,7 +22,24 @@
  <!-- Custom CSS -->
  <link rel="stylesheet" href="css/custom.css">
  <script src="js/modernizr.js"></script> <!-- Modernizr -->
-
+ <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    "name": "Vyapar Kranti",
+    "alternateName": "Website Development & Digital Marketing Agency",
+    "url": "https://vyaparkranti.com/",
+    "logo": "https://vyaparkranti.com/assets/img/logo_3d.png",
+    "sameAs": [
+      "https://www.facebook.com/vyaparkranti/",
+      "https://twitter.com/vyaparkranti",
+      "https://www.instagram.com/vyaparkranti/",
+      "https://www.youtube.com/@VyaparKranti",
+      "https://www.linkedin.com/in/vyapar-kranti-332570284/"
+    ]
+  }
+  </script>
+  
  <!--[if lt IE 9]>
    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>

@@ -5,8 +5,8 @@
 <head>
     @include('includes.head')
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FY39RJP7SH"></script>
-    <script>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-FY39RJP7SH"></script>
+    <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -17,7 +17,7 @@
         gtag('config', 'G-FY39RJP7SH');
     </script>
     <!-- Meta Pixel Code -->
-    <script>
+    <script type="text/javascript">
         ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
             n = f.fbq = function() {
@@ -44,14 +44,14 @@
     <!-- End Meta Pixel Code -->
 </head>
 
-<body id="home" class="@yield('bodyClass')" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+<body id="{{Request::is('/') ? 'home' : 'information' }}" class="@yield('bodyClass')" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
     <!-- LOADER -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="loader">
             <img src="assets/images/loader.gif" alt="#" />
         </div>
-    </div>
+    </div> -->
     <!-- end loader -->
     <!-- END LOADER -->
 
@@ -73,11 +73,11 @@
 </body>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<script>
+<script type="text/javascript">
     $("#newsletter_form").submit(function() {
         $("#submit_newsletter_form").attr("disable", true);
         $.ajax({
-            url: '{{ route('subscribeNewsLetter') }}',
+            url: "{{ route('subscribeNewsLetter') }}",
             method: 'post',
             data: {
                 email: $("#subscription_email").val(),
@@ -122,7 +122,7 @@
 
     function refreshCapthca(imgId = 'captcha_img_id', textId = 'captcha') {
         $.ajax({
-            url: '{{ route('refreshCaptcha') }}',
+            url: "{{ route('refreshCaptcha') }}",
             method: 'get',
             dataType: 'json',
             success: function(response) {
@@ -138,6 +138,35 @@
             }
         });
     }
+    $(".build-project").on("click",function(){
+        refreshCapthca('captcha_img_id_build_project','captcha_text_build');
+    });
+    $("#build_project_form").submit(function() {
+        $("#getQuote").attr("disable", true);
+        let data = $(this).serialize();
+        $.ajax({
+            url: "{{ route('buildProjectFormSubmit') }}",
+            method: 'post',
+            data: data,
+            dataType: 'json',
+            success: function(response) {
+                refreshCapthca('captcha_img_id_build_project','captcha_text_build');
+                if (response.status) {
+                    successMessage(response.message);
+                    $("#build_project_form")[0].reset();
+                    $("#getQuote").attr("disable", false);
+                } else {
+                    errorMessage(response.message);
+                    $("#getQuote").attr("disable", false);
+                }
+            },
+            error: function(err) {
+                refreshCapthca('captcha_img_id_build_project','captcha_text_build');
+                errorMessage("error occurred");
+                $("#getQuote").attr("disable", false);
+            }
+        });
+    });
 </script>
 
 </html>

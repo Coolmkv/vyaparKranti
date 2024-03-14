@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 class CreateWebsitePages extends Migration
@@ -13,16 +14,28 @@ class CreateWebsitePages extends Migration
      */
     public function up()
     {
-        Schema::create('websitePages', function (Blueprint $table) {
-            $table->integerIncrements('id');
-            $table->string('route_name',255)->nullable(true)->default(NULL);
-            $table->integer('status')->nullable(true)->default(1);
-            $table->bigInteger("created_by")->default(NULL);
-            $table->bigInteger("updated_by")->default(NULL);
-            $table->timestamps();
-        });
+        if($this->checkNotExists()){
+            Schema::create('websitePages', function (Blueprint $table) {
+                $table->integerIncrements('id');
+                $table->string('route_name',255)->nullable(true)->default(NULL);
+                $table->integer('status')->nullable(true)->default(1);
+                $table->bigInteger("created_by")->nullable(true)->default(NULL);
+                $table->bigInteger("updated_by")->nullable(true)->default(NULL);
+                $table->timestamps();
+            });
+        }
+        
     }
 
+    public function checkNotExists(){
+        try{
+           DB::table("websitePages")->first();
+           return false;
+        }catch(Exception $exception){
+            report($exception);
+            return true;
+        }
+    }
     /**
      * Reverse the migrations.
      *

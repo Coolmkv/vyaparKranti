@@ -59,7 +59,7 @@ return [
      *
      * You can use the following filetypes: ico, png, gif, jpeg, svg.
      */
-    'favicon' => "assets/images/favicon.icon",
+    // 'favicon' => "assets/images/favicon-one.ico",
 
     'title' => [
         /**
@@ -82,7 +82,7 @@ return [
          * so you'll need to add the suffix manually if you want that. If set to null, we'll determine the title
          * just like the other pages.
          */
-        'homepage_title' => "Home Page",
+        'homepage_title' => "Web Designing & Development company | Digital Marketing - Vyapar Kranti",
     ],
 
     'description' => [

@@ -1,19 +1,26 @@
 
-    <!-- ALL JS FILES -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/jquery.pogo-slider.min.js"></script>
-    <script src="assets/js/slider-index.js"></script>
-    {{-- <script src="assets/js/smoothscroll.js"></script> --}}
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.js"></script>
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/images-loded.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
+<!-- ALL JS FILES -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- ALL PLUGINS -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.pogo-slider.min.js"></script>
+<script src="assets/js/slider-index.js"></script>
+{{-- <script src="assets/js/smoothscroll.js"></script> --}}
+<script src="assets/js/form-validator.min.js"></script>
+<script src="assets/js/contact-form-script.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/typer.js"></script>
+<script src="assets/js/images-loded.min.js"></script>
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/app.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="assets/js/custom.js"></script>
+
+<script type="text/javascript">
         /* counter js */
 
         (function($) {
@@ -114,5 +121,15 @@
                 $this.countTo(options);
             }
         });
-         
+        // Start of Tawk.to Script
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/65f165e58d261e1b5f6d1ef0/1horfc2id';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+// End of Tawk.to Script
     </script>

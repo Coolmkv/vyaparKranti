@@ -6,6 +6,7 @@ use App\Http\Requests\SEORequest;
 use App\Models\GalleryItem;
 use App\Models\NavMenu;
 use App\Models\User;
+use App\Repositories\BuildProjectFeedbackRepository;
 use App\Repositories\SEORepository;
 use App\Traits\CommonFunctions;
 use Exception;
@@ -303,5 +304,53 @@ class AdminController extends Controller
 
     public function seoDataTable(){
         return (new SEORepository())->seoDataTable();
+    }
+
+    public function buildAprojectData(){
+        return view("Dashboard.Pages.buildAProjectDataPage");
+    }
+    public function buildAprojectDataTable(){
+        return (new BuildProjectFeedbackRepository())->getAQuoteAllData();
+    }
+
+    public function runAPI() {
+        
+        return view("Dashboard.Pages.runAPI");
+    }
+
+    public function runAPIForm(Request $request){
+        
+       $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+        CURLOPT_URL => $request->input("url",'https://b2bapiflights.benzyinfotech.com'),
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => '',
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 0,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => $request->input("method")??'GET',
+        CURLOPT_POSTFIELDS =>
+        $request->input("payload")??'{
+            "MerchantID": "300",
+            "ApiKey": "kXAY9yHARK",
+            "ClientID": "bitest",
+            "Password": "staging@1",
+            "AgentCode": "",
+            "BrowserKey": "caecd3cd30225512c1811070dce615c1",
+            "Key": "ef20-925c-4489-bfeb-236c8b406f7e"
+        }'
+        ,
+        CURLOPT_HTTPHEADER => 
+    json_decode($request->input("header")??'["MerchantID: 300","ApiKey: kXAY9yHARK","ClientID: bitest","Password: staging@1","AgentCode: ","BrowserKey: caecd3cd30225512c1811070dce615c1","Key: ef20-925c-4489-bfeb-236c8b406f7e","Content-Type: application\/json"]',true)
+        ,
+        ));
+
+        $response = curl_exec($curl);
+
+        curl_close($curl);
+        echo $response;
+
     }
 }
