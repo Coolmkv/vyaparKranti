@@ -48,7 +48,7 @@
                 <ul class="footer-list">
                     <li><a href="{{ route('aboutUs') }}">About Vyapar Kranti</a></li>
                     <li><a href="/">Values</a></li>
-                    <li><a href="{{ route('ourServices') }}">Solutions</a></li>
+                    <li><a href="/">Solutions</a></li>
                     <li><a href="{{ route('packagePage') }}">Packages</a></li>
                     <li><a href="{{ route('contactUs') }}">Contact Us</a></li>
                     <li><a href="{{ route('careerPage') }}">Career</a></li>
@@ -99,7 +99,7 @@
   </footer>
 <!-- End Footer -->
 <div class="copyright-section">
-    <p>Copyright &copy; <a href="{{ route('/') }}">Vyapar Kranti</a> All Rights Reserved. <img src="assets/img/make-in-india.png" width="34px" style="filter: invert(1);-webkit-transform: scaleX(-1);transform: scaleX(-1);" alt="Vyapar Kranti"></p>
+    <p>Copyright &copy; <a href="{{ url('/') }}">Vyapar Kranti</a> All Rights Reserved. <img src="assets/img/make-in-india.png" width="34px" style="filter: invert(1);-webkit-transform: scaleX(-1);transform: scaleX(-1);" alt="Vyapar Kranti"></p>
 </div>
 <ul class="fixed-social">
     <li>
