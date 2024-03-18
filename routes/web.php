@@ -19,9 +19,9 @@ use App\Http\Controllers\WebSitePages;
 Route::get('/', [WebSitePages::class,"homePage"])->name("homePage");
 Route::get('about-us', [WebSitePages::class,"aboutUs"])->name("aboutUs");
 Route::get('services', [WebSitePages::class,"ourServices"])->name("ourServices");
-Route::get('library', [WebSitePages::class,"ourPortfolio"])->name("ourPortfolio");
+// Route::get('library', [WebSitePages::class,"ourPortfolio"])->name("ourPortfolio");
 Route::get('contact-us', [WebSitePages::class,"contactUs"])->name("contactUs");
-Route::get('library-category',[WebSitePages::class,"libraryCategory"])->name("libraryCategory");
+// Route::get('library-category',[WebSitePages::class,"libraryCategory"])->name("libraryCategory");
 
 // Create Inner Page
 Route::get('content-writing',[WebSitePages::class,"contentwriting"])->name("contentwriting");
