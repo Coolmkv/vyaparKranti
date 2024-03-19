@@ -116,3 +116,89 @@
         <a href="tel:+919958224825" class="text-white"><span class="soacial_icon"><i class="fa fa-phone"></i></span><span class="social_details">+91 995 822 4825</span></a>
     </li>
 </ul>
+<div class="modal fade" id="vyaparkrantimodals" tabindex="-1" role="dialog" aria-labelledby="vyaparkranti" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <button type="button" class="close" onclick="setCookie('close-popup-bh', 'true', 0.15);" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class="modal-body">
+            <form id="queryFormSubmit" action="javascript:">
+                @csrf
+                <div class="form-inner container-fluid pt-2 pb-2">
+                    <div class="main-left-banner form-inner-item">
+                        <div class="img-service">
+                            <img src="assets/img/grow.png" alt="left Image" width="" height="" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="form-inner-item pb-2">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="company-logo text-center mb-3">
+                                    <a href="{{ url('/') }}"><img src="assets/img/logo_3d.png" alt="Vyapar Kranti" width="130" height="64" class="img-fluid" /></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-6 pr-1">
+                                <div class="form-group mb-2">
+                                    <label for="">Full Name</label>
+                                    <input type="text" class="form-control br-4" id="name" name="name" placeholder="Your Name" required="" data-error="Full Name">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-6 pl-1">
+                                <div class="form-group mb-2">
+                                    <label for="">E-mail</label>
+                                    <input type="email" placeholder="Your email ID" id="emailId" class="form-control br-4" name="emailId" required="" data-error="Please enter your email">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mb-2">
+                                    <label for="">Mobile No.</label>
+                                    <input type="number" placeholder="Your mobile number" id="contact_number" class="form-control br-4" name="contact_number" required="" data-error="Please enter contact your number">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mb-2">
+                                    <label for="">Message</label>
+                                    <textarea type="text" rows="5" id="message" placeholder="Your message" class="form-control br-4" name="Message"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-sm-12">
+                                <div class="row">
+                                    <div class="col-md-12 form-group form-inline">
+                                        <div class="col-8 p-0">
+                                            <img src="{{ captcha_src() }}" class="img-thumbnail" name="captcha_img" alt="Vyapar Kranti"
+                                                id="captcha_img_id_query-form">
+                                        </div>
+                                        <div class="col-4">
+                                            <button style="padding:.6em" type="button" class="btn btn-common" onclick="refreshCapthca('captcha_img_id_query-form','captcha_text_query-form')">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                                                    <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                                                    <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Enter Text" class="form-control" name="captcha" id="captcha_text_query-form" required />
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="submit-button">
+                                    <button class="btn btn-common br-4" id="submit-query" type="submit">Get a Quote</button>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>

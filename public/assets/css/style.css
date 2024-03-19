@@ -23,7 +23,8 @@ ul.navigation-list {list-style: none;display: flex;align-items: center;height: 1
 .navigation-list > li:not(.build-project) .nav-list {transition: .5s;position: relative;background: linear-gradient( to right, #FFBB00, #FFBB00, 50%, #33354b 50%);-webkit-text-fill-color: transparent;-webkit-background-clip: text;background-size: 200% 100%;background-position: 100%;}
 .navigation-list > li:not(.build-project) .nav-list:hover {background-position: 0;}
 #newsletter_form #subscribeSubmit{border: none;}
-.readmore, .form-project .get-a-quote, #newsletter_form #subscribeSubmit, .select-packege-query button, .build-project button, .navigation + .build-project > span, .navigation .navigation-list .build-project > span {cursor: pointer;background-color: var(--vbrown-color);border-radius: 6px;color: #fff !important;font: 700 10px/30px sans-serif;padding: 4px 10px !important;letter-spacing: 1px;transition: var(--transition);}
+#submit-query,.readmore, .form-project .get-a-quote, #newsletter_form #subscribeSubmit, .select-packege-query button, .build-project button, .navigation + .build-project > span, .navigation .navigation-list .build-project > span {cursor: pointer;background-color: var(--vbrown-color);border-radius: 6px;color: #fff !important;font: 700 10px/30px sans-serif;padding: 4px 10px !important;letter-spacing: 1px;transition: var(--transition);}
+#submit-query{font-size: 13px;}
 .navigation.active .navigation-list .build-project {margin-bottom: 15px;}
 .navigation.active .closemenu {padding: 10px 15px;display: block !important;}
 .closemenu > h2 {font: 700 18px/normal var(--vfont-quicksand);display: inline-block;text-transform: uppercase;color: var(--vbrown-color);margin: 0 0;width: calc(100% - 30px);}
@@ -182,6 +183,22 @@ span.career-icon + h5 {font: 700 14px/normal var(--vfont-poppins);text-transform
 .job-list-container .job-list:hover a {background-color: #fff;color: var(--vbrown-color) !important;}
 .career_tags li {padding: 0px 0px;display: block;font: 600 13px/normal var(--vfont-quicksand);margin: 0 0 10px;color: gray;}
 .career_tags li label {font: 700 14px/normal var(--vfont-quicksand);margin: 0 10px 0 0;color: var(--vbrown-color);}
+
+#vyaparkrantimodals .modal-dialog {width: 700px;margin: 15px auto 30px;max-width: 700px;}
+#vyaparkrantimodals .form-inner {display: flex;align-items: center;grid-gap: 10px;}
+#vyaparkrantimodals .form-inner .form-inner-item {width: calc(100% / 2 - 4px);display: inline-block;}
+div#vyaparkrantimodals {top: 15%;}
+#vyaparkrantimodals a.close {position: absolute;cursor: pointer;z-index: 9;}
+#vyaparkrantimodals .modal-body {padding: 0;}
+#vyaparkrantimodals .modal-content {border: none;border-radius: 0px;overflow: hidden;}
+#vyaparkrantimodals button.close {position: absolute;z-index: 8;right: 15px;top: 7px;font-size: 30px;color: #000;opacity: 1;}
+.br-0{border-radius: 0 !important}
+.br-4{border-radius: 4px !important}
+.form-group  > label {
+    margin: 5px 0 0;
+    color: var(--vbrown-color);
+    font: 700 13px/normal var(--vfont-quicksand);
+}
 @media(min-width: 992px){}
 @media(max-width: 991px){.navigation + .build-project{display: block !important;}
 .navigation + .build-project > span {height: 38px;display: block;}
@@ -219,6 +236,10 @@ span.career-icon + h5 {font: 700 14px/normal var(--vfont-poppins);text-transform
 .without-ol > .row:nth-child(2n+1) > div:first-child {order: 1;}
 }
 @media(max-width: 767px){.footer-inner {display: block;}
+#vyaparkrantimodals .form-inner .form-inner-item {width: 100%;}
+div#vyaparkrantimodals {top: 15px;}
+#vyaparkrantimodals .form-inner .form-inner-item:first-child{display: none;}
+#vyaparkrantimodals .modal-dialog {width: auto;margin: 15px 15px 30px;}
 ol.without-ol img {max-width: 320px;display: block;margin: auto;}
 h3.footer_title {justify-content: space-between;display: flex;}
 .footer_title > span.plus-open {display: inline-block !important;cursor: pointer;}
