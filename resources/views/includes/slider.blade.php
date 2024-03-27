@@ -1,17 +1,17 @@
 <!-- New Slider section  -->
 <div id="vp-slider">
     <!-- Background Image  -->
-    <img src="{{asset('assets/img/3d-design.jpg')}}" srcset="{{asset('assets/img/3d-design.jpg')}}, {{asset('assets/img/3d-design.jpg')}}, {{asset('assets/img/vyaparkranti-mobile-one.png')}} 700w" alt="Vyapar Kranti" width="1920" height="700" class="img-fluid" />
+    <img src="{{asset('assets/img/vyaparkranti.png')}}" srcset="{{asset('assets/img/vyaparkranti.png')}}, {{asset('assets/img/3d-design.jpg')}}, {{asset('assets/img/vyaparkranti-mobile.png')}} 700w" alt="Vyapar Kranti" width="1920" height="700" class="img-fluid" />
     <!-- Background Image End -->
     <!-- Video Section  -->
-    <!-- <video src="{{asset('assets/video/vk-media.mp4')}}" preload="auto" width="100%" height="100%"  autoplay muted loop frameborder="0" allowfullscreen></video> -->
+    {{-- <video src="{{asset('assets/video/vk-media.mp4')}}" preload="auto" width="100%" height="100%"  autoplay muted loop frameborder="0" allowfullscreen></video> --}}
     <!-- Video Section End -->
     <span class="vp-slider-polls" id="particles-js"></span>
     <div class="main-slide-container">
         <div class="vp-slider-content">
             <h1><span class="typer" id="main" data-words="Hosting & Domain Registration,Website Design & Development,Digital Marketing Services" data-delay="0" data-deleteDelay="2000"></span><span  class="cursor" data-owner="main"></span></h1>
-            <p class="text-white">Showcase your business to the world using the innovative WEB Solutions & boost up your business growth. Bridging the gap between seller and buyer to maximize the opportunity to serve.</p>
-            <ul class="slider-links text-white text-center">
+            <p>Showcase your business to the world using the innovative WEB Solutions & boost up your business growth. Bridging the gap between seller and buyer to maximize the opportunity to serve.</p>
+            <ul class="slider-links text-white text-left">
                 <li><a href="/"><span style="color: var(--vyellow-color);">#Website Designing</span></a></li>
                 <li><a href="/"><span style="color: var(--vyellow-color);">#Website Development</span></a></li>
                 <li><a href="/"><span style="color: var(--vyellow-color);">#Applications</span></a></li>
