@@ -42,7 +42,7 @@
             if (cookie == null) {
             setTimeout(function() {
                 $('#vyaparkrantimodals').modal('show');
-            }, 3000);
+            }, 1);
             }
         });
 

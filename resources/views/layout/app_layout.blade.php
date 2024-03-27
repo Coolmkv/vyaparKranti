@@ -167,6 +167,32 @@
             }
         });
     });
+    $("#queryFormSubmit").submit(function() {
+        $("#submit-query").attr("disable", true);
+        let data = $(this).serialize();
+        $.ajax({
+            url: '{{ route('contactUsForm') }}',
+            method: 'post',
+            data: data,
+            dataType: 'json',
+            success: function(response) {
+                refreshCapthca('captcha_img_id_contact_us','captcha_text_query-form');
+                if (response.status) {
+                    successMessage(response.message);
+                    $("#queryFormSubmit")[0].reset();
+                    $("#submit-query").attr("disable", false);
+                } else {
+                    errorMessage(response.message);
+                    $("#submit-query").attr("disable", false);
+                }
+            },
+            error: function(err) {
+                refreshCapthca('captcha_img_id_query-form','captcha_text_query-form');
+                errorMessage("error occurred");
+                $("#submit-query").attr("disable", false);
+            }
+        });
+    });
 </script>
 
 </html>

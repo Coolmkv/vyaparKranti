@@ -142,8 +142,8 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="submit-button build-project">
-                                <button class="btn btn-common" id="submit" type="submit">SEND MESSAGE</button>
+                            <div class="submit-button">
+                                <button class="btn btn-common submitbutton" id="submit" type="submit">SEND MESSAGE</button>
                                 <div id="msgSubmit" class="h3 hidden"></div>
                                 <div class="clearfix"></div>
                             </div>
