@@ -134,9 +134,9 @@
               </li>
 
               <li class="menu-item">
-                <a href="{{route("runAPI")}}" class="menu-link">
-                  <i class="menu-icon tf-icons bx bx-notepad"></i>
-                  <div data-i18n="Analytics">runAPI</div>
+                <a href="{{route("manageContactUs")}}" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-message-detail"></i>
+                  <div data-i18n="Analytics">Manage Contact Us</div>
                 </a>
               </li>
               

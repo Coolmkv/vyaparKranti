@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\Library\Library;
 use Illuminate\Support\Facades\Route;
 
@@ -47,6 +48,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('run-api',[AdminController::class,"runAPI"])->name("runAPI");
     Route::get('run-api-form',[AdminController::class,"runAPIForm"])->name("runAPIForm");
     
+    Route::get("mange-contact-us",[ContactUsController::class,"manageContactUs"])->name("manageContactUs");
+    Route::post("contact-us-data",[ContactUsController::class,"contactUsData"])->name("ContactUsData");
 });
 
 require __DIR__.'/auth.php';
