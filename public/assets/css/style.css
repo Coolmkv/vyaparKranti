@@ -257,11 +257,8 @@ h3.footer_title {justify-content: space-between;display: flex;}
 .footer_title > span.plus-open {display: inline-block !important;cursor: pointer;}
 ul.footer-list {display: none;}
 ul.footer-list.opennav {display: block;}
-.vp-slider-content {max-width: 100%;justify-content: center;padding-top: 1rem;left: 0%;background: linear-gradient(180deg, transparent 25%, transparent);top: 0%;right: 0;transform: translate(0%, 0%);}
-.vp-slider-content span#main {
-    font-size: 34px !important;
-    font-family: "Manrope", sans-serif !important;
-}
+.vp-slider-content {max-width: 100%;justify-content: flex-start;justify-content: start;padding-top: 1rem;left: 0%;background: linear-gradient(180deg, transparent 25%, transparent);top: 0%;right: 0;transform: translate(0%, 0%);}
+.vp-slider-content span#main {font-size: 34px !important;font-family: "Manrope", sans-serif !important;}
 .vp-slider-content h3 span {font: 700 36px/36px var(--vfont-quicksand);}
 a.prime-btn {padding: 0px 40px 0 15px;font: 400 10px/40px var(--vfont-poppins);border-radius: 50px;height: 40px;}
 a.prime-btn:after {width: 30px;height: calc(100% - 10px);border-radius: 50px;line-height: 30px;font-size: 18px;left: calc(100% - 40px);}
